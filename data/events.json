@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-18T13:42:04+00:00",
+ "generated_at": "2026-10-18T13:58:10+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-10-18T13:42:02+00:00"
+   "fetched_at": "2026-10-18T13:53:57+00:00"
   },
   "utmb": {
    "status": "ok",
    "count": 52,
-   "fetched_at": "2026-10-18T13:42:02+00:00"
+   "fetched_at": "2026-10-18T13:53:57+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 921,
-   "fetched_at": "2026-10-18T13:42:02+00:00"
+   "count": 922,
+   "fetched_at": "2026-10-18T13:53:57+00:00"
   },
   "duv": {
    "status": "ok",
    "count": 2119,
-   "fetched_at": "2026-10-18T13:42:02+00:00"
+   "fetched_at": "2026-10-18T13:53:57+00:00"
   }
  },
  "events": [
@@ -107945,6 +107945,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "da30f71bec59"
+  },
+  {
+   "name": "Sala Silverman",
+   "start_date": "2027-08-28",
+   "source": "intervals",
+   "source_id": "14258",
+   "source_url": "https://www.intervals.icu/events/14258/",
+   "end_date": "2027-08-28",
+   "country": "SE",
+   "city": "Sala",
+   "lat": 59.91993,
+   "lon": 16.60655,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14258",
+     "source_url": "https://www.intervals.icu/events/14258/",
+     "id": "004571281781"
+    }
+   ],
+   "fetched_at": "2026-10-18T13:53:57+00:00",
+   "id": "004571281781"
   },
   {
    "name": "Subaru",
