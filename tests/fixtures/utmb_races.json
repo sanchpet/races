@@ -1,0 +1,1035 @@
+{
+ "nbHits": 16,
+ "limit": 100,
+ "offset": 0,
+ "races": [
+  {
+   "id": 22799,
+   "startDate": "10th April 2027",
+   "startLocation": "PINOLERE, Spain",
+   "raceStatus": {
+    "open": true,
+    "status": "registration_open"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 47k RELAY",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/foto_relay_web_abril_2026_1dd0c204b2",
+    "ratio": 1.6285,
+    "format": "png",
+    "type": "image",
+    "width": 1920,
+    "height": 1179
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-relay-50K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 47,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 2600,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 1,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "20k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "PINOLERE, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#000d44",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "hill",
+    "mountain",
+    "singleTrack",
+    "woods",
+    "dayTime"
+   ]
+  },
+  {
+   "id": 6081,
+   "startDate": "10th April 2027",
+   "startLocation": "PINOLERE, Spain",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 47k",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/foto_47k_web_abril_2026_2c1d0078db",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-50K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 47,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 2600,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 2,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "50k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "PINOLERE, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#fc5a00",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "hill",
+    "mountain",
+    "dayTime",
+    "singleTrack",
+    "woods"
+   ]
+  },
+  {
+   "id": 1953,
+   "startDate": "10th April 2027",
+   "startLocation": "PALO BLANCO, Spain",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 24k",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/foto_24k_web_abril_2026_b744f72e4c",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-20K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 24,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 1300,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 1,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "20k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "PALO BLANCO, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#ffff00",
+   "raceThemeIsDark": false,
+   "playgrounds": [
+    "mountain",
+    "hill",
+    "singleTrack",
+    "woods",
+    "hikingTrail",
+    "dayTime"
+   ]
+  },
+  {
+   "id": 47610,
+   "startDate": "16th October 2026",
+   "startLocation": "Zhonghe Square, China",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_closed"
+   },
+   "name": "Mount Yun by UTMB - UMY 100M",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/mount-yun/LOGO_1_f8e9ad8409.png"
+   },
+   "media": {
+    "publicId": "mount-yun/2026 New Images/OFFICIAL_AEK_575_e83b25e33b",
+    "ratio": 1.50117,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1279
+   },
+   "slug": "https://mount-yun.utmb.world/races/100M",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 166,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 7400,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 4,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100m",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Zhonghe Square, China",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#f42525",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "mountain"
+   ]
+  },
+  {
+   "id": 41384,
+   "startDate": "16th October 2026",
+   "startLocation": "Zhonghe Square, China",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_closed"
+   },
+   "name": "Mount Yun by UTMB - DMY 100K",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/mount-yun/LOGO_1_f8e9ad8409.png"
+   },
+   "media": {
+    "publicId": "mount-yun/2026 New Images/S_23265299_0_1680703abc",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://mount-yun.utmb.world/races/100K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 97,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 4300,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 3,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Zhonghe Square, China",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#7ddf65",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "mountain"
+   ]
+  },
+  {
+   "id": 47618,
+   "startDate": "17th October 2026",
+   "startLocation": "Zhonghe Square, China",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_closed"
+   },
+   "name": "Mount Yun by UTMB - CMY 70K",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/mount-yun/LOGO_1_f8e9ad8409.png"
+   },
+   "media": {
+    "publicId": "mount-yun/2026 New Images/30083_0_54919d2bda",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://mount-yun.utmb.world/races/70K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 68,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 2600,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 2,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "50k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Zhonghe Square, China",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#80ffd8",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "mountain"
+   ]
+  },
+  {
+   "id": 41386,
+   "startDate": "17th October 2026",
+   "startLocation": "Zhonghe Square in Mount Yun, China",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_closed"
+   },
+   "name": "Mount Yun by UTMB - MMY 50K",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/mount-yun/LOGO_1_f8e9ad8409.png"
+   },
+   "media": {
+    "publicId": "mount-yun/MOUNT-YUN Photo Gallery/100_14_6da6e37d5d",
+    "ratio": 1.48547,
+    "format": "jpg",
+    "type": "image",
+    "width": 5471,
+    "height": 3683
+   },
+   "slug": "https://mount-yun.utmb.world/races/50K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 48,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 2400,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 2,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "50k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Zhonghe Square in Mount Yun, China",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#fc5a00",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail",
+    "mountain"
+   ]
+  },
+  {
+   "id": 41388,
+   "startDate": "18th October 2026",
+   "startLocation": "Zhonghe Square in Mount Yun, China",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_closed"
+   },
+   "name": "Mount Yun by UTMB - EMY 20K",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/mount-yun/LOGO_1_f8e9ad8409.png"
+   },
+   "media": {
+    "publicId": "mount-yun/c17_jpg_tplv_9lv23dm2t1_image_a6805800a7",
+    "ratio": 1.77778,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1080
+   },
+   "slug": "https://mount-yun.utmb.world/races/20K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 22,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 1400,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 1,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "20k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Zhonghe Square in Mount Yun, China",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#FFFF00",
+   "raceThemeIsDark": false,
+   "playgrounds": [
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 10675,
+   "startDate": "30th October 2026",
+   "startLocation": "Höganäs Church, Sweden",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Kullamannen by UTMB - Ultra 100 Miles",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/kullamannen/Logos/Trail_Kullamannen_By_UTMB_Logo_Neg_Version_e354a3772a.png"
+   },
+   "media": {
+    "publicId": "kullamannen/Races/Kullamannen_2024_C_Toni_Grases_0868_Mejorado_NR_2121x1414_65db51a_df58153106",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://kullamannen.utmb.world/races/ultra-100-miles",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 173,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 2300,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 4,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100m",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Höganäs Church, Sweden",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#f42525",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 22553,
+   "startDate": "30th October 2026",
+   "startLocation": "Höganäs Church, Sweden",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Kullamannen by UTMB - Sprint Ultra 100 km",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/kullamannen/Logos/Trail_Kullamannen_By_UTMB_Logo_Neg_Version_e354a3772a.png"
+   },
+   "media": {
+    "publicId": "kullamannen/Galleries/Kullamannen_2025_Carles_Iturbe_22_73902c35c4",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://kullamannen.utmb.world/races/sprint-ultra-100-km",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 108,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 749,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 3,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Höganäs Church, Sweden",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#7ddf65",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 30675,
+   "startDate": "31st October 2026",
+   "startLocation": "Båstad Skansen Beach, Sweden",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Kullamannen by UTMB - Seventh Seal",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/kullamannen/Logos/Trail_Kullamannen_By_UTMB_Logo_Neg_Version_e354a3772a.png"
+   },
+   "media": {
+    "publicId": "kullamannen/Galleries/Kullamannen_2024_C_Toni_Grases_2660_acb52475a5",
+    "ratio": 1.50117,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1279
+   },
+   "slug": "https://kullamannen.utmb.world/races/seventh-seal",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 53,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 727,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 2,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "50k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Båstad Skansen Beach, Sweden",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#fc5a00",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 32646,
+   "startDate": "31st October 2026",
+   "startLocation": "Hotel Skansen Seaside, Sweden",
+   "raceStatus": {
+    "open": true,
+    "status": "registration_open"
+   },
+   "name": "Kullamannen by UTMB - North Shore",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/kullamannen/Logos/Trail_Kullamannen_By_UTMB_Logo_Neg_Version_e354a3772a.png"
+   },
+   "media": {
+    "publicId": "kullamannen/Races/Kullamannen_2024_C_Toni_Grases_1979_1_b8a6cc590b",
+    "alt": "Dödens Zon 20 km runner at Kullaberg",
+    "ratio": 1.50117,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1279
+   },
+   "slug": "https://kullamannen.utmb.world/races/north-shore",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 22,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 96,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 1,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "20k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "Hotel Skansen Seaside, Sweden",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#000d44",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 45960,
+   "startDate": "8th April 2027",
+   "startLocation": "PLAYA DEL SOCORRO, Spain",
+   "raceStatus": {
+    "open": true,
+    "status": "registration_open"
+   },
+   "name": "Tenerife Bluetrail by UTMB - VERTICAL NIGHT CHALLENGE",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/Vertical_mujer_42a42a90d2",
+    "ratio": 1.4969,
+    "format": "jpg",
+    "type": "image",
+    "width": 1449,
+    "height": 968
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-VK",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 6.5,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 850,
+      "postfix": "m"
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "PLAYA DEL SOCORRO, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#f32193",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "hill",
+    "mountain",
+    "singleTrack",
+    "woods",
+    "hikingTrail",
+    "nightTime"
+   ]
+  },
+  {
+   "id": 946,
+   "startDate": "9th April 2027",
+   "startLocation": "PLAYA DE LOS CRISTIANOS , Spain",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 110k",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/foto_header_web_abril_2026_3134e0660e",
+    "ratio": 1.33333,
+    "format": "png",
+    "type": "image",
+    "width": 1200,
+    "height": 900
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-100M",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 110,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 6250,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 4,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100m",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "PLAYA DE LOS CRISTIANOS , Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#f42525",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "mountain",
+    "highAltitude",
+    "singleTrack",
+    "nightTime",
+    "dayTime",
+    "woods",
+    "hill",
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 62720,
+   "startDate": "9th April 2027",
+   "startLocation": "LA ESPERANZA, Spain",
+   "raceStatus": {
+    "open": true,
+    "status": "registration_open"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 68k",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/material_fotográfico_2025/20250329_TBT_UTMB_Race_Chanajiga_0034_1da7c5c254",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-100K-68k",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 68,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 3600,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 3,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "LA ESPERANZA, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#7ddf65",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "highAltitude",
+    "hill",
+    "mountain",
+    "nightTime",
+    "dayTime",
+    "singleTrack",
+    "woods",
+    "hikingTrail"
+   ]
+  },
+  {
+   "id": 945,
+   "startDate": "10th April 2027",
+   "startLocation": "VILAFLOR, Spain",
+   "raceStatus": {
+    "open": false,
+    "status": "registration_sold_out"
+   },
+   "name": "Tenerife Bluetrail by UTMB - TENERIFE BLUETRAIL 82k",
+   "logo": null,
+   "eventLogo": {
+    "publicId": "/tenerife/LOGOS/logo_TENERIFE_by_UTMB_blanco_8b1fa22998.png"
+   },
+   "media": {
+    "publicId": "tenerife/FOTOGRAFÍAS/actualización web 2027/foto_73k_web_abril_2026_2bc07e07cf",
+    "ratio": 1.5,
+    "format": "jpg",
+    "type": "image",
+    "width": 1920,
+    "height": 1280
+   },
+   "slug": "https://tenerife.utmb.world/races/tbt-100K",
+   "raceLink": null,
+   "details": {
+    "summaryUp": null,
+    "summaryDown": null,
+    "statsUp": [
+     {
+      "name": "distance",
+      "value": 82,
+      "postfix": "km"
+     },
+     {
+      "name": "elevationGain",
+      "value": 3300,
+      "postfix": "m"
+     },
+     {
+      "name": "runningStones",
+      "value": 3,
+      "postfix": null
+     },
+     {
+      "name": "categoryWorldSeries",
+      "value": "100k",
+      "postfix": null
+     }
+    ],
+    "statsDown": [
+     {
+      "name": "startPlace",
+      "value": "VILAFLOR, Spain",
+      "postfix": null
+     }
+    ]
+   },
+   "raceTheme": "#7ddf65",
+   "raceThemeIsDark": true,
+   "playgrounds": [
+    "highAltitude",
+    "hill",
+    "mountain",
+    "nightTime",
+    "dayTime",
+    "singleTrack",
+    "woods",
+    "hikingTrail"
+   ]
+  }
+ ]
+}

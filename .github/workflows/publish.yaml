@@ -1,0 +1,77 @@
+name: Publish
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      fetch:
+        description: Fetch sources before building
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: true
+
+      - run: uv sync --locked
+
+      # The GeoNames dump changes slowly; refresh it weekly instead of on every run.
+      - name: Week number
+        id: week
+        run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v6
+        if: github.event_name != 'push'
+        with:
+          path: .cache/geonames
+          key: geonames-${{ steps.week.outputs.week }}
+
+      - name: Fetch sources
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
+        run: |
+          set -o pipefail
+          uv run races fetch | tee fetch.log
+          { echo '## Fetch'; echo '```'; cat fetch.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit refreshed data
+        if: github.event_name != 'push'
+        run: |
+          git add data/events.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q --signoff -m "chore(data): refresh events"
+          git pull -q --rebase origin main
+          git push origin HEAD:main
+
+      - name: Build
+        run: uv run races build --out dist
+
+      # The server serves this branch through git-sync, so a single commit keeps its clone small.
+      - name: Push to the public branch
+        working-directory: dist
+        run: |
+          source=$(git -C .. rev-parse --short HEAD)
+          git init -q -b public
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Build from races ${source}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" public
