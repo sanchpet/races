@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Races — world trail and road race calendar</title>
+  <meta name="description" content="Trail, road and ultra races worldwide, aggregated from public race calendars.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛰</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+        integrity="sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+        integrity="sha384-wgw+aLYNQ7dlhK47ZPK7FRACiq7ROZwgFNg0m04avm4CaXS+Z9Y7nMu8yNjBKYC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Races</h1>
+      <p class="tagline">Trail, road and ultra races worldwide</p>
+    </div>
+    <nav class="tabs" aria-label="View">
+      <button type="button" data-tab="all" class="active">All races</button>
+      <button type="button" data-tab="mine">My races <span id="mine-count" class="pill">0</span></button>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="filters" id="filters">
+      <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false">Filters</button>
+      <form id="filter-form" autocomplete="off">
+        <label class="field">Search
+          <input type="search" name="q" placeholder="Name, city or country">
+        </label>
+        <label class="field">Region
+          <select name="region"><option value="">Anywhere</option></select>
+        </label>
+        <label class="field">Country
+          <select name="country"><option value="">All countries</option></select>
+        </label>
+        <div class="row">
+          <label class="field">From <input type="date" name="from"></label>
+          <label class="field">To <input type="date" name="to"></label>
+        </div>
+        <fieldset class="field">
+          <legend>Discipline</legend>
+          <div class="checks" id="disciplines"></div>
+        </fieldset>
+        <div class="row">
+          <label class="field">Min km <input type="number" name="kmin" min="0" step="1" inputmode="numeric"></label>
+          <label class="field">Max km <input type="number" name="kmax" min="0" step="1" inputmode="numeric"></label>
+        </div>
+        <div class="row">
+          <label class="field">Min climb, m <input type="number" name="emin" min="0" step="100" inputmode="numeric"></label>
+          <label class="field">Max climb, m <input type="number" name="emax" min="0" step="100" inputmode="numeric"></label>
+        </div>
+        <label class="check"><input type="checkbox" name="ultra"> Ultra distances only (over 42.2 km)</label>
+        <label class="check"><input type="checkbox" name="open"> Registration open</label>
+        <button type="reset" class="link">Reset filters</button>
+      </form>
+    </aside>
+
+    <section class="results">
+      <div class="toolbar">
+        <p id="summary" aria-live="polite">Loading…</p>
+        <div class="seg" role="group" aria-label="Display">
+          <button type="button" data-view="list" class="active">List</button>
+          <button type="button" data-view="map">Map</button>
+        </div>
+      </div>
+      <div id="map" hidden></div>
+      <p id="map-note" class="note" hidden></p>
+      <ol id="list" class="list"></ol>
+      <button type="button" id="more" class="more" hidden>Show more</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="sources-line"></p>
+    <p>Dates and distances come from the listed sources and may lag the organiser's site — check there before you register.
+      Places are geocoded with <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0); map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+      No cookies, no analytics. <a href="https://github.com/sanchpet/races">Source code</a>.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+          integrity="sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

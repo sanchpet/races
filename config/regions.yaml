@@ -1,0 +1,45 @@
+# Region groups for the site's filter. Edit freely: a group is a label plus a list
+# of ISO 3166-1 alpha-2 country codes, and a country may sit in several groups.
+# Groups appear in the filter in this order. Kosovo uses the user-assigned XK.
+# Quote "NO" (Norway): bare NO is a boolean in YAML.
+
+cyprus-neighbours:
+  label: Cyprus & neighbours
+  countries: [CY, GR, TR, IL, LB, EG, SY, JO, PS]
+
+georgia-caucasus:
+  label: Georgia & Caucasus
+  countries: [GE, AM, AZ, TR]
+
+europe:
+  label: Europe
+  countries: [AD, AL, AM, AT, AX, AZ, BA, BE, BG, BY, CH, CY, CZ, DE, DK, EE, ES, FI, FO,
+              FR, GB, GE, GG, GI, GR, HR, HU, IE, IM, IS, IT, JE, LI, LT, LU, LV, MC, MD,
+              ME, MK, MT, NL, "NO", PL, PT, RO, RS, RU, SE, SI, SK, SM, TR, UA, VA, XK]
+
+asia:
+  label: Asia
+  countries: [AE, AF, AM, AZ, BD, BH, BN, BT, CN, CY, GE, HK, ID, IL, IN, IQ, IR, JO, JP,
+              KG, KH, KP, KR, KW, KZ, LA, LB, LK, MM, MN, MO, MV, MY, NP, OM, PH, PK, PS,
+              QA, SA, SG, SY, TH, TJ, TL, TM, TR, TW, UZ, VN, YE]
+
+middle-east:
+  label: Middle East
+  countries: [AE, BH, CY, EG, IL, IQ, IR, JO, KW, LB, OM, PS, QA, SA, SY, TR, YE]
+
+americas:
+  label: Americas
+  countries: [AG, AI, AR, AW, BB, BL, BM, BO, BQ, BR, BS, BZ, CA, CL, CO, CR, CU, CW, DM,
+              DO, EC, FK, GD, GF, GL, GP, GT, GY, HN, HT, JM, KN, KY, LC, MF, MQ, MS, MX,
+              NI, PA, PE, PM, PR, PY, SR, SV, SX, TC, TT, US, UY, VC, VE, VG, VI]
+
+africa:
+  label: Africa
+  countries: [AO, BF, BI, BJ, BW, CD, CF, CG, CI, CM, CV, DJ, DZ, EG, EH, ER, ET, GA, GH,
+              GM, GN, GQ, GW, KE, KM, LR, LS, LY, MA, MG, ML, MR, MU, MW, MZ, NA, NE, NG,
+              RE, RW, SC, SD, SL, SN, SO, SS, ST, SZ, TD, TG, TN, TZ, UG, YT, ZA, ZM, ZW]
+
+oceania:
+  label: Oceania
+  countries: [AS, AU, CK, FJ, FM, GU, KI, MH, MP, NC, NF, NR, NU, NZ, PF, PG, PN, PW, SB,
+              TK, TO, TV, VU, WF, WS]

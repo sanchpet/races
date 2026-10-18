@@ -1,0 +1,13 @@
+# The site owner's race picks, highlighted on the site and listed under "My races".
+#
+# Each entry names an event by its `id` (shown on the site under "details") or by
+# any of its source URLs, plus an optional status and note:
+#
+#   - id: 3f2a9c81d0b4
+#     status: planned      # planned | registered | done
+#     note: First 100 km, if training goes well
+#   - url: https://tenerife.utmb.world/
+#     status: registered
+#
+# Friends' picks will live next to this file as picks/<name>.yaml, same format.
+[]
