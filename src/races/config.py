@@ -7,6 +7,8 @@ from pathlib import Path
 
 import yaml
 
+from races.models import Event
+
 PICK_STATUSES = ("planned", "registered", "done")
 PICK_KEYS = {"id", "url", "status", "note"}
 OWNER = "owner"
@@ -31,6 +33,12 @@ class Pick:
     status: str = "planned"
     note: str | None = None
     origin: str = ""
+
+    def handles(self) -> set[str]:
+        return {k for k in (self.id, (self.url or "").rstrip("/")) if k}
+
+    def find(self, index: dict[str, Event]) -> Event | None:
+        return next((index[k] for k in (self.id, (self.url or "").rstrip("/")) if k in index), None)
 
 
 def load_regions(path: Path) -> list[Region]:

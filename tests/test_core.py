@@ -216,3 +216,20 @@ def test_unchanged_events_keep_their_timestamp():
     keep_unchanged_timestamps([moved], [old])
     assert same.fetched_at == "2026-10-01T00:00:00+00:00"
     assert moved.fetched_at == "2026-10-18T00:00:00+00:00"
+
+
+def test_picked_race_outlives_race_day_and_its_source():
+    from races.config import Pick
+    from races.pipeline import carry_picked, finalise
+
+    today = date(2027, 6, 1)
+    done = event("utmb", "1", "Kazbegi Ultra", date(2027, 5, 1))
+    dropped = event("duv", "2", "Mestia Ultra", date(2027, 7, 1))
+    stale = event("duv", "3", "Batumi Run", date(2027, 5, 2))
+    picks = [Pick("owner", id=done.id, status="done"), Pick("nino", url=dropped.source_url + "/")]
+
+    current = [done]  # the source still lists the finished race; duv no longer lists Mestia
+    carried = carry_picked(current, [done, dropped, stale], picks)
+    assert carried == [dropped]
+    kept = finalise(current + carried + [stale], {}, today, picks)
+    assert [e.name for e in kept] == ["Kazbegi Ultra", "Mestia Ultra"]

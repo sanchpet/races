@@ -10,10 +10,11 @@ from datetime import date
 from pathlib import Path
 
 from races.build import build_site
-from races.config import load_regions
+from races.config import load_picks, load_regions
 from races.geocode import Gazetteer, download
 from races.http import PoliteClient
 from races.pipeline import (
+    carry_picked,
     collect,
     enrich,
     finalise,
@@ -35,6 +36,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
             return 2
         sources = {k: v for k, v in sources.items() if k in args.only}
 
+    picks = load_picks(args.root)
     _, previous = load_events(args.data)
     with PoliteClient(cache_dir=None if args.no_cache else Path(".cache/raw")) as client:
         events, report = collect(sources, client, previous)
@@ -44,6 +46,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
         for e in kept:
             e.sources = [s for s in e.sources if s.source not in sources]
         events += kept
+    events += carry_picked(events, previous, picks)
 
     gazetteer = None
     if not args.no_geocode:
@@ -54,7 +57,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
             log.error("geocoding disabled: %s", exc)
 
     enrich(events, args.root / "config" / "regions.yaml", gazetteer)
-    merged = finalise(events, sources, date.today())
+    merged = finalise(events, sources, date.today(), picks)
     keep_unchanged_timestamps(merged, previous)
     write_events(args.data, merged, report)
 

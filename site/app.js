@@ -6,6 +6,9 @@ const DISCIPLINES = ["trail", "road", "ultra", "sky", "other"];
 const STATUS_LABEL = { open: "Registration open", closed: "Closed", upcoming: "Opens soon" };
 const PICK_LABEL = { planned: "Planned", registered: "Registered", done: "Done" };
 
+// Picked races stay in the data after race day; elsewhere only upcoming ones are listed.
+const TODAY = new Date().toISOString().slice(0, 10);
+
 const state = { data: null, tab: "all", view: "list", shown: PAGE, filtered: [] };
 let map = null;
 let cluster = null;
@@ -56,7 +59,7 @@ function readFilters() {
 }
 
 function matches(e, f, regionCountries) {
-  if (state.tab === "mine" && !ownerPick(e)) return false;
+  if (state.tab === "mine" ? !ownerPick(e) : e.end_date < TODAY) return false;
   if (f.country && e.country !== f.country) return false;
   if (regionCountries && !regionCountries.has(e.country)) return false;
   if (f.from && e.end_date < f.from) return false;
@@ -198,7 +201,7 @@ function renderMap() {
 }
 
 function render() {
-  const total = state.data.events.length;
+  const total = state.data.events.filter((e) => e.end_date >= TODAY).length;
   const n = state.filtered.length;
   $("#summary").textContent = state.tab === "mine"
     ? `${n} of my races` : `${n.toLocaleString("en")} of ${total.toLocaleString("en")} races`;
