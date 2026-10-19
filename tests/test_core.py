@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -6,7 +7,7 @@ import httpx
 import pytest
 
 from races.build import attach_picks, build_site
-from races.config import Region, load_picks, region_tags
+from races.config import PicksError, Region, load_picks, region_tags
 from races.dedupe import deduplicate
 from races.geocode import Gazetteer
 from races.http import PoliteClient, RobotsDisallowed
@@ -91,10 +92,20 @@ def test_picks_owner_and_friends(tmp_path):
     assert [(p.person, p.status) for p in picks] == [("owner", "registered"), ("nino", "planned")]
 
 
-@pytest.mark.parametrize("body", ["- note: no key\n", "- id: x\n  status: maybe\n", "id: x\n"])
-def test_picks_reject_bad_entries(tmp_path, body):
+@pytest.mark.parametrize(
+    ("body", "error"),
+    [
+        ("- note: no key\n", "needs an id or a url"),
+        ("- id: x\n  status: maybe\n", "unknown status"),
+        ("id: x\n", "expected a list"),
+        ("- id: 123456789012\n", "put it in quotes"),
+        ("- id: 012345670123\n", "put it in quotes"),
+        ("- id: '000000000000'\n  staus: done\n", "unknown keys ['staus']"),
+    ],
+)
+def test_picks_reject_bad_entries(tmp_path, body, error):
     (tmp_path / "picks.yaml").write_text(body)
-    with pytest.raises(ValueError):
+    with pytest.raises(PicksError, match=re.escape(error)):
         load_picks(tmp_path)
 
 
