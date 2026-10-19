@@ -1,5 +1,7 @@
 "use strict";
 
+// The picks tab's name everywhere on the page.
+const MINE_LABEL = "My races";
 const PAGE = 150;
 const MARATHON_KM = 42.195;
 const DISCIPLINES = ["trail", "road", "ultra", "sky", "other"];
@@ -217,7 +219,7 @@ function render() {
   const total = state.data.events.filter((e) => e.end_date >= TODAY).length;
   const n = state.filtered.length;
   $("#summary").textContent = state.tab === "mine"
-    ? `${n} of my races` : `${n.toLocaleString("en")} of ${total.toLocaleString("en")} races`;
+    ? `${MINE_LABEL}: ${n}` : `${n.toLocaleString("en")} of ${total.toLocaleString("en")} races`;
   $("#map").hidden = state.view !== "map";
   $("#list").hidden = state.view !== "list";
   $("#map-note").hidden = state.view !== "map";
@@ -266,6 +268,7 @@ function populate() {
     .forEach(([code, name]) => country.add(new Option(`${flag(code)} ${name}`, code)));
   $("#disciplines").innerHTML = DISCIPLINES.map((x) =>
     `<label class="check"><input type="checkbox" name="discipline" value="${x}"> ${x}</label>`).join("");
+  $("#mine-label").textContent = MINE_LABEL;
   $("#mine-count").textContent = d.events.filter(ownerPick).length;
 
   const generated = d.generated_at ? new Date(d.generated_at).toUTCString().slice(5, 22) : "unknown";
