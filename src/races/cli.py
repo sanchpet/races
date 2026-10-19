@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 
 from races.build import build_site
-from races.config import load_picks, load_regions
+from races.config import PicksError, load_picks, load_regions
 from races.geocode import Gazetteer, download
 from races.http import PoliteClient
 from races.pipeline import (
@@ -80,7 +80,7 @@ def print_summary(events, report: dict, root: Path) -> None:
 
 def cmd_build(args: argparse.Namespace) -> int:
     stats = build_site(args.root, args.data, args.out)
-    print(f"built {args.out}: {stats['events']} events, {stats['unmatched_picks']} unmatched picks")
+    print(f"built {args.out}: {stats['events']} events, {stats['picks']} picks")
     return 0
 
 
@@ -106,7 +106,11 @@ def main(argv: list[str] | None = None) -> int:
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
     )
-    return args.func(args)
+    try:
+        return args.func(args)
+    except PicksError as exc:
+        log.error("%s", exc)
+        return 2
 
 
 if __name__ == "__main__":

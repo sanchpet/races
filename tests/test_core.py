@@ -114,23 +114,38 @@ def test_seeded_picks_file_loads():
 
 
 def test_attach_picks_by_id_secondary_id_and_url():
-    e = event("utmb", "1", "Race", date(2027, 1, 1)).to_dict()
-    e["sources"].append(
-        {"source": "duv", "source_id": "7", "source_url": "https://d.example/7", "id": "dupid"}
-    )
     from races.config import Pick
+    from races.models import SourceRef
 
-    unmatched = attach_picks(
-        [e],
+    e = event("utmb", "1", "Race", date(2027, 1, 1))
+    e.sources.append(SourceRef("duv", "7", "https://d.example/7", "dupid"))
+    other = event("duv", "8", "Other race", date(2027, 1, 2))
+    records = attach_picks(
+        [e, other],
         [
-            Pick("owner", id=e["id"]),
+            Pick("owner", id=e.id),
             Pick("nino", id="dupid", status="done"),
             Pick("gio", url="https://d.example/7/"),
-            Pick("owner", id="missing"),
         ],
     )
-    assert [p["person"] for p in e["picks"]] == ["owner", "nino", "gio"]
-    assert [p.id for p in unmatched] == ["missing"]
+    assert [p["person"] for p in records[0]["picks"]] == ["owner", "nino", "gio"]
+    assert "picks" not in records[1]
+
+
+def test_pick_matching_no_race_fails_the_build(tmp_path):
+    data = tmp_path / "events.json"
+    write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1))], {})
+    root = tmp_path / "root"
+    (root / "picks").mkdir(parents=True)
+    (root / "site").symlink_to(ROOT / "site")
+    (root / "config").symlink_to(ROOT / "config")
+    (root / "picks.yaml").write_text("- id: deadbeef0000\n")
+    (root / "picks" / "nino.yaml").write_text("- url: https://nowhere.example/race\n")
+    with pytest.raises(PicksError) as err:
+        build_site(root, data, tmp_path / "dist")
+    assert "picks.yaml #1: deadbeef0000" in str(err.value)
+    assert "picks/nino.yaml #1: https://nowhere.example/race" in str(err.value)
+    assert not (tmp_path / "dist").exists()
 
 
 def test_gazetteer_locates_town_inside_venue_or_name():
@@ -182,7 +197,7 @@ def test_build_site_writes_page_and_data(tmp_path):
     )
     out = tmp_path / "dist"
     stats = build_site(ROOT, data, out)
-    assert stats == {"events": 1, "unmatched_picks": 0}
+    assert stats == {"events": 1, "picks": 0}
     assert (out / "index.html").exists() and (out / "app.js").exists()
     site = json.loads((out / "events.json").read_text())
     assert site["countries"] == {"GE": "Georgia"}

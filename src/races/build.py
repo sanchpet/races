@@ -3,59 +3,51 @@
 from __future__ import annotations
 
 import json
-import logging
 import shutil
 from pathlib import Path
 
-from races.config import OWNER, Pick, load_picks, load_regions
+from races.config import OWNER, Pick, PicksError, load_picks, load_regions
 from races.countries import name_of
+from races.models import Event, index_events
 
-log = logging.getLogger(__name__)
 
-
-def attach_picks(events: list[dict], picks: list[Pick]) -> list[Pick]:
-    """Mark events picked by someone; returns the picks that matched nothing."""
-    by_key: dict[str, dict] = {}
-    for event in events:
-        by_key[event["id"]] = event
-        for ref in event.get("sources", []):
-            by_key[ref["id"]] = event
-            by_key[ref["source_url"].rstrip("/")] = event
-        if event["registration"].get("url"):
-            by_key.setdefault(event["registration"]["url"].rstrip("/"), event)
-
-    unmatched = []
+def attach_picks(events: list[Event], picks: list[Pick]) -> list[dict]:
+    """Site records with each event's picks; a pick that names no event stops the build."""
+    index = index_events(events)
+    records = {e.id: e.to_dict() for e in events}
+    missing = []
     for pick in picks:
-        event = by_key.get(pick.id or "") or by_key.get((pick.url or "").rstrip("/"))
+        event = pick.find(index)
         if event is None:
-            unmatched.append(pick)
+            missing.append(pick)
             continue
-        event.setdefault("picks", []).append(
+        records[event.id].setdefault("picks", []).append(
             {"person": pick.person, "status": pick.status, "note": pick.note}
         )
-    return unmatched
+    if missing:
+        lines = [f"  {p.origin}: {p.id or p.url}" for p in missing]
+        raise PicksError(
+            "picks that match no race (use the event id from the site's Details, "
+            "or one of its source URLs):\n" + "\n".join(lines)
+        )
+    return list(records.values())
 
 
 def build_site(root: Path, data_path: Path, out: Path) -> dict:
     data = json.loads(data_path.read_text(encoding="utf-8"))
-    events = data["events"]
+    events = [Event.from_dict(e) for e in data["events"]]
     regions = load_regions(root / "config" / "regions.yaml")
-    unmatched = attach_picks(events, load_picks(root))
-    for pick in unmatched:
-        log.warning("pick by %s matches no event: %s", pick.person, pick.id or pick.url)
+    picks = load_picks(root)
+    records = attach_picks(events, picks)
 
-    countries = sorted({e["country"] for e in events if e.get("country")})
+    countries = sorted({e.country for e in events if e.country})
     site_data = {
         "generated_at": data.get("generated_at"),
         "sources": data.get("sources", {}),
         "owner": OWNER,
         "regions": [{"key": r.key, "label": r.label, "countries": r.countries} for r in regions],
         "countries": {c: name_of(c) for c in countries},
-        "events": events,
-        "unmatched_picks": [
-            {"person": p.person, "id": p.id, "url": p.url, "status": p.status, "note": p.note}
-            for p in unmatched
-        ],
+        "events": records,
     }
 
     if out.exists():
@@ -64,4 +56,4 @@ def build_site(root: Path, data_path: Path, out: Path) -> dict:
     (out / "events.json").write_text(
         json.dumps(site_data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
     )
-    return {"events": len(events), "unmatched_picks": len(unmatched)}
+    return {"events": len(events), "picks": len(picks)}
