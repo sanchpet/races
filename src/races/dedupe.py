@@ -8,7 +8,7 @@ from datetime import timedelta
 from difflib import SequenceMatcher
 
 from races.geocode import normalise
-from races.models import Event
+from races.models import Event, index_events
 
 NAME_THRESHOLD = 0.82
 DATE_SLACK = timedelta(days=1)
@@ -93,3 +93,21 @@ def deduplicate(events: list[Event], priority: dict[str, int]) -> list[Event]:
             kept.append(event)
             by_day[event.start_date].append(event)
     return sorted(kept, key=lambda e: (e.start_date, e.name))
+
+
+def fold_in(events: list[Event], extra: list[Event]) -> list[Event]:
+    """Add hand-entered races to deduplicated source events.
+
+    One that shares a URL with a source event, or is `similar` to one, merges into it
+    as provenance and the source record stays primary; the rest stand on their own.
+    """
+    index = index_events(events)
+    alone = []
+    for event in extra:
+        match = next((index[k] for k in event.handles() if k in index), None)
+        match = match or next((e for e in events if similar(e, event)), None)
+        if match:
+            merge_into(match, event)
+        else:
+            alone.append(event)
+    return sorted(events + alone, key=lambda e: (e.start_date, e.name))

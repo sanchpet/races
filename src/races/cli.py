@@ -11,7 +11,7 @@ from pathlib import Path
 
 from races.build import build_site
 from races.config import PicksError, load_picks, load_regions
-from races.geocode import Gazetteer, download
+from races.geocode import open_gazetteer
 from races.http import PoliteClient
 from races.pipeline import (
     carry_picked,
@@ -50,11 +50,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
 
     gazetteer = None
     if not args.no_geocode:
-        try:
-            countries = {e.country for e in events if e.country}
-            gazetteer = Gazetteer.from_zip(download(), countries)
-        except Exception as exc:  # map pins are optional; the calendar still works
-            log.error("geocoding disabled: %s", exc)
+        gazetteer = open_gazetteer({e.country for e in events if e.country})
 
     enrich(events, args.root / "config" / "regions.yaml", gazetteer)
     merged = finalise(events, sources, date.today(), picks)

@@ -248,3 +248,118 @@ def test_picked_race_outlives_race_day_and_its_source():
     assert carried == [dropped]
     kept = finalise(current + carried + [stale], {}, today, picks)
     assert [e.name for e in kept] == ["Kazbegi Ultra", "Mestia Ultra"]
+
+
+def geonames_row(name, country, lat, lon, population=10000):
+    return [
+        "1",
+        name,
+        name,
+        "",
+        str(lat),
+        str(lon),
+        "P",
+        "PPL",
+        country,
+        *[""] * 5,
+        str(population),
+    ]
+
+
+def site_root(tmp_path, picks_yaml):
+    root = tmp_path / "root"
+    root.mkdir()
+    (root / "site").symlink_to(ROOT / "site")
+    (root / "config").symlink_to(ROOT / "config")
+    (root / "picks.yaml").write_text(picks_yaml)
+    return root
+
+
+INLINE_PICK = """
+- name: Svaneti Trail
+  date: 2027-07-10
+  end_date: 2027-07-11
+  country: Georgia
+  city: Mestia
+  url: https://svaneti.example/trail/
+  distances: [21, {km: 54, climb_m: 3100}]
+  status: registered
+  note: Home race
+"""
+
+
+def test_inline_pick_defines_its_own_race(tmp_path):
+    (pick,) = load_picks(site_root(tmp_path, INLINE_PICK))
+    e = pick.event
+    assert (e.name, e.country, e.city, e.source) == ("Svaneti Trail", "GE", "Mestia", "picks")
+    assert (e.start_date, e.end_date) == (date(2027, 7, 10), date(2027, 7, 11))
+    assert [(d.km, d.elevation_gain_m) for d in e.distances] == [(21, None), (54, 3100)]
+    assert e.discipline == "trail"
+    assert e.sources[0].source_url == "https://svaneti.example/trail/"
+
+
+@pytest.mark.parametrize(
+    ("body", "error"),
+    [
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n", "needs url"),
+        ("- name: X\n  url: https://x.example\n", "needs date, country"),
+        ("- name: X\n  date: 2027-01-01\n  country: Narnia\n  url: u\n", "unknown country"),
+        ("- name: X\n  date: soon\n  country: GE\n  url: u\n", "not a YYYY-MM-DD date"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  lat: 41\n", "both lat"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  distance: 5\n", "'distance'"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  distances: [ten]\n", "km"),
+        ("- url: u\n  city: Mestia\n", "unknown keys ['city']"),
+    ],
+)
+def test_inline_pick_rejects_bad_races(tmp_path, body, error):
+    with pytest.raises(PicksError, match=re.escape(error)):
+        load_picks(site_root(tmp_path, body))
+
+
+def test_inline_race_is_geocoded_and_listed_with_its_provenance(tmp_path):
+    data = tmp_path / "events.json"
+    write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1), "FR")], {})
+    gazetteer = Gazetteer([geonames_row("Mestia", "GE", 43.04, 42.73)])
+    out = tmp_path / "dist"
+    build_site(site_root(tmp_path, INLINE_PICK), data, out, gazetteer)
+
+    site = json.loads((out / "events.json").read_text())
+    race = next(e for e in site["events"] if e["name"] == "Svaneti Trail")
+    assert (race["lat"], race["lon"]) == (43.04, 42.73)
+    assert "georgia-caucasus" in race["region_tags"]
+    assert [s["source"] for s in race["sources"]] == ["picks"]
+    assert race["picks"] == [{"person": "owner", "status": "registered", "note": "Home race"}]
+    assert site["countries"] == {"FR": "France", "GE": "Georgia"}
+    assert [e["start_date"] for e in site["events"]] == ["2027-01-01", "2027-07-10"]
+
+
+@pytest.mark.parametrize(
+    ("name", "url"),
+    [
+        ("Mestia Ultra", "https://svaneti.example/trail"),  # same URL, another name
+        ("Svaneti Trail 54K", "https://duv.example/77"),  # same race by dedupe's rules
+    ],
+)
+def test_inline_race_merges_into_the_source_event_that_finds_it(tmp_path, name, url):
+    found = Event(
+        name=name,
+        start_date=date(2027, 7, 10),
+        source="duv",
+        source_id="77",
+        source_url=url,
+        country="GE",
+        city="Mestia",
+        lat=43.0,
+        lon=42.7,
+        distances=[Distance(54.0)],
+    )
+    data = tmp_path / "events.json"
+    write_events(data, [found], {})
+    out = tmp_path / "dist"
+    build_site(site_root(tmp_path, INLINE_PICK), data, out, Gazetteer([]))
+
+    (race,) = json.loads((out / "events.json").read_text())["events"]
+    assert race["id"] == found.id and race["name"] == name
+    assert [s["source"] for s in race["sources"]] == ["duv", "picks"]
+    assert [(d["km"], d["elevation_gain_m"]) for d in race["distances"]] == [(21, None), (54, 3100)]
+    assert race["picks"][0]["status"] == "registered"

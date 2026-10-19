@@ -1,4 +1,4 @@
-# The site owner's race picks, highlighted on the site and listed under "My races".
+# The site owner's race picks, highlighted on the site and listed in their own tab.
 #
 # Each entry names an event by its `id` (shown on the site under "details") or by
 # any of its source URLs, plus an optional status and note:
@@ -8,6 +8,27 @@
 #     note: First 100 km, if training goes well
 #   - url: https://tenerife.utmb.world/
 #     status: registered
+#
+# A race no source lists is defined in the pick itself: give it a name, and the
+# date, country and url become required too. It shows on the map and list like any
+# other race, listed by "picks"; once a source lists it under the same url, or by
+# the same name and date, the two merge and the source's record leads.
+#
+#   - name: Svaneti Trail
+#     date: 2027-07-10
+#     end_date: 2027-07-11 # optional, for a multi-day race
+#     country: GE          # ISO code or English name
+#     url: https://example.org/svaneti-trail/
+#     city: Mestia         # optional; places the pin when lat/lon are absent
+#     lat: 43.045          # optional, both or neither
+#     lon: 42.727
+#     distances: [21, {km: 54, climb_m: 3100}]   # optional, km
+#     discipline: trail    # optional: trail | road | ultra | sky | other
+#     status: registered
+#     note: Home race
+#
+# A pick that matches no race fails the build. Picked races stay listed after
+# race day, so `done` keeps a record.
 #
 # Friends' picks will live next to this file as picks/<name>.yaml, same format.
 []

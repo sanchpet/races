@@ -33,7 +33,7 @@ uv run pytest      # recorded fixtures, no network
 ## Configuration
 
 - `config/regions.yaml` — the region groups in the filter (a label and a list of ISO country codes each). Edit and rebuild; no code changes needed.
-- `picks.yaml` — the owner's picks: an event `id` (shown under "Details" on each race) or any of its source URLs, with an optional `status` (`planned`, `registered`, `done`) and `note`. Friends' picks will go to `picks/<name>.yaml` in the same format.
+- `picks.yaml` — the owner's picks: an event `id` (shown under "Details" on each race) or any of its source URLs, with an optional `status` (`planned`, `registered`, `done`) and `note`. A race no source lists can be defined in the pick itself (name, date, country, url; see the file's header); it merges with a source's record once a parser finds the same race. A pick that matches no race fails `races build`. Picks apply at build time, so an edit shows on the next push without a fetch. Friends' picks will go to `picks/<name>.yaml` in the same format.
 
 ## Adding a source
 

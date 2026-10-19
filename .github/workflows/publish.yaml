@@ -32,12 +32,12 @@ jobs:
       - run: uv sync --locked
 
       # The GeoNames dump changes slowly; refresh it weekly instead of on every run.
+      # Push builds need it too when a pick defines its own race without lat/lon.
       - name: Week number
         id: week
         run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
 
       - uses: actions/cache@v6
-        if: github.event_name != 'push'
         with:
           path: .cache/geonames
           key: geonames-${{ steps.week.outputs.week }}

@@ -46,6 +46,15 @@ def download(path: Path = DEFAULT_PATH) -> Path:
     return path
 
 
+def open_gazetteer(countries: set[str]) -> Gazetteer | None:
+    """None when the dump cannot be had: map pins are optional, the calendar still works."""
+    try:
+        return Gazetteer.from_zip(download(), countries)
+    except Exception as exc:
+        log.error("geocoding disabled: %s", exc)
+        return None
+
+
 class Gazetteer:
     def __init__(self, rows: list[list[str]], countries: set[str] | None = None) -> None:
         # (country, normalised name) -> (population, lat, lon); the most populous wins.
