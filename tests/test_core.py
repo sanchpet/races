@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -6,7 +7,7 @@ import httpx
 import pytest
 
 from races.build import attach_picks, build_site
-from races.config import Region, load_picks, region_tags
+from races.config import PicksError, Region, load_picks, region_tags
 from races.dedupe import deduplicate
 from races.geocode import Gazetteer
 from races.http import PoliteClient, RobotsDisallowed
@@ -91,10 +92,20 @@ def test_picks_owner_and_friends(tmp_path):
     assert [(p.person, p.status) for p in picks] == [("owner", "registered"), ("nino", "planned")]
 
 
-@pytest.mark.parametrize("body", ["- note: no key\n", "- id: x\n  status: maybe\n", "id: x\n"])
-def test_picks_reject_bad_entries(tmp_path, body):
+@pytest.mark.parametrize(
+    ("body", "error"),
+    [
+        ("- note: no key\n", "needs an id or a url"),
+        ("- id: x\n  status: maybe\n", "unknown status"),
+        ("id: x\n", "expected a list"),
+        ("- id: 123456789012\n", "put it in quotes"),
+        ("- id: 012345670123\n", "put it in quotes"),
+        ("- id: '000000000000'\n  staus: done\n", "unknown keys ['staus']"),
+    ],
+)
+def test_picks_reject_bad_entries(tmp_path, body, error):
     (tmp_path / "picks.yaml").write_text(body)
-    with pytest.raises(ValueError):
+    with pytest.raises(PicksError, match=re.escape(error)):
         load_picks(tmp_path)
 
 
@@ -103,23 +114,38 @@ def test_seeded_picks_file_loads():
 
 
 def test_attach_picks_by_id_secondary_id_and_url():
-    e = event("utmb", "1", "Race", date(2027, 1, 1)).to_dict()
-    e["sources"].append(
-        {"source": "duv", "source_id": "7", "source_url": "https://d.example/7", "id": "dupid"}
-    )
     from races.config import Pick
+    from races.models import SourceRef
 
-    unmatched = attach_picks(
-        [e],
+    e = event("utmb", "1", "Race", date(2027, 1, 1))
+    e.sources.append(SourceRef("duv", "7", "https://d.example/7", "dupid"))
+    other = event("duv", "8", "Other race", date(2027, 1, 2))
+    records = attach_picks(
+        [e, other],
         [
-            Pick("owner", id=e["id"]),
+            Pick("owner", id=e.id),
             Pick("nino", id="dupid", status="done"),
             Pick("gio", url="https://d.example/7/"),
-            Pick("owner", id="missing"),
         ],
     )
-    assert [p["person"] for p in e["picks"]] == ["owner", "nino", "gio"]
-    assert [p.id for p in unmatched] == ["missing"]
+    assert [p["person"] for p in records[0]["picks"]] == ["owner", "nino", "gio"]
+    assert "picks" not in records[1]
+
+
+def test_pick_matching_no_race_fails_the_build(tmp_path):
+    data = tmp_path / "events.json"
+    write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1))], {})
+    root = tmp_path / "root"
+    (root / "picks").mkdir(parents=True)
+    (root / "site").symlink_to(ROOT / "site")
+    (root / "config").symlink_to(ROOT / "config")
+    (root / "picks.yaml").write_text("- id: deadbeef0000\n")
+    (root / "picks" / "nino.yaml").write_text("- url: https://nowhere.example/race\n")
+    with pytest.raises(PicksError) as err:
+        build_site(root, data, tmp_path / "dist")
+    assert "picks.yaml #1: deadbeef0000" in str(err.value)
+    assert "picks/nino.yaml #1: https://nowhere.example/race" in str(err.value)
+    assert not (tmp_path / "dist").exists()
 
 
 def test_gazetteer_locates_town_inside_venue_or_name():
@@ -171,7 +197,7 @@ def test_build_site_writes_page_and_data(tmp_path):
     )
     out = tmp_path / "dist"
     stats = build_site(ROOT, data, out)
-    assert stats == {"events": 1, "unmatched_picks": 0}
+    assert stats == {"events": 1, "picks": 0}
     assert (out / "index.html").exists() and (out / "app.js").exists()
     site = json.loads((out / "events.json").read_text())
     assert site["countries"] == {"GE": "Georgia"}
@@ -205,3 +231,135 @@ def test_unchanged_events_keep_their_timestamp():
     keep_unchanged_timestamps([moved], [old])
     assert same.fetched_at == "2026-10-01T00:00:00+00:00"
     assert moved.fetched_at == "2026-10-18T00:00:00+00:00"
+
+
+def test_picked_race_outlives_race_day_and_its_source():
+    from races.config import Pick
+    from races.pipeline import carry_picked, finalise
+
+    today = date(2027, 6, 1)
+    done = event("utmb", "1", "Kazbegi Ultra", date(2027, 5, 1))
+    dropped = event("duv", "2", "Mestia Ultra", date(2027, 7, 1))
+    stale = event("duv", "3", "Batumi Run", date(2027, 5, 2))
+    picks = [Pick("owner", id=done.id, status="done"), Pick("nino", url=dropped.source_url + "/")]
+
+    current = [done]  # the source still lists the finished race; duv no longer lists Mestia
+    carried = carry_picked(current, [done, dropped, stale], picks)
+    assert carried == [dropped]
+    kept = finalise(current + carried + [stale], {}, today, picks)
+    assert [e.name for e in kept] == ["Kazbegi Ultra", "Mestia Ultra"]
+
+
+def geonames_row(name, country, lat, lon, population=10000):
+    return [
+        "1",
+        name,
+        name,
+        "",
+        str(lat),
+        str(lon),
+        "P",
+        "PPL",
+        country,
+        *[""] * 5,
+        str(population),
+    ]
+
+
+def site_root(tmp_path, picks_yaml):
+    root = tmp_path / "root"
+    root.mkdir()
+    (root / "site").symlink_to(ROOT / "site")
+    (root / "config").symlink_to(ROOT / "config")
+    (root / "picks.yaml").write_text(picks_yaml)
+    return root
+
+
+INLINE_PICK = """
+- name: Svaneti Trail
+  date: 2027-07-10
+  end_date: 2027-07-11
+  country: Georgia
+  city: Mestia
+  url: https://svaneti.example/trail/
+  distances: [21, {km: 54, climb_m: 3100}]
+  status: registered
+  note: Home race
+"""
+
+
+def test_inline_pick_defines_its_own_race(tmp_path):
+    (pick,) = load_picks(site_root(tmp_path, INLINE_PICK))
+    e = pick.event
+    assert (e.name, e.country, e.city, e.source) == ("Svaneti Trail", "GE", "Mestia", "picks")
+    assert (e.start_date, e.end_date) == (date(2027, 7, 10), date(2027, 7, 11))
+    assert [(d.km, d.elevation_gain_m) for d in e.distances] == [(21, None), (54, 3100)]
+    assert e.discipline == "trail"
+    assert e.sources[0].source_url == "https://svaneti.example/trail/"
+
+
+@pytest.mark.parametrize(
+    ("body", "error"),
+    [
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n", "needs url"),
+        ("- name: X\n  url: https://x.example\n", "needs date, country"),
+        ("- name: X\n  date: 2027-01-01\n  country: Narnia\n  url: u\n", "unknown country"),
+        ("- name: X\n  date: soon\n  country: GE\n  url: u\n", "not a YYYY-MM-DD date"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  lat: 41\n", "both lat"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  distance: 5\n", "'distance'"),
+        ("- name: X\n  date: 2027-01-01\n  country: GE\n  url: u\n  distances: [ten]\n", "km"),
+        ("- url: u\n  city: Mestia\n", "unknown keys ['city']"),
+    ],
+)
+def test_inline_pick_rejects_bad_races(tmp_path, body, error):
+    with pytest.raises(PicksError, match=re.escape(error)):
+        load_picks(site_root(tmp_path, body))
+
+
+def test_inline_race_is_geocoded_and_listed_with_its_provenance(tmp_path):
+    data = tmp_path / "events.json"
+    write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1), "FR")], {})
+    gazetteer = Gazetteer([geonames_row("Mestia", "GE", 43.04, 42.73)])
+    out = tmp_path / "dist"
+    build_site(site_root(tmp_path, INLINE_PICK), data, out, gazetteer)
+
+    site = json.loads((out / "events.json").read_text())
+    race = next(e for e in site["events"] if e["name"] == "Svaneti Trail")
+    assert (race["lat"], race["lon"]) == (43.04, 42.73)
+    assert "georgia-caucasus" in race["region_tags"]
+    assert [s["source"] for s in race["sources"]] == ["picks"]
+    assert race["picks"] == [{"person": "owner", "status": "registered", "note": "Home race"}]
+    assert site["countries"] == {"FR": "France", "GE": "Georgia"}
+    assert [e["start_date"] for e in site["events"]] == ["2027-01-01", "2027-07-10"]
+
+
+@pytest.mark.parametrize(
+    ("name", "url"),
+    [
+        ("Mestia Ultra", "https://svaneti.example/trail"),  # same URL, another name
+        ("Svaneti Trail 54K", "https://duv.example/77"),  # same race by dedupe's rules
+    ],
+)
+def test_inline_race_merges_into_the_source_event_that_finds_it(tmp_path, name, url):
+    found = Event(
+        name=name,
+        start_date=date(2027, 7, 10),
+        source="duv",
+        source_id="77",
+        source_url=url,
+        country="GE",
+        city="Mestia",
+        lat=43.0,
+        lon=42.7,
+        distances=[Distance(54.0)],
+    )
+    data = tmp_path / "events.json"
+    write_events(data, [found], {})
+    out = tmp_path / "dist"
+    build_site(site_root(tmp_path, INLINE_PICK), data, out, Gazetteer([]))
+
+    (race,) = json.loads((out / "events.json").read_text())["events"]
+    assert race["id"] == found.id and race["name"] == name
+    assert [s["source"] for s in race["sources"]] == ["duv", "picks"]
+    assert [(d["km"], d["elevation_gain_m"]) for d in race["distances"]] == [(21, None), (54, 3100)]
+    assert race["picks"][0]["status"] == "registered"

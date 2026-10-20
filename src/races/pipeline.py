@@ -4,14 +4,15 @@ from __future__ import annotations
 
 import json
 import logging
+from collections.abc import Sequence
 from datetime import UTC, date, datetime
 from pathlib import Path
 
-from races.config import load_regions, region_tags
+from races.config import Pick, load_regions, region_tags
 from races.dedupe import deduplicate
 from races.geocode import Gazetteer
 from races.http import PoliteClient
-from races.models import Event
+from races.models import Event, index_events
 from races.sources import Source
 
 log = logging.getLogger(__name__)
@@ -55,9 +56,24 @@ def enrich(events: list[Event], regions_path: Path, gazetteer: Gazetteer | None)
         event.region_tags = region_tags(event.country, regions)
 
 
-def finalise(events: list[Event], sources: dict[str, Source], today: date) -> list[Event]:
-    upcoming = [e for e in events if (e.end_date or e.start_date) >= today]
-    return deduplicate(upcoming, {name: s.priority for name, s in sources.items()})
+def carry_picked(events: list[Event], previous: list[Event], picks: list[Pick]) -> list[Event]:
+    """Previous events a pick names that this fetch no longer lists (the race is over, or
+    its source dropped it): they stay, so a pick never loses its race."""
+    current, old = index_events(events), index_events(previous)
+    carried: dict[str, Event] = {}
+    for pick in picks:
+        if pick.find(current) is None and (event := pick.find(old)) is not None:
+            carried[event.id] = event
+    return list(carried.values())
+
+
+def finalise(
+    events: list[Event], sources: dict[str, Source], today: date, picks: Sequence[Pick] = ()
+) -> list[Event]:
+    """Drop finished races, except picked ones (a done race stays on its picker's list)."""
+    picked = {k for pick in picks for k in pick.handles()}
+    kept = [e for e in events if (e.end_date or e.start_date) >= today or e.handles() & picked]
+    return deduplicate(kept, {name: s.priority for name, s in sources.items()})
 
 
 def keep_unchanged_timestamps(events: list[Event], previous: list[Event]) -> None:

@@ -73,6 +73,15 @@ class Event:
         if self.end_date is None:
             self.end_date = self.start_date
 
+    def handles(self) -> set[str]:
+        """Every handle a pick may name this event by: ids and URLs of all its sources."""
+        keys = {self.id}
+        for ref in self.sources:
+            keys |= {ref.id, ref.source_url.rstrip("/")}
+        if self.registration.url:
+            keys.add(self.registration.url.rstrip("/"))
+        return keys
+
     @property
     def max_km(self) -> float:
         return max((d.km for d in self.distances), default=0.0)
@@ -93,6 +102,20 @@ class Event:
         d["registration"] = Registration(**d.get("registration", {}))
         d["sources"] = [SourceRef(**x) for x in d.get("sources", [])]
         return cls(**d)
+
+
+def index_events(events: list[Event]) -> dict[str, Event]:
+    """Event by key; a registration URL never shadows another event's own id or source URL."""
+    index: dict[str, Event] = {}
+    for event in events:
+        index[event.id] = event
+        for ref in event.sources:
+            index[ref.id] = event
+            index[ref.source_url.rstrip("/")] = event
+    for event in events:
+        if event.registration.url:
+            index.setdefault(event.registration.url.rstrip("/"), event)
+    return index
 
 
 def classify(name: str, *, terrain: str | None = None, max_km: float = 0.0) -> str:

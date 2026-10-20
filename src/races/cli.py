@@ -10,10 +10,11 @@ from datetime import date
 from pathlib import Path
 
 from races.build import build_site
-from races.config import load_regions
-from races.geocode import Gazetteer, download
+from races.config import PicksError, load_picks, load_regions
+from races.geocode import open_gazetteer
 from races.http import PoliteClient
 from races.pipeline import (
+    carry_picked,
     collect,
     enrich,
     finalise,
@@ -35,6 +36,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
             return 2
         sources = {k: v for k, v in sources.items() if k in args.only}
 
+    picks = load_picks(args.root)
     _, previous = load_events(args.data)
     with PoliteClient(cache_dir=None if args.no_cache else Path(".cache/raw")) as client:
         events, report = collect(sources, client, previous)
@@ -44,17 +46,14 @@ def cmd_fetch(args: argparse.Namespace) -> int:
         for e in kept:
             e.sources = [s for s in e.sources if s.source not in sources]
         events += kept
+    events += carry_picked(events, previous, picks)
 
     gazetteer = None
     if not args.no_geocode:
-        try:
-            countries = {e.country for e in events if e.country}
-            gazetteer = Gazetteer.from_zip(download(), countries)
-        except Exception as exc:  # map pins are optional; the calendar still works
-            log.error("geocoding disabled: %s", exc)
+        gazetteer = open_gazetteer({e.country for e in events if e.country})
 
     enrich(events, args.root / "config" / "regions.yaml", gazetteer)
-    merged = finalise(events, sources, date.today())
+    merged = finalise(events, sources, date.today(), picks)
     keep_unchanged_timestamps(merged, previous)
     write_events(args.data, merged, report)
 
@@ -77,7 +76,7 @@ def print_summary(events, report: dict, root: Path) -> None:
 
 def cmd_build(args: argparse.Namespace) -> int:
     stats = build_site(args.root, args.data, args.out)
-    print(f"built {args.out}: {stats['events']} events, {stats['unmatched_picks']} unmatched picks")
+    print(f"built {args.out}: {stats['events']} events, {stats['picks']} picks")
     return 0
 
 
@@ -103,7 +102,11 @@ def main(argv: list[str] | None = None) -> int:
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
     )
-    return args.func(args)
+    try:
+        return args.func(args)
+    except PicksError as exc:
+        log.error("%s", exc)
+        return 2
 
 
 if __name__ == "__main__":

@@ -1,14 +1,20 @@
 "use strict";
 
+// The picks tab's name everywhere on the page.
+const MINE_LABEL = "My races";
 const PAGE = 150;
 const MARATHON_KM = 42.195;
 const DISCIPLINES = ["trail", "road", "ultra", "sky", "other"];
 const STATUS_LABEL = { open: "Registration open", closed: "Closed", upcoming: "Opens soon" };
 const PICK_LABEL = { planned: "Planned", registered: "Registered", done: "Done" };
 
+// Picked races stay in the data after race day; elsewhere only upcoming ones are listed.
+const TODAY = new Date().toISOString().slice(0, 10);
+
 const state = { data: null, tab: "all", view: "list", shown: PAGE, filtered: [] };
 let map = null;
 let cluster = null;
+let pickLayer = null;
 
 const $ = (sel) => document.querySelector(sel);
 const form = $("#filter-form");
@@ -56,7 +62,7 @@ function readFilters() {
 }
 
 function matches(e, f, regionCountries) {
-  if (state.tab === "mine" && !ownerPick(e)) return false;
+  if (state.tab === "mine" ? !ownerPick(e) : e.end_date < TODAY) return false;
   if (f.country && e.country !== f.country) return false;
   if (regionCountries && !regionCountries.has(e.country)) return false;
   if (f.from && e.end_date < f.from) return false;
@@ -118,9 +124,7 @@ function card(e) {
   const status = e.registration.status;
   const statusBadge = STATUS_LABEL[status]
     ? `<span class="badge ${esc(status)}">${esc(STATUS_LABEL[status])}</span>` : "";
-  const pickBadge = pick
-    ? `<span class="badge pick">★ ${esc(PICK_LABEL[pick.status] || pick.status)}${pick.note ? " — " + esc(pick.note) : ""}</span>`
-    : "";
+  const pickBadge = pick ? `<span class="badge pick">${esc(pickText(pick))}</span>` : "";
   const sources = e.sources
     .map((s) => `<a href="${esc(s.source_url)}" rel="noopener">${esc(s.source)}</a>`)
     .join(", ");
@@ -161,11 +165,17 @@ function renderList() {
   more.textContent = `Show more (${state.filtered.length - state.shown} left)`;
 }
 
+function pickText(pick) {
+  return `★ ${PICK_LABEL[pick.status] || pick.status}${pick.note ? " — " + pick.note : ""}`;
+}
+
 function popup(e) {
   const when = fmtDate(e.start_date, { day: "numeric", month: "short", year: "numeric" });
   const km = e.distances.map((d) => d.km).join(" / ");
+  const pick = ownerPick(e);
   return `<strong><a href="${esc(e.registration.url || e.source_url)}" rel="noopener">${esc(e.name)}</a></strong><br>
-    ${esc(when)} · ${esc(e.city || "")} ${flag(e.country)}<br>${km ? esc(km) + " km" : ""}`;
+    ${esc(when)} · ${esc(e.city || "")} ${flag(e.country)}<br>${km ? esc(km) + " km" : ""}
+    ${pick ? `<br><span class="pick-note">${esc(pickText(pick))}</span>` : ""}`;
 }
 
 function renderMap() {
@@ -182,14 +192,22 @@ function renderMap() {
     }).addTo(map);
     cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 });
     map.addLayer(cluster);
+    // Picks stay out of the clusters, or a few stars drown among thousands of races.
+    pickLayer = L.layerGroup().addTo(map);
   }
   cluster.clearLayers();
+  pickLayer.clearLayers();
   const located = state.filtered.filter((e) => e.lat !== null && e.lon !== null);
-  const markers = located.map((e) => {
-    const options = ownerPick(e) ? { icon: L.divIcon({ className: "", html: "<span style=\"font-size:22px\">★</span>", iconSize: [22, 22] }) } : {};
-    return L.marker([e.lat, e.lon], options).bindPopup(popup(e));
-  });
-  cluster.addLayers(markers);
+  const pickIcon = L.divIcon({ className: "pick-marker", html: "★", iconSize: [26, 26] });
+  const plain = [];
+  for (const e of located) {
+    if (ownerPick(e)) {
+      L.marker([e.lat, e.lon], { icon: pickIcon, zIndexOffset: 1000 }).bindPopup(popup(e)).addTo(pickLayer);
+    } else {
+      plain.push(L.marker([e.lat, e.lon]).bindPopup(popup(e)));
+    }
+  }
+  cluster.addLayers(plain);
   const missing = state.filtered.length - located.length;
   const note = $("#map-note");
   note.hidden = missing === 0;
@@ -198,10 +216,10 @@ function renderMap() {
 }
 
 function render() {
-  const total = state.data.events.length;
+  const total = state.data.events.filter((e) => e.end_date >= TODAY).length;
   const n = state.filtered.length;
   $("#summary").textContent = state.tab === "mine"
-    ? `${n} of my races` : `${n.toLocaleString("en")} of ${total.toLocaleString("en")} races`;
+    ? `${MINE_LABEL}: ${n}` : `${n.toLocaleString("en")} of ${total.toLocaleString("en")} races`;
   $("#map").hidden = state.view !== "map";
   $("#list").hidden = state.view !== "list";
   $("#map-note").hidden = state.view !== "map";
@@ -250,6 +268,7 @@ function populate() {
     .forEach(([code, name]) => country.add(new Option(`${flag(code)} ${name}`, code)));
   $("#disciplines").innerHTML = DISCIPLINES.map((x) =>
     `<label class="check"><input type="checkbox" name="discipline" value="${x}"> ${x}</label>`).join("");
+  $("#mine-label").textContent = MINE_LABEL;
   $("#mine-count").textContent = d.events.filter(ownerPick).length;
 
   const generated = d.generated_at ? new Date(d.generated_at).toUTCString().slice(5, 22) : "unknown";
