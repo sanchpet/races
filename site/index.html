@@ -56,7 +56,7 @@
           <label class="field">Max climb, m <input type="number" name="emax" min="0" step="100" inputmode="numeric"></label>
         </div>
         <label class="check"><input type="checkbox" name="ultra"> Ultra distances only (over 42.2 km)</label>
-        <label class="check"><input type="checkbox" name="open"> Registration open</label>
+        <!-- Hidden while only UTMB reports registration status (under 2% of races); app.js still handles it: <label class="check"><input type="checkbox" name="open"> Registration open</label> -->
         <button type="reset" class="link">Reset filters</button>
       </form>
     </aside>
