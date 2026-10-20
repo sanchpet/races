@@ -109,8 +109,8 @@ def test_picks_reject_bad_entries(tmp_path, body, error):
         load_picks(tmp_path)
 
 
-def test_seeded_picks_file_loads():
-    assert load_picks(ROOT) == []
+def test_repo_picks_file_loads():
+    assert all(p.person == "owner" for p in load_picks(ROOT))
 
 
 def test_attach_picks_by_id_secondary_id_and_url():
@@ -196,7 +196,7 @@ def test_build_site_writes_page_and_data(tmp_path):
         data, [event("utmb", "1", "Race", date(2027, 1, 1))], {"utmb": {"status": "ok", "count": 1}}
     )
     out = tmp_path / "dist"
-    stats = build_site(ROOT, data, out)
+    stats = build_site(site_root(tmp_path, "[]"), data, out)
     assert stats == {"events": 1, "picks": 0}
     assert (out / "index.html").exists() and (out / "app.js").exists()
     site = json.loads((out / "events.json").read_text())
