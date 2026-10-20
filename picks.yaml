@@ -31,4 +31,23 @@
 # race day, so `done` keeps a record.
 #
 # Friends' picks will live next to this file as picks/<name>.yaml, same format.
-[]
+
+# Official pages are the 2026 editions; 2027 dates come from the Visit Cyprus calendar.
+- name: Troodos Terra
+  date: 2027-05-23
+  country: CY
+  city: Troodos
+  url: https://www.dromearacing.com/races/kyrima-troodos-terra-2026/
+  distances: [{km: 29, climb_m: 1380}]
+  discipline: trail
+  status: planned
+  note: Spring 2027 target
+- name: Klirou Atovrisi
+  date: 2027-03-21
+  country: CY
+  city: Klirou
+  url: https://www.dromearacing.com/races/mikel-klirou-atovrisi-2026/
+  distances: [{km: 23, climb_m: 900}]
+  discipline: trail
+  status: planned
+  note: Checkpoint before Troodos Terra
