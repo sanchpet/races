@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-21T08:41:50+00:00",
+ "generated_at": "2026-10-22T08:44:06+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-10-21T08:37:41+00:00"
+   "fetched_at": "2026-10-22T08:39:58+00:00"
   },
   "utmb": {
    "status": "ok",
-   "count": 52,
-   "fetched_at": "2026-10-21T08:37:41+00:00"
+   "count": 55,
+   "fetched_at": "2026-10-22T08:39:58+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 884,
-   "fetched_at": "2026-10-21T08:37:41+00:00"
+   "count": 895,
+   "fetched_at": "2026-10-22T08:39:58+00:00"
   },
   "duv": {
    "status": "ok",
-   "count": 2100,
-   "fetched_at": "2026-10-21T08:37:41+00:00"
+   "count": 2102,
+   "fetched_at": "2026-10-22T08:39:58+00:00"
   }
  },
  "events": [
@@ -110,72 +110,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "03e8cd93d1f9"
-  },
-  {
-   "name": "15th Big Dog's Backyard Ultra",
-   "start_date": "2026-10-17",
-   "source": "duv",
-   "source_id": "133276",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133276",
-   "end_date": "2026-10-21",
-   "country": "US",
-   "city": "Bell Buckle",
-   "lat": 33.97751,
-   "lon": -118.18702,
-   "discipline": "ultra",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "133276",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133276",
-     "id": "6e1ecaeefd5c"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "6e1ecaeefd5c"
-  },
-  {
-   "name": "4th Backyard Ultra World Team Championships - Japan",
-   "start_date": "2026-10-17",
-   "source": "duv",
-   "source_id": "133057",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133057",
-   "end_date": "2026-10-21",
-   "country": "JP",
-   "city": "Tokyo",
-   "lat": 35.6895,
-   "lon": 139.69171,
-   "discipline": "ultra",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "asia"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "133057",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133057",
-     "id": "fa262a7bb105"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "fa262a7bb105"
   },
   {
    "name": "11th Endless Mile",
@@ -576,39 +510,6 @@
    "id": "91ccbfb68ac3"
   },
   {
-   "name": "4th NorCal Backyard Ultra",
-   "start_date": "2026-10-23",
-   "source": "duv",
-   "source_id": "126733",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=126733",
-   "end_date": "2026-10-24",
-   "country": "US",
-   "city": "Granite Bay",
-   "lat": 38.76323,
-   "lon": -121.16384,
-   "discipline": "ultra",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "126733",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=126733",
-     "id": "d4b259ae231b"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "d4b259ae231b"
-  },
-  {
    "name": "7. 48-Stundenlauf Aare-Insel Brugg",
    "start_date": "2026-10-23",
    "source": "duv",
@@ -673,6 +574,45 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "2bfebaf82791"
+  },
+  {
+   "name": "NorCal Backyard Ultra",
+   "start_date": "2026-10-23",
+   "source": "intervals",
+   "source_id": "14325",
+   "source_url": "https://www.intervals.icu/events/14325/",
+   "end_date": "2026-10-24",
+   "country": "US",
+   "city": "Granite Bay",
+   "lat": 38.76323,
+   "lon": -121.16384,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14325",
+     "source_url": "https://www.intervals.icu/events/14325/",
+     "id": "87bcc95d0740"
+    },
+    {
+     "source": "duv",
+     "source_id": "126733",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=126733",
+     "id": "d4b259ae231b"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "87bcc95d0740"
   },
   {
    "name": "PUGLIA BY UTMB®",
@@ -4311,6 +4251,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "bdc4b0b6dd40"
+  },
+  {
+   "name": "Linghem Dark Halfyard (Ultra) Trail",
+   "start_date": "2026-10-24",
+   "source": "duv",
+   "source_id": "136909",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136909",
+   "end_date": "2026-10-24",
+   "country": "SE",
+   "city": "Linghem",
+   "lat": 58.43333,
+   "lon": 15.78333,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 45.5,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136909",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136909",
+     "id": "fdf85d282d03"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "fdf85d282d03"
   },
   {
    "name": "Mustavuori Vertical",
@@ -8461,6 +8439,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "a3911906af83"
+  },
+  {
+   "name": "14 Borås 6-timmars",
+   "start_date": "2026-10-31",
+   "source": "duv",
+   "source_id": "136917",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136917",
+   "end_date": "2026-10-31",
+   "country": "SE",
+   "city": "Borås",
+   "lat": 57.72101,
+   "lon": 12.9401,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136917",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136917",
+     "id": "a80b6b9daf7c"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "a80b6b9daf7c"
   },
   {
    "name": "16th Cougar Mountain Trail Run",
@@ -16135,6 +16146,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8bf709c82fd0"
+  },
+  {
+   "name": "Iron Backbone Ultra",
+   "start_date": "2026-11-07",
+   "source": "duv",
+   "source_id": "131689",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=131689",
+   "end_date": "2026-11-07",
+   "country": "SE",
+   "city": "Kristinehamn",
+   "lat": 59.30978,
+   "lon": 14.10808,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "131689",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=131689",
+     "id": "3581453a7f7a"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "3581453a7f7a"
   },
   {
    "name": "Iron Man - Panama City, FL",
@@ -31749,6 +31798,39 @@
    "id": "4f37e07f3625"
   },
   {
+   "name": "Mezza Maratona Palmanova",
+   "start_date": "2026-11-29",
+   "source": "intervals",
+   "source_id": "14319",
+   "source_url": "https://www.intervals.icu/events/14319/",
+   "end_date": "2026-11-29",
+   "country": "IT",
+   "city": "Province of Udine",
+   "lat": 46.0693,
+   "lon": 13.23715,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14319",
+     "source_url": "https://www.intervals.icu/events/14319/",
+     "id": "dcc67922fd47"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "dcc67922fd47"
+  },
+  {
    "name": "Newport 10K",
    "start_date": "2026-11-29",
    "source": "intervals",
@@ -32528,6 +32610,48 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "c0f4ad16a199"
+  },
+  {
+   "name": "Personliga Rekordens Tävling - PRT 24h - 100mi split",
+   "start_date": "2026-12-04",
+   "source": "duv",
+   "source_id": "136915",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136915",
+   "end_date": "2026-12-06",
+   "country": "SE",
+   "city": "Växjö",
+   "lat": 56.87767,
+   "lon": 14.80906,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 100.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136915",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136915",
+     "id": "5aa44a2bd33e"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "5aa44a2bd33e"
   },
   {
    "name": "Standard Chartered 10KM",
@@ -53889,6 +54013,39 @@
    "id": "d0e76a3691e3"
   },
   {
+   "name": "Busso Bay run",
+   "start_date": "2027-02-13",
+   "source": "intervals",
+   "source_id": "14320",
+   "source_url": "https://www.intervals.icu/events/14320/",
+   "end_date": "2027-02-13",
+   "country": "AU",
+   "city": "Busselton",
+   "lat": -33.65249,
+   "lon": 115.3455,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "oceania"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14320",
+     "source_url": "https://www.intervals.icu/events/14320/",
+     "id": "0364af8d0068"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "0364af8d0068"
+  },
+  {
    "name": "MACCL #5 - Heaton Park",
    "start_date": "2027-02-13",
    "source": "intervals",
@@ -56162,6 +56319,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8273bd9522fc"
+  },
+  {
+   "name": "10km de Kinergy",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14324",
+   "source_url": "https://www.intervals.icu/events/14324/",
+   "end_date": "2027-02-21",
+   "country": "FR",
+   "city": "Orléans",
+   "lat": 47.90248,
+   "lon": 1.90407,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14324",
+     "source_url": "https://www.intervals.icu/events/14324/",
+     "id": "7bc78d6b92bc"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "7bc78d6b92bc"
   },
   {
    "name": "13th Rocks and Roots Trail Series 50K #2",
@@ -60823,6 +61018,39 @@
    ],
    "fetched_at": "2026-10-21T08:37:41+00:00",
    "id": "fc35fba7763e"
+  },
+  {
+   "name": "FDNY v NYPD 5 Miler",
+   "start_date": "2027-03-07",
+   "source": "intervals",
+   "source_id": "14330",
+   "source_url": "https://www.intervals.icu/events/14330/",
+   "end_date": "2027-03-07",
+   "country": "US",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14330",
+     "source_url": "https://www.intervals.icu/events/14330/",
+     "id": "1e4855165423"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "1e4855165423"
   },
   {
    "name": "HOKA Semi de Paris 2027",
@@ -71937,6 +72165,44 @@
    "id": "ce62335f7819"
   },
   {
+   "name": "Semi-marathon Futuroscope",
+   "start_date": "2027-04-11",
+   "source": "intervals",
+   "source_id": "14323",
+   "source_url": "https://www.intervals.icu/events/14323/",
+   "end_date": "2027-04-11",
+   "country": "FR",
+   "city": "Poitiers",
+   "lat": 46.58261,
+   "lon": 0.34348,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14323",
+     "source_url": "https://www.intervals.icu/events/14323/",
+     "id": "345d64407a1a"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "345d64407a1a"
+  },
+  {
    "name": "Vig Bay",
    "start_date": "2027-04-11",
    "source": "intervals",
@@ -76644,39 +76910,6 @@
    "name": "Ironman Texas",
    "start_date": "2027-04-24",
    "source": "intervals",
-   "source_id": "11508",
-   "source_url": "https://www.intervals.icu/events/11508/",
-   "end_date": "2027-04-24",
-   "country": "US",
-   "city": "Texas",
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "11508",
-     "source_url": "https://www.intervals.icu/events/11508/",
-     "id": "e19bc2f70e34"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "e19bc2f70e34"
-  },
-  {
-   "name": "Ironman Texas",
-   "start_date": "2027-04-24",
-   "source": "intervals",
    "source_id": "11593",
    "source_url": "https://www.intervals.icu/events/11593/",
    "end_date": "2027-04-24",
@@ -76705,6 +76938,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "9c14d151411a"
+  },
+  {
+   "name": "Ironman Texas",
+   "start_date": "2027-04-24",
+   "source": "intervals",
+   "source_id": "11508",
+   "source_url": "https://www.intervals.icu/events/11508/",
+   "end_date": "2027-04-24",
+   "country": "US",
+   "city": "Texas",
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "11508",
+     "source_url": "https://www.intervals.icu/events/11508/",
+     "id": "e19bc2f70e34"
+    }
+   ],
+   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "id": "e19bc2f70e34"
   },
   {
    "name": "Marmaris Ultra Trail 100km",
@@ -77564,6 +77830,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "fbc6a8a37967"
+  },
+  {
+   "name": "广德铁三226",
+   "start_date": "2027-04-25",
+   "source": "intervals",
+   "source_id": "14317",
+   "source_url": "https://www.intervals.icu/events/14317/",
+   "end_date": "2027-04-25",
+   "country": "CN",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14317",
+     "source_url": "https://www.intervals.icu/events/14317/",
+     "id": "080025b76511"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "080025b76511"
   },
   {
    "name": "13th Julsø Ultra 60km",
@@ -80098,6 +80397,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8eda8120e18a"
+  },
+  {
+   "name": "Toronto Marathon (HM)",
+   "start_date": "2027-05-02",
+   "source": "intervals",
+   "source_id": "14326",
+   "source_url": "https://www.intervals.icu/events/14326/",
+   "end_date": "2027-05-02",
+   "country": "CA",
+   "city": "Toronto",
+   "lat": 43.70643,
+   "lon": -79.39864,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14326",
+     "source_url": "https://www.intervals.icu/events/14326/",
+     "id": "a653d0661b48"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "a653d0661b48"
   },
   {
    "name": "Tri at Bain",
@@ -92421,6 +92758,56 @@
    "id": "a2da4da70dd1"
   },
   {
+   "name": "Lake Toba by UTMB",
+   "start_date": "2027-06-12",
+   "source": "utmb",
+   "source_id": "laketoba.utmb.world:2027",
+   "source_url": "https://laketoba.utmb.world/",
+   "end_date": "2027-06-13",
+   "country": "ID",
+   "city": "Waterfront City Pangururan",
+   "lat": 2.6081,
+   "lon": 98.6961,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 17.0,
+     "elevation_gain_m": 230
+    },
+    {
+     "km": 23.6,
+     "elevation_gain_m": 1206
+    },
+    {
+     "km": 64.03,
+     "elevation_gain_m": 3236
+    },
+    {
+     "km": 101.19,
+     "elevation_gain_m": 4205
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://laketoba.utmb.world/"
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "laketoba.utmb.world:2027",
+     "source_url": "https://laketoba.utmb.world/",
+     "id": "143b99d7edcd"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "143b99d7edcd"
+  },
+  {
    "name": "Tschirgant Skyrun - TS42 MARATHON",
    "start_date": "2027-06-12",
    "source": "intervals",
@@ -92605,6 +92992,82 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "c659757ec52e"
+  },
+  {
+   "name": "Comrades Marathon",
+   "start_date": "2027-06-13",
+   "source": "intervals",
+   "source_id": "14321",
+   "source_url": "https://www.intervals.icu/events/14321/",
+   "end_date": "2027-06-13",
+   "country": "ZA",
+   "city": "Pietermaritzburg",
+   "lat": -29.61679,
+   "lon": 30.39278,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "africa"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14321",
+     "source_url": "https://www.intervals.icu/events/14321/",
+     "id": "83eb1dcf933e"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "83eb1dcf933e"
+  },
+  {
+   "name": "Comrades Marathon",
+   "start_date": "2027-06-13",
+   "source": "intervals",
+   "source_id": "14322",
+   "source_url": "https://www.intervals.icu/events/14322/",
+   "end_date": "2027-06-13",
+   "country": "ZA",
+   "city": "Pietermaritzburg",
+   "lat": -29.61679,
+   "lon": 30.39278,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "africa"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14322",
+     "source_url": "https://www.intervals.icu/events/14322/",
+     "id": "1d9086a7e94e"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "1d9086a7e94e"
   },
   {
    "name": "IRONMAN Cairns",
@@ -93687,6 +94150,52 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "de961d983ed0"
+  },
+  {
+   "name": "Kaga Spa by UTMB",
+   "start_date": "2027-06-19",
+   "source": "utmb",
+   "source_id": "kagaspa.utmb.world:2027",
+   "source_url": "https://kagaspa.utmb.world/",
+   "end_date": "2027-06-20",
+   "country": "JP",
+   "city": "Yukemuri Kenkou Village",
+   "lat": 36.3,
+   "lon": 136.33333,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 20.7,
+     "elevation_gain_m": 649
+    },
+    {
+     "km": 56.8,
+     "elevation_gain_m": 2607
+    },
+    {
+     "km": 97.4,
+     "elevation_gain_m": 5122
+    }
+   ],
+   "registration": {
+    "status": "open",
+    "opens": null,
+    "closes": null,
+    "url": "https://kagaspa.utmb.world/"
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "kagaspa.utmb.world:2027",
+     "source_url": "https://kagaspa.utmb.world/",
+     "id": "76e3945f29ca"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "76e3945f29ca"
   },
   {
    "name": "MK24 Midsummer Run",
@@ -98386,6 +98895,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "d4c5c51d95a2"
+  },
+  {
+   "name": "Ironman 70.3 Jönköping",
+   "start_date": "2027-07-11",
+   "source": "intervals",
+   "source_id": "14328",
+   "source_url": "https://www.intervals.icu/events/14328/",
+   "end_date": "2027-07-11",
+   "country": "SE",
+   "city": "Jönköping",
+   "lat": 57.78145,
+   "lon": 14.15618,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14328",
+     "source_url": "https://www.intervals.icu/events/14328/",
+     "id": "60fd5776c93a"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "60fd5776c93a"
   },
   {
    "name": "Ironman 70.3 Luxembourg",
@@ -106707,6 +107249,56 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "5e5c1f1d3e7f"
+  },
+  {
+   "name": "Malaysia Ultra-Trail by UTMB",
+   "start_date": "2027-09-04",
+   "source": "utmb",
+   "source_id": "malaysia.utmb.world:2027",
+   "source_url": "https://malaysia.utmb.world/",
+   "end_date": "2027-09-04",
+   "country": "MY",
+   "city": "Jalan Kota",
+   "lat": null,
+   "lon": null,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 13.9,
+     "elevation_gain_m": 382
+    },
+    {
+     "km": 25.92,
+     "elevation_gain_m": 1012
+    },
+    {
+     "km": 54.53,
+     "elevation_gain_m": 1977
+    },
+    {
+     "km": 97.7,
+     "elevation_gain_m": 4802
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://malaysia.utmb.world/"
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "malaysia.utmb.world:2027",
+     "source_url": "https://malaysia.utmb.world/",
+     "id": "1e6f16bcefe9"
+    }
+   ],
+   "fetched_at": "2026-10-22T08:39:58+00:00",
+   "id": "1e6f16bcefe9"
   },
   {
    "name": "15th Jay Peak 50k Ultra Trail Race",
