@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-22T08:44:06+00:00",
+ "generated_at": "2026-10-23T08:39:38+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-10-22T08:39:58+00:00"
+   "fetched_at": "2026-10-23T08:35:29+00:00"
   },
   "utmb": {
    "status": "ok",
    "count": 55,
-   "fetched_at": "2026-10-22T08:39:58+00:00"
+   "fetched_at": "2026-10-23T08:35:29+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 895,
-   "fetched_at": "2026-10-22T08:39:58+00:00"
+   "count": 901,
+   "fetched_at": "2026-10-23T08:35:29+00:00"
   },
   "duv": {
    "status": "ok",
-   "count": 2102,
-   "fetched_at": "2026-10-22T08:39:58+00:00"
+   "count": 2108,
+   "fetched_at": "2026-10-23T08:35:29+00:00"
   }
  },
  "events": [
@@ -649,7 +649,7 @@
     }
    ],
    "registration": {
-    "status": "open",
+    "status": "closed",
     "opens": null,
     "closes": null,
     "url": "https://puglia.utmb.world/"
@@ -665,7 +665,7 @@
      "id": "27e3fd9c1b44"
     }
    ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "fetched_at": "2026-10-23T08:35:29+00:00",
    "id": "27e3fd9c1b44"
   },
   {
@@ -4606,6 +4606,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "3dfcea910bfd"
+  },
+  {
+   "name": "Sentrumsløpet",
+   "start_date": "2026-10-24",
+   "source": "intervals",
+   "source_id": "14350",
+   "source_url": "https://www.intervals.icu/events/14350/",
+   "end_date": "2026-10-24",
+   "country": "NO",
+   "city": "Oslo",
+   "lat": 59.91273,
+   "lon": 10.74609,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14350",
+     "source_url": "https://www.intervals.icu/events/14350/",
+     "id": "f0ddd4d302c1"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "f0ddd4d302c1"
   },
   {
    "name": "Smurf's Backyard Ultra",
@@ -10224,6 +10257,39 @@
    "id": "48706549e603"
   },
   {
+   "name": "XTerra Appalachian Trail Fest",
+   "start_date": "2026-10-31",
+   "source": "intervals",
+   "source_id": "14344",
+   "source_url": "https://www.intervals.icu/events/14344/",
+   "end_date": "2026-10-31",
+   "country": "US",
+   "city": "Pelham",
+   "lat": 33.28567,
+   "lon": -86.80999,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14344",
+     "source_url": "https://www.intervals.icu/events/14344/",
+     "id": "f4d5cce4f6cc"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "f4d5cce4f6cc"
+  },
+  {
    "name": "galilli100 olympic triathlon",
    "start_date": "2026-10-31",
    "source": "intervals",
@@ -15765,6 +15831,39 @@
    "id": "8636853717c4"
   },
   {
+   "name": "Bieg Niepodległości Targówek",
+   "start_date": "2026-11-07",
+   "source": "intervals",
+   "source_id": "14342",
+   "source_url": "https://www.intervals.icu/events/14342/",
+   "end_date": "2026-11-07",
+   "country": "PL",
+   "city": "Варшава",
+   "lat": 52.29185,
+   "lon": 21.04845,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14342",
+     "source_url": "https://www.intervals.icu/events/14342/",
+     "id": "77e367369891"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "77e367369891"
+  },
+  {
    "name": "Big Texas Ultra",
    "start_date": "2026-11-07",
    "source": "duv",
@@ -19088,39 +19187,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "4a9577a737c8"
-  },
-  {
-   "name": "Valtellina Wine Trail",
-   "start_date": "2026-11-08",
-   "source": "intervals",
-   "source_id": "14144",
-   "source_url": "https://www.intervals.icu/events/14144/",
-   "end_date": "2026-11-08",
-   "country": "IT",
-   "city": "Province of Sondrio",
-   "lat": 46.16852,
-   "lon": 9.87134,
-   "discipline": "trail",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14144",
-     "source_url": "https://www.intervals.icu/events/14144/",
-     "id": "88ee74d5f966"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "88ee74d5f966"
   },
   {
    "name": "Westfalenparklauf 2026",
@@ -23755,6 +23821,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "42f5f0e7a9c3"
+  },
+  {
+   "name": "Semi-marathon de Deauville",
+   "start_date": "2026-11-15",
+   "source": "intervals",
+   "source_id": "14346",
+   "source_url": "https://www.intervals.icu/events/14346/",
+   "end_date": "2026-11-15",
+   "country": "FR",
+   "city": null,
+   "lat": 49.357,
+   "lon": 0.06995,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14346",
+     "source_url": "https://www.intervals.icu/events/14346/",
+     "id": "a1be73ab9cb2"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "a1be73ab9cb2"
   },
   {
    "name": "Target Marathon",
@@ -28640,6 +28744,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "04eebf0a2b75"
+  },
+  {
+   "name": "Training Program Rasya",
+   "start_date": "2026-11-23",
+   "source": "intervals",
+   "source_id": "14348",
+   "source_url": "https://www.intervals.icu/events/14348/",
+   "end_date": "2026-11-23",
+   "country": "ID",
+   "city": "South Sulawesi",
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14348",
+     "source_url": "https://www.intervals.icu/events/14348/",
+     "id": "3c5c05028da0"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "3c5c05028da0"
   },
   {
    "name": "1st Zamboanga Trail Runners -ZTR",
@@ -39076,6 +39213,39 @@
    "id": "1e7ecf2a9b52"
   },
   {
+   "name": "Carrera de navidad Cercedilla",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14334",
+   "source_url": "https://www.intervals.icu/events/14334/",
+   "end_date": "2026-12-13",
+   "country": "ES",
+   "city": "Madrid",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14334",
+     "source_url": "https://www.intervals.icu/events/14334/",
+     "id": "27269fce0ab0"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "27269fce0ab0"
+  },
+  {
    "name": "Cordillera Mountain Race 50K Trail Run",
    "start_date": "2026-12-13",
    "source": "intervals",
@@ -39528,6 +39698,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "7af0c0dea3a8"
+  },
+  {
+   "name": "Perły Małopolski Rabka Zdrój",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14340",
+   "source_url": "https://www.intervals.icu/events/14340/",
+   "end_date": "2026-12-13",
+   "country": "PL",
+   "city": "Rabka-Zdrój",
+   "lat": 49.60889,
+   "lon": 19.96654,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14340",
+     "source_url": "https://www.intervals.icu/events/14340/",
+     "id": "11019c4ca2ac"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "11019c4ca2ac"
   },
   {
    "name": "Richmond Park Half Marathon",
@@ -55311,6 +55514,44 @@
    "id": "4ef2c92c6c66"
   },
   {
+   "name": "2. PaUL50",
+   "start_date": "2027-02-20",
+   "source": "duv",
+   "source_id": "136927",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136927",
+   "end_date": "2027-02-20",
+   "country": "DE",
+   "city": "Bad Muskau",
+   "lat": 51.55051,
+   "lon": 14.7124,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 58.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136927",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136927",
+     "id": "7313f5087386"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "7313f5087386"
+  },
+  {
    "name": "20th Lord Hill Trail Run",
    "start_date": "2027-02-20",
    "source": "duv",
@@ -60617,6 +60858,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "46218560b4d5"
+  },
+  {
+   "name": "V Ultra Kociol",
+   "start_date": "2027-03-06",
+   "source": "duv",
+   "source_id": "136925",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136925",
+   "end_date": "2027-03-06",
+   "country": "PL",
+   "city": "Swidwin",
+   "lat": 53.77464,
+   "lon": 15.77671,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 60.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136925",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136925",
+     "id": "2a90df620b15"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "2a90df620b15"
   },
   {
    "name": "Xtrail Kenting by UTMB",
@@ -66080,39 +66359,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "0d697faceff6"
-  },
-  {
-   "name": "Stramilano",
-   "start_date": "2027-03-21",
-   "source": "intervals",
-   "source_id": "14145",
-   "source_url": "https://www.intervals.icu/events/14145/",
-   "end_date": "2027-03-21",
-   "country": "IT",
-   "city": "Metropolitan City of Milan",
-   "lat": 45.46427,
-   "lon": 9.18951,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14145",
-     "source_url": "https://www.intervals.icu/events/14145/",
-     "id": "c056d44057ec"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "c056d44057ec"
   },
   {
    "name": "Surrey Half Marathon",
@@ -76910,39 +77156,6 @@
    "name": "Ironman Texas",
    "start_date": "2027-04-24",
    "source": "intervals",
-   "source_id": "11593",
-   "source_url": "https://www.intervals.icu/events/11593/",
-   "end_date": "2027-04-24",
-   "country": "US",
-   "city": "The Woodlands",
-   "lat": 30.15799,
-   "lon": -95.48938,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "11593",
-     "source_url": "https://www.intervals.icu/events/11593/",
-     "id": "9c14d151411a"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "9c14d151411a"
-  },
-  {
-   "name": "Ironman Texas",
-   "start_date": "2027-04-24",
-   "source": "intervals",
    "source_id": "11508",
    "source_url": "https://www.intervals.icu/events/11508/",
    "end_date": "2027-04-24",
@@ -76971,6 +77184,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "e19bc2f70e34"
+  },
+  {
+   "name": "Ironman Texas",
+   "start_date": "2027-04-24",
+   "source": "intervals",
+   "source_id": "11593",
+   "source_url": "https://www.intervals.icu/events/11593/",
+   "end_date": "2027-04-24",
+   "country": "US",
+   "city": "The Woodlands",
+   "lat": 30.15799,
+   "lon": -95.48938,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "11593",
+     "source_url": "https://www.intervals.icu/events/11593/",
+     "id": "9c14d151411a"
+    }
+   ],
+   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "id": "9c14d151411a"
   },
   {
    "name": "Marmaris Ultra Trail 100km",
@@ -79540,6 +79786,44 @@
    "id": "2ec66bb8b8db"
   },
   {
+   "name": "9th Oxbow 50km Race",
+   "start_date": "2027-05-01",
+   "source": "duv",
+   "source_id": "136928",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136928",
+   "end_date": "2027-05-01",
+   "country": "CA",
+   "city": "Glenboro",
+   "lat": 49.23335,
+   "lon": -102.1676,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136928",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136928",
+     "id": "6276102542bf"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "6276102542bf"
+  },
+  {
    "name": "9th The Tick 50 Mile Race",
    "start_date": "2027-05-01",
    "source": "duv",
@@ -79913,6 +80197,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "9f17e0e1b2fb"
+  },
+  {
+   "name": "13th Dirty Feet Kal Park 50",
+   "start_date": "2027-05-02",
+   "source": "duv",
+   "source_id": "136929",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136929",
+   "end_date": "2027-05-02",
+   "country": "CA",
+   "city": "Vernon",
+   "lat": 50.26729,
+   "lon": -119.27337,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136929",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136929",
+     "id": "62988279b160"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "62988279b160"
   },
   {
    "name": "2. 2. Etappe vom 2.SHDU(Südhessischer Doppelultra)",
@@ -100305,6 +100627,39 @@
    "id": "78182cb83b33"
   },
   {
+   "name": "Ironman Oregon 70.3",
+   "start_date": "2027-07-18",
+   "source": "intervals",
+   "source_id": "14341",
+   "source_url": "https://www.intervals.icu/events/14341/",
+   "end_date": "2027-07-18",
+   "country": "US",
+   "city": "Salem",
+   "lat": 44.9429,
+   "lon": -123.0351,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14341",
+     "source_url": "https://www.intervals.icu/events/14341/",
+     "id": "341f750f32f2"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "341f750f32f2"
+  },
+  {
    "name": "41st Badwater Ultramarathon",
    "start_date": "2027-07-19",
    "source": "duv",
@@ -109116,6 +109471,44 @@
    "id": "b6cfbcaa51be"
   },
   {
+   "name": "13th Rivers Edge Ultra - The Mammoth",
+   "start_date": "2027-09-18",
+   "source": "duv",
+   "source_id": "136931",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136931",
+   "end_date": "2027-09-19",
+   "country": "CA",
+   "city": "Devon",
+   "lat": 53.36683,
+   "lon": -113.73533,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136931",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136931",
+     "id": "ab9157b79e4c"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "ab9157b79e4c"
+  },
+  {
    "name": "14th The Barkley Fall Classic",
    "start_date": "2027-09-18",
    "source": "duv",
@@ -111415,6 +111808,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "17c1e4803aab"
+  },
+  {
+   "name": "16th Grizzly Ultra Marathon",
+   "start_date": "2027-10-09",
+   "source": "duv",
+   "source_id": "136930",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136930",
+   "end_date": "2027-10-09",
+   "country": "CA",
+   "city": "Canmore",
+   "lat": 51.08335,
+   "lon": -115.35206,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "136930",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=136930",
+     "id": "07f987a24028"
+    }
+   ],
+   "fetched_at": "2026-10-23T08:35:29+00:00",
+   "id": "07f987a24028"
   },
   {
    "name": "3. Flisa Backyard",
