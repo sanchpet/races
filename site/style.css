@@ -203,6 +203,7 @@ input, select {
 .badge.closed { color: var(--closed); }
 .badge.upcoming { color: var(--upcoming); }
 .badge.pick { color: var(--pick); background: var(--pick-soft); border-color: transparent; }
+.badge.ongoing { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
 .pick-marker {
   color: var(--pick);
   font-size: 26px;
