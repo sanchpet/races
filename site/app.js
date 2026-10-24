@@ -125,6 +125,8 @@ function card(e) {
   const statusBadge = STATUS_LABEL[status]
     ? `<span class="badge ${esc(status)}">${esc(STATUS_LABEL[status])}</span>` : "";
   const pickBadge = pick ? `<span class="badge pick">${esc(pickText(pick))}</span>` : "";
+  const ongoing = e.start_date < TODAY && (e.end_date || e.start_date) >= TODAY;
+  const ongoingBadge = ongoing ? `<span class="badge ongoing">Ongoing</span>` : "";
   const sources = e.sources
     .map((s) => `<a href="${esc(s.source_url)}" rel="noopener">${esc(s.source)}</a>`)
     .join(", ");
@@ -132,7 +134,7 @@ function card(e) {
     <div class="when">${dateBlock(e)}</div>
     <h3 class="name"><a href="${esc(e.registration.url || e.source_url)}" rel="noopener">${esc(e.name)}</a></h3>
     <div class="meta"><span>${flag(e.country)} ${esc(place || "Location unknown")}</span>
-      <span>${esc(e.discipline)}</span>${statusBadge}${pickBadge}</div>
+      <span>${esc(e.discipline)}</span>${ongoingBadge}${statusBadge}${pickBadge}</div>
     <div class="chips">${distanceChips(e)}</div>
     <details><summary>Details</summary>
       Listed by ${sources}. Event id <code>${esc(e.id)}</code> (use it in picks.yaml).
