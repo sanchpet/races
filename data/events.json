@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-28T09:46:59+00:00",
+ "generated_at": "2026-10-29T10:05:42+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-10-28T09:42:50+00:00"
+   "fetched_at": "2026-10-29T10:01:32+00:00"
   },
   "utmb": {
    "status": "ok",
-   "count": 56,
-   "fetched_at": "2026-10-28T09:42:50+00:00"
+   "count": 57,
+   "fetched_at": "2026-10-29T10:01:32+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 918,
-   "fetched_at": "2026-10-28T09:42:50+00:00"
+   "count": 940,
+   "fetched_at": "2026-10-29T10:01:32+00:00"
   },
   "duv": {
    "status": "ok",
-   "count": 2045,
-   "fetched_at": "2026-10-28T09:42:50+00:00"
+   "count": 2048,
+   "fetched_at": "2026-10-29T10:01:32+00:00"
   }
  },
  "events": [
@@ -70,48 +70,6 @@
    "id": "a05afe44c395"
   },
   {
-   "name": "RUR 1000 (Rheingold Ultrarace)",
-   "start_date": "2026-10-10",
-   "source": "duv",
-   "source_id": "124585",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=124585",
-   "end_date": "2026-10-28",
-   "country": "DE",
-   "city": "Remagen",
-   "lat": 50.57879,
-   "lon": 7.22703,
-   "discipline": "ultra",
-   "distances": [
-    {
-     "km": 570.0,
-     "elevation_gain_m": null
-    },
-    {
-     "km": 1062.0,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "124585",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=124585",
-     "id": "03e8cd93d1f9"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "03e8cd93d1f9"
-  },
-  {
    "name": "2nd WFT Dark Sky 220",
    "start_date": "2026-10-25",
    "source": "duv",
@@ -152,79 +110,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8d7f9dcc523e"
-  },
-  {
-   "name": "Sokolský běh republiky",
-   "start_date": "2026-10-28",
-   "source": "intervals",
-   "source_id": "14168",
-   "source_url": "https://www.intervals.icu/events/14168/",
-   "end_date": "2026-10-28",
-   "country": "CZ",
-   "city": "Šumperk-Šumperk",
-   "lat": 49.96528,
-   "lon": 16.97061,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14168",
-     "source_url": "https://www.intervals.icu/events/14168/",
-     "id": "8fc996a601a9"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "8fc996a601a9"
-  },
-  {
-   "name": "tel aviv 10k night run",
-   "start_date": "2026-10-28",
-   "source": "intervals",
-   "source_id": "13038",
-   "source_url": "https://www.intervals.icu/events/13038/",
-   "end_date": "2026-10-28",
-   "country": "IL",
-   "city": "Tel Aviv-Yafo",
-   "lat": 32.08088,
-   "lon": 34.78057,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 10.0,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "cyprus-neighbours",
-    "asia",
-    "middle-east"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "13038",
-     "source_url": "https://www.intervals.icu/events/13038/",
-     "id": "1e411c6b7715"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "1e411c6b7715"
   },
   {
    "name": "Ledlenser Nightrun Bergen",
@@ -574,48 +459,6 @@
    "id": "4b297f270ebf"
   },
   {
-   "name": "9 Kullamannen Ultra 100 miles",
-   "start_date": "2026-10-30",
-   "source": "duv",
-   "source_id": "130362",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=130362",
-   "end_date": "2026-10-30",
-   "country": "SE",
-   "city": "Höganäs",
-   "lat": 56.19971,
-   "lon": 12.55795,
-   "discipline": "ultra",
-   "distances": [
-    {
-     "km": 108.0,
-     "elevation_gain_m": null
-    },
-    {
-     "km": 173.0,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "130362",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=130362",
-     "id": "d1e59c82122f"
-    }
-   ],
-   "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "d1e59c82122f"
-  },
-  {
    "name": "Black Beacon 100 miles",
    "start_date": "2026-10-30",
    "source": "duv",
@@ -654,37 +497,70 @@
    "id": "50bcf3da6c49"
   },
   {
-   "name": "Kullamannen 100m 2026",
+   "name": "Kullamannen by UTMB",
    "start_date": "2026-10-30",
-   "source": "intervals",
-   "source_id": "13079",
-   "source_url": "https://www.intervals.icu/events/13079/",
-   "end_date": "2026-10-30",
+   "source": "utmb",
+   "source_id": "kullamannen.utmb.world:2026",
+   "source_url": "https://kullamannen.utmb.world/",
+   "end_date": "2026-10-31",
    "country": "SE",
-   "city": "Хёганес",
-   "lat": null,
-   "lon": null,
+   "city": "Höganäs Church",
+   "lat": 56.19971,
+   "lon": 12.55795,
    "discipline": "trail",
-   "distances": [],
+   "distances": [
+    {
+     "km": 22.0,
+     "elevation_gain_m": 96
+    },
+    {
+     "km": 53.0,
+     "elevation_gain_m": 727
+    },
+    {
+     "km": 108.0,
+     "elevation_gain_m": 749
+    },
+    {
+     "km": 168.0,
+     "elevation_gain_m": 2020
+    },
+    {
+     "km": 173.0,
+     "elevation_gain_m": null
+    }
+   ],
    "registration": {
-    "status": "unknown",
+    "status": "open",
     "opens": null,
     "closes": null,
-    "url": null
+    "url": "https://kullamannen.utmb.world/"
    },
    "region_tags": [
     "europe"
    ],
    "sources": [
     {
+     "source": "utmb",
+     "source_id": "kullamannen.utmb.world:2026",
+     "source_url": "https://kullamannen.utmb.world/",
+     "id": "0bfe3ed78728"
+    },
+    {
      "source": "intervals",
      "source_id": "13079",
      "source_url": "https://www.intervals.icu/events/13079/",
      "id": "f3d8943b64b8"
+    },
+    {
+     "source": "duv",
+     "source_id": "130362",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=130362",
+     "id": "d1e59c82122f"
     }
    ],
-   "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "f3d8943b64b8"
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "0bfe3ed78728"
   },
   {
    "name": "Mallorca by UTMB",
@@ -1757,6 +1633,44 @@
    "id": "a3c4e71a706a"
   },
   {
+   "name": "4th Caspers Trail Races",
+   "start_date": "2026-10-31",
+   "source": "duv",
+   "source_id": "128103",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128103",
+   "end_date": "2026-10-31",
+   "country": "US",
+   "city": "San Juan Capistrano",
+   "lat": 33.50169,
+   "lon": -117.66255,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "128103",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128103",
+     "id": "65e65f301d3f"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "65e65f301d3f"
+  },
+  {
    "name": "4th Outopia HK Wild 50",
    "start_date": "2026-10-31",
    "source": "duv",
@@ -2466,6 +2380,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "d8ecd4cf653c"
+  },
+  {
+   "name": "James Island Connector Run",
+   "start_date": "2026-10-31",
+   "source": "intervals",
+   "source_id": "14517",
+   "source_url": "https://www.intervals.icu/events/14517/",
+   "end_date": "2026-10-31",
+   "country": "US",
+   "city": "Charleston",
+   "lat": 32.77632,
+   "lon": -79.93275,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14517",
+     "source_url": "https://www.intervals.icu/events/14517/",
+     "id": "a5e16d7b0f17"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "a5e16d7b0f17"
   },
   {
    "name": "Kullamannen North Shore 20K",
@@ -4215,6 +4162,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "e9c05ccb6eca"
+  },
+  {
+   "name": "Hilton Head Half & Quarter Marathon & 5K",
+   "start_date": "2026-11-01",
+   "source": "intervals",
+   "source_id": "14518",
+   "source_url": "https://www.intervals.icu/events/14518/",
+   "end_date": "2026-11-01",
+   "country": "US",
+   "city": "Hilton Head Island",
+   "lat": 32.19382,
+   "lon": -80.73816,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 5.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14518",
+     "source_url": "https://www.intervals.icu/events/14518/",
+     "id": "a1cc7ad0d0d9"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "a1cc7ad0d0d9"
   },
   {
    "name": "IRONMAN SANJUAN",
@@ -9564,6 +9549,39 @@
    "id": "6377c01a8f94"
   },
   {
+   "name": "Obala Ultra Trail",
+   "start_date": "2026-11-07",
+   "source": "intervals",
+   "source_id": "14504",
+   "source_url": "https://www.intervals.icu/events/14504/",
+   "end_date": "2026-11-07",
+   "country": "SI",
+   "city": "Gmina Izola",
+   "lat": 45.53661,
+   "lon": 13.66015,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14504",
+     "source_url": "https://www.intervals.icu/events/14504/",
+     "id": "d8af7d75ce53"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "d8af7d75ce53"
+  },
+  {
    "name": "Race to Remember",
    "start_date": "2026-11-07",
    "source": "duv",
@@ -14327,6 +14345,44 @@
    "id": "7976d53923a4"
   },
   {
+   "name": "4th Cahuilla Rez Ultra",
+   "start_date": "2026-11-14",
+   "source": "duv",
+   "source_id": "126677",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=126677",
+   "end_date": "2026-11-15",
+   "country": "US",
+   "city": "Anza",
+   "lat": 33.55503,
+   "lon": -116.67363,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "126677",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=126677",
+     "id": "f46d01f341c4"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "f46d01f341c4"
+  },
+  {
    "name": "4th NYC Trail Mix 50 Miles Race",
    "start_date": "2026-11-14",
    "source": "duv",
@@ -16878,6 +16934,44 @@
    ],
    "fetched_at": "2026-10-24T08:10:25+00:00",
    "id": "6fa0dc5145d0"
+  },
+  {
+   "name": "Course 10 km",
+   "start_date": "2026-11-15",
+   "source": "intervals",
+   "source_id": "14521",
+   "source_url": "https://www.intervals.icu/events/14521/",
+   "end_date": "2026-11-15",
+   "country": "FR",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14521",
+     "source_url": "https://www.intervals.icu/events/14521/",
+     "id": "d2e8e54cc935"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "d2e8e54cc935"
   },
   {
    "name": "EASTCOAST",
@@ -19578,6 +19672,39 @@
    "id": "14518448071f"
   },
   {
+   "name": "3rd Mountain Mama Farms Classic",
+   "start_date": "2026-11-21",
+   "source": "duv",
+   "source_id": "129128",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=129128",
+   "end_date": "2026-11-21",
+   "country": "US",
+   "city": "Summerville",
+   "lat": 33.0185,
+   "lon": -80.17565,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "129128",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=129128",
+     "id": "fde9125d3490"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "fde9125d3490"
+  },
+  {
    "name": "3rd Pére Malfait Trail Race",
    "start_date": "2026-11-21",
    "source": "duv",
@@ -20523,6 +20650,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "32a75edd40b6"
+  },
+  {
+   "name": "Bohicket 5K and Half at Seabrook Island",
+   "start_date": "2026-11-21",
+   "source": "intervals",
+   "source_id": "14516",
+   "source_url": "https://www.intervals.icu/events/14516/",
+   "end_date": "2026-11-21",
+   "country": "US",
+   "city": "Seabrook Island",
+   "lat": 32.57713,
+   "lon": -80.17065,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 5.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14516",
+     "source_url": "https://www.intervals.icu/events/14516/",
+     "id": "197380752f39"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "197380752f39"
   },
   {
    "name": "Course des 3 Ponts",
@@ -29643,6 +29808,44 @@
    "id": "d5e9c5b81eb8"
   },
   {
+   "name": "10. Berliner Nikolauslauf 2026 – Viertel-Marathon",
+   "start_date": "2026-12-06",
+   "source": "intervals",
+   "source_id": "14533",
+   "source_url": "https://www.intervals.icu/events/14533/",
+   "end_date": "2026-12-06",
+   "country": "DE",
+   "city": "Berlin-Bezirk Steglitz-Zehlendorf",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14533",
+     "source_url": "https://www.intervals.icu/events/14533/",
+     "id": "f1a59c32f69b"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "f1a59c32f69b"
+  },
+  {
    "name": "10k Laviana",
    "start_date": "2026-12-06",
    "source": "intervals",
@@ -33753,6 +33956,39 @@
    "id": "a9b7d43d809c"
   },
   {
+   "name": "Friedenslichtlauf",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14526",
+   "source_url": "https://www.intervals.icu/events/14526/",
+   "end_date": "2026-12-13",
+   "country": "DE",
+   "city": "Elsenfeld",
+   "lat": 49.84289,
+   "lon": 9.16355,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14526",
+     "source_url": "https://www.intervals.icu/events/14526/",
+     "id": "ad585c43b823"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "ad585c43b823"
+  },
+  {
    "name": "Ironman 70.3 Florida",
    "start_date": "2026-12-13",
    "source": "intervals",
@@ -34162,6 +34398,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "ce4a153dcae9"
+  },
+  {
+   "name": "San silvestre 10 K Alcobendas",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14519",
+   "source_url": "https://www.intervals.icu/events/14519/",
+   "end_date": "2026-12-13",
+   "country": "ES",
+   "city": null,
+   "lat": 40.54746,
+   "lon": -3.64197,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14519",
+     "source_url": "https://www.intervals.icu/events/14519/",
+     "id": "b1f450afc257"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "b1f450afc257"
   },
   {
    "name": "Telford 10k",
@@ -36401,6 +36675,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "40276630b34d"
+  },
+  {
+   "name": "Quang Nguyen",
+   "start_date": "2026-12-26",
+   "source": "intervals",
+   "source_id": "14531",
+   "source_url": "https://www.intervals.icu/events/14531/",
+   "end_date": "2026-12-26",
+   "country": "VN",
+   "city": "Da Nang",
+   "lat": 16.06778,
+   "lon": 108.22083,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14531",
+     "source_url": "https://www.intervals.icu/events/14531/",
+     "id": "706401decf1a"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "706401decf1a"
   },
   {
    "name": "1. Megalithgrab Sloopsteene Ultramarathon",
@@ -40615,6 +40922,44 @@
    "id": "9161d1e9492d"
   },
   {
+   "name": "North Cornwall Half Marathon",
+   "start_date": "2027-01-09",
+   "source": "intervals",
+   "source_id": "14536",
+   "source_url": "https://www.intervals.icu/events/14536/",
+   "end_date": "2027-01-09",
+   "country": "GB",
+   "city": "Wadebridge",
+   "lat": 50.51734,
+   "lon": -4.83633,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14536",
+     "source_url": "https://www.intervals.icu/events/14536/",
+     "id": "cec4d2c4c920"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "cec4d2c4c920"
+  },
+  {
    "name": "S1 Bora Ultra",
    "start_date": "2027-01-09",
    "source": "duv",
@@ -44603,6 +44948,82 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "de1e0f1d42d1"
+  },
+  {
+   "name": "Mointainman Half Marathon Winterloop",
+   "start_date": "2027-01-23",
+   "source": "intervals",
+   "source_id": "14507",
+   "source_url": "https://www.intervals.icu/events/14507/",
+   "end_date": "2027-01-23",
+   "country": "DE",
+   "city": "Reit im Winkl",
+   "lat": 47.67729,
+   "lon": 12.47086,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14507",
+     "source_url": "https://www.intervals.icu/events/14507/",
+     "id": "661be5bb9bd1"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "661be5bb9bd1"
+  },
+  {
+   "name": "Mountainman Marathon Winterloop",
+   "start_date": "2027-01-23",
+   "source": "intervals",
+   "source_id": "14508",
+   "source_url": "https://www.intervals.icu/events/14508/",
+   "end_date": "2027-01-23",
+   "country": "DE",
+   "city": "Reit im Winkl",
+   "lat": 47.67729,
+   "lon": 12.47086,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14508",
+     "source_url": "https://www.intervals.icu/events/14508/",
+     "id": "6faacab92332"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "6faacab92332"
   },
   {
    "name": "Mountainman Winterloop Reit im Winkl",
@@ -49858,6 +50279,44 @@
    "id": "98227da31cb0"
   },
   {
+   "name": "Plänterwaldlauf – 10km",
+   "start_date": "2027-02-14",
+   "source": "intervals",
+   "source_id": "14534",
+   "source_url": "https://www.intervals.icu/events/14534/",
+   "end_date": "2027-02-14",
+   "country": "DE",
+   "city": "Berlin-Bezirk Treptow-Köpenick",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14534",
+     "source_url": "https://www.intervals.icu/events/14534/",
+     "id": "14ded86c3bba"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "14ded86c3bba"
+  },
+  {
    "name": "Trail Sagrat Cor",
    "start_date": "2027-02-14",
    "source": "intervals",
@@ -51925,6 +52384,44 @@
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
    "id": "ff7b6384aae3"
+  },
+  {
+   "name": "Saint Valentine Marathon",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14510",
+   "source_url": "https://www.intervals.icu/events/14510/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": "San Valentino Torio",
+   "lat": 40.79109,
+   "lon": 14.60333,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14510",
+     "source_url": "https://www.intervals.icu/events/14510/",
+     "id": "101bac34e32b"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "101bac34e32b"
   },
   {
    "name": "Saint Valentine Marathon",
@@ -61318,6 +61815,39 @@
    "id": "03f9fe809bf0"
   },
   {
+   "name": "Burgh Backyard",
+   "start_date": "2027-03-20",
+   "source": "intervals",
+   "source_id": "14522",
+   "source_url": "https://www.intervals.icu/events/14522/",
+   "end_date": "2027-03-20",
+   "country": "GB",
+   "city": null,
+   "lat": 54.92181,
+   "lon": -3.05671,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14522",
+     "source_url": "https://www.intervals.icu/events/14522/",
+     "id": "a20a980a4138"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "a20a980a4138"
+  },
+  {
    "name": "Hoka Torekov Båstad",
    "start_date": "2027-03-20",
    "source": "intervals",
@@ -61575,6 +62105,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "47e3697b6419"
+  },
+  {
+   "name": "2027武汉马拉松",
+   "start_date": "2027-03-21",
+   "source": "intervals",
+   "source_id": "14532",
+   "source_url": "https://www.intervals.icu/events/14532/",
+   "end_date": "2027-03-21",
+   "country": "CN",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14532",
+     "source_url": "https://www.intervals.icu/events/14532/",
+     "id": "0c462da991ba"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "0c462da991ba"
   },
   {
    "name": "2nd Himalayan Harmony",
@@ -67897,6 +68460,39 @@
    "id": "57512a28ef98"
   },
   {
+   "name": "Pardubický půlmaraton",
+   "start_date": "2027-04-10",
+   "source": "intervals",
+   "source_id": "14527",
+   "source_url": "https://www.intervals.icu/events/14527/",
+   "end_date": "2027-04-10",
+   "country": "CZ",
+   "city": "Pardubice",
+   "lat": 50.04075,
+   "lon": 15.77659,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14527",
+     "source_url": "https://www.intervals.icu/events/14527/",
+     "id": "7a556837daaf"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "7a556837daaf"
+  },
+  {
    "name": "Rose of the Shires Ultra 54",
    "start_date": "2027-04-10",
    "source": "duv",
@@ -68360,6 +68956,44 @@
    "id": "b353a4b6c221"
   },
   {
+   "name": "ADAC Marathon Hannover 2027 (Half Distance)",
+   "start_date": "2027-04-11",
+   "source": "intervals",
+   "source_id": "14511",
+   "source_url": "https://www.intervals.icu/events/14511/",
+   "end_date": "2027-04-11",
+   "country": "DE",
+   "city": "Hanover",
+   "lat": 52.37052,
+   "lon": 9.73322,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14511",
+     "source_url": "https://www.intervals.icu/events/14511/",
+     "id": "da59dd3492fd"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "da59dd3492fd"
+  },
+  {
    "name": "Deutsche Post Marathon Bonn",
    "start_date": "2027-04-11",
    "source": "intervals",
@@ -68505,6 +69139,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "ac127befe360"
+  },
+  {
+   "name": "Leuven Half Marathon 2027",
+   "start_date": "2027-04-11",
+   "source": "intervals",
+   "source_id": "14524",
+   "source_url": "https://www.intervals.icu/events/14524/",
+   "end_date": "2027-04-11",
+   "country": "BE",
+   "city": "Leuven",
+   "lat": 50.87959,
+   "lon": 4.70093,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14524",
+     "source_url": "https://www.intervals.icu/events/14524/",
+     "id": "cbe02460ce91"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "cbe02460ce91"
   },
   {
    "name": "Leuven Marathon",
@@ -74250,6 +74922,39 @@
    "id": "62472a74e799"
   },
   {
+   "name": "Rock and Roll Zurich Madrid",
+   "start_date": "2027-04-25",
+   "source": "intervals",
+   "source_id": "14520",
+   "source_url": "https://www.intervals.icu/events/14520/",
+   "end_date": "2027-04-25",
+   "country": "ES",
+   "city": "Madrid",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14520",
+     "source_url": "https://www.intervals.icu/events/14520/",
+     "id": "9c00aa080ad5"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "9c00aa080ad5"
+  },
+  {
    "name": "Semi Marathon de Nantes",
    "start_date": "2027-04-25",
    "source": "intervals",
@@ -74324,6 +75029,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "feb7d9706ce3"
+  },
+  {
+   "name": "Spreewaldmarathon",
+   "start_date": "2027-04-25",
+   "source": "intervals",
+   "source_id": "14525",
+   "source_url": "https://www.intervals.icu/events/14525/",
+   "end_date": "2027-04-25",
+   "country": "DE",
+   "city": "Burg (Spreewald)",
+   "lat": 51.83448,
+   "lon": 14.14856,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14525",
+     "source_url": "https://www.intervals.icu/events/14525/",
+     "id": "49de56455d67"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "49de56455d67"
   },
   {
    "name": "TransEspaña",
@@ -82222,6 +82965,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "3eab3ad7093d"
+  },
+  {
+   "name": "Tenno Trail",
+   "start_date": "2027-05-15",
+   "source": "intervals",
+   "source_id": "14509",
+   "source_url": "https://www.intervals.icu/events/14509/",
+   "end_date": "2027-05-15",
+   "country": "IT",
+   "city": "Autonomous Province of Trento",
+   "lat": 46.06787,
+   "lon": 11.12108,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14509",
+     "source_url": "https://www.intervals.icu/events/14509/",
+     "id": "c3070ebd9ece"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "c3070ebd9ece"
   },
   {
    "name": "Trail Denes Morella 25k",
@@ -93777,6 +94553,44 @@
    "id": "4dac00647a49"
   },
   {
+   "name": "Hella Halbmarathon",
+   "start_date": "2027-06-27",
+   "source": "intervals",
+   "source_id": "14528",
+   "source_url": "https://www.intervals.icu/events/14528/",
+   "end_date": "2027-06-27",
+   "country": "DE",
+   "city": "Hamburg",
+   "lat": 53.55073,
+   "lon": 9.99302,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14528",
+     "source_url": "https://www.intervals.icu/events/14528/",
+     "id": "2f7e64ae435a"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "2f7e64ae435a"
+  },
+  {
    "name": "IRONMAN - Les Sables d'Olonne-Vendee",
    "start_date": "2027-06-27",
    "source": "intervals",
@@ -101501,6 +102315,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "fadd5d530fa3"
+  },
+  {
+   "name": "dm kurzdistanz",
+   "start_date": "2027-08-08",
+   "source": "intervals",
+   "source_id": "14506",
+   "source_url": "https://www.intervals.icu/events/14506/",
+   "end_date": "2027-08-08",
+   "country": "DE",
+   "city": "Wilhelmshaven",
+   "lat": 53.5476,
+   "lon": 8.10395,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14506",
+     "source_url": "https://www.intervals.icu/events/14506/",
+     "id": "d4bb30dd0b3e"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "d4bb30dd0b3e"
   },
   {
    "name": "27th Mongolia Sunrise to Sunset",
@@ -110599,6 +111446,44 @@
    ],
    "fetched_at": "2026-10-27T09:03:22+00:00",
    "id": "f4e1475b726c"
+  },
+  {
+   "name": "6° Desafio Ichura 50k",
+   "start_date": "2027-10-26",
+   "source": "duv",
+   "source_id": "137138",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137138",
+   "end_date": "2027-10-26",
+   "country": "AR",
+   "city": "Chilecito",
+   "lat": -29.16163,
+   "lon": -67.49934,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137138",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137138",
+     "id": "08035e72d582"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "08035e72d582"
   },
   {
    "name": "2nd Running for visually impaired children",
