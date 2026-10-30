@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-29T10:05:42+00:00",
+ "generated_at": "2026-10-30T10:09:16+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-10-29T10:01:32+00:00"
+   "fetched_at": "2026-10-30T10:05:03+00:00"
   },
   "utmb": {
    "status": "ok",
-   "count": 57,
-   "fetched_at": "2026-10-29T10:01:32+00:00"
+   "count": 58,
+   "fetched_at": "2026-10-30T10:05:03+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 940,
-   "fetched_at": "2026-10-29T10:01:32+00:00"
+   "count": 949,
+   "fetched_at": "2026-10-30T10:05:03+00:00"
   },
   "duv": {
    "status": "ok",
    "count": 2048,
-   "fetched_at": "2026-10-29T10:01:32+00:00"
+   "fetched_at": "2026-10-30T10:05:03+00:00"
   }
  },
  "events": [
@@ -110,39 +110,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8d7f9dcc523e"
-  },
-  {
-   "name": "Ledlenser Nightrun Bergen",
-   "start_date": "2026-10-29",
-   "source": "intervals",
-   "source_id": "10558",
-   "source_url": "https://www.intervals.icu/events/10558/",
-   "end_date": "2026-10-29",
-   "country": "NO",
-   "city": "Bergen",
-   "lat": 60.39299,
-   "lon": 5.32415,
-   "discipline": "trail",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "10558",
-     "source_url": "https://www.intervals.icu/events/10558/",
-     "id": "c5b9b26b2af3"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "c5b9b26b2af3"
   },
   {
    "name": "10th High Trail Nine Peaks - 9 Peaks",
@@ -4673,6 +4640,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8520bdaf32d5"
+  },
+  {
+   "name": "SEF Slavkovský podzimní kros",
+   "start_date": "2026-11-01",
+   "source": "intervals",
+   "source_id": "14545",
+   "source_url": "https://www.intervals.icu/events/14545/",
+   "end_date": "2026-11-01",
+   "country": "CZ",
+   "city": "Horní Slavkov",
+   "lat": 50.13863,
+   "lon": 12.80758,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14545",
+     "source_url": "https://www.intervals.icu/events/14545/",
+     "id": "f8b9ce45ae92"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "f8b9ce45ae92"
   },
   {
    "name": "SOHNA 50km",
@@ -10217,6 +10217,82 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "8e0106a8c5fe"
+  },
+  {
+   "name": "10K UGR",
+   "start_date": "2026-11-08",
+   "source": "intervals",
+   "source_id": "14544",
+   "source_url": "https://www.intervals.icu/events/14544/",
+   "end_date": "2026-11-08",
+   "country": "ES",
+   "city": "Granada",
+   "lat": 37.18817,
+   "lon": -3.60667,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14544",
+     "source_url": "https://www.intervals.icu/events/14544/",
+     "id": "4b8dfcf7ee47"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "4b8dfcf7ee47"
+  },
+  {
+   "name": "10K UGR 2026",
+   "start_date": "2026-11-08",
+   "source": "intervals",
+   "source_id": "14543",
+   "source_url": "https://www.intervals.icu/events/14543/",
+   "end_date": "2026-11-08",
+   "country": "ES",
+   "city": "Granada",
+   "lat": 37.18817,
+   "lon": -3.60667,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14543",
+     "source_url": "https://www.intervals.icu/events/14543/",
+     "id": "88ca0cbfcb93"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "88ca0cbfcb93"
   },
   {
    "name": "10k Mérida.",
@@ -16774,8 +16850,8 @@
    "name": "Carrera de la mujer",
    "start_date": "2026-11-15",
    "source": "intervals",
-   "source_id": "14466",
-   "source_url": "https://www.intervals.icu/events/14466/",
+   "source_id": "14469",
+   "source_url": "https://www.intervals.icu/events/14469/",
    "end_date": "2026-11-15",
    "country": "ES",
    "city": "Sevilla",
@@ -16795,13 +16871,13 @@
    "sources": [
     {
      "source": "intervals",
-     "source_id": "14466",
-     "source_url": "https://www.intervals.icu/events/14466/",
-     "id": "ec707ff7cdc5"
+     "source_id": "14469",
+     "source_url": "https://www.intervals.icu/events/14469/",
+     "id": "87398526986c"
     }
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "ec707ff7cdc5"
+   "id": "87398526986c"
   },
   {
    "name": "Carrera de la mujer",
@@ -16840,8 +16916,8 @@
    "name": "Carrera de la mujer",
    "start_date": "2026-11-15",
    "source": "intervals",
-   "source_id": "14469",
-   "source_url": "https://www.intervals.icu/events/14469/",
+   "source_id": "14466",
+   "source_url": "https://www.intervals.icu/events/14466/",
    "end_date": "2026-11-15",
    "country": "ES",
    "city": "Sevilla",
@@ -16861,13 +16937,13 @@
    "sources": [
     {
      "source": "intervals",
-     "source_id": "14469",
-     "source_url": "https://www.intervals.icu/events/14469/",
-     "id": "87398526986c"
+     "source_id": "14466",
+     "source_url": "https://www.intervals.icu/events/14466/",
+     "id": "ec707ff7cdc5"
     }
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "87398526986c"
+   "id": "ec707ff7cdc5"
   },
   {
    "name": "Collines de Giono",
@@ -27218,6 +27294,44 @@
    "id": "e0ac124833bb"
   },
   {
+   "name": "10. Berliner Nikolauslauf 2026 – Viertel-Marathon",
+   "start_date": "2026-12-05",
+   "source": "intervals",
+   "source_id": "14533",
+   "source_url": "https://www.intervals.icu/events/14533/",
+   "end_date": "2026-12-05",
+   "country": "DE",
+   "city": "Berlin-Bezirk Steglitz-Zehlendorf",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14533",
+     "source_url": "https://www.intervals.icu/events/14533/",
+     "id": "f1a59c32f69b"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "f1a59c32f69b"
+  },
+  {
    "name": "10k Race",
    "start_date": "2026-12-05",
    "source": "intervals",
@@ -29644,6 +29758,39 @@
    "id": "f1fcc0fe7274"
   },
   {
+   "name": "Soli'trail",
+   "start_date": "2026-12-05",
+   "source": "intervals",
+   "source_id": "14551",
+   "source_url": "https://www.intervals.icu/events/14551/",
+   "end_date": "2026-12-05",
+   "country": "FR",
+   "city": "Bouliac",
+   "lat": 44.8193,
+   "lon": -0.50265,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14551",
+     "source_url": "https://www.intervals.icu/events/14551/",
+     "id": "33321d9de262"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "33321d9de262"
+  },
+  {
    "name": "St. Jude Memphis Marathon",
    "start_date": "2026-12-05",
    "source": "intervals",
@@ -29806,44 +29953,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "d5e9c5b81eb8"
-  },
-  {
-   "name": "10. Berliner Nikolauslauf 2026 – Viertel-Marathon",
-   "start_date": "2026-12-06",
-   "source": "intervals",
-   "source_id": "14533",
-   "source_url": "https://www.intervals.icu/events/14533/",
-   "end_date": "2026-12-06",
-   "country": "DE",
-   "city": "Berlin-Bezirk Steglitz-Zehlendorf",
-   "lat": 52.52437,
-   "lon": 13.41053,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 42.195,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14533",
-     "source_url": "https://www.intervals.icu/events/14533/",
-     "id": "f1a59c32f69b"
-    }
-   ],
-   "fetched_at": "2026-10-29T10:01:32+00:00",
-   "id": "f1a59c32f69b"
   },
   {
    "name": "10k Laviana",
@@ -36926,6 +37035,77 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "3b026d4462be"
+  },
+  {
+   "name": "Corrida run 12km",
+   "start_date": "2026-12-27",
+   "source": "intervals",
+   "source_id": "14549",
+   "source_url": "https://www.intervals.icu/events/14549/",
+   "end_date": "2026-12-27",
+   "country": "BE",
+   "city": "Leuven",
+   "lat": 50.87959,
+   "lon": 4.70093,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 12.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14549",
+     "source_url": "https://www.intervals.icu/events/14549/",
+     "id": "7727de4826c0"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "7727de4826c0"
+  },
+  {
+   "name": "Son Tra City Trail",
+   "start_date": "2026-12-27",
+   "source": "intervals",
+   "source_id": "14542",
+   "source_url": "https://www.intervals.icu/events/14542/",
+   "end_date": "2026-12-27",
+   "country": "VN",
+   "city": "Đà Nẵng",
+   "lat": 16.06778,
+   "lon": 108.22083,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14542",
+     "source_url": "https://www.intervals.icu/events/14542/",
+     "id": "e04e597c52e8"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "e04e597c52e8"
   },
   {
    "name": "São Silvestre de Braga 2026",
@@ -52249,6 +52429,44 @@
    "id": "eaccbc76f2f5"
   },
   {
+   "name": "Coelmo Napoli City Half Marathon 2027",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14548",
+   "source_url": "https://www.intervals.icu/events/14548/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": "Metropolitan City of Naples",
+   "lat": 40.85216,
+   "lon": 14.26811,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14548",
+     "source_url": "https://www.intervals.icu/events/14548/",
+     "id": "d0723f2f62d0"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "d0723f2f62d0"
+  },
+  {
    "name": "Kyoto Marathon 2027",
    "start_date": "2027-02-21",
    "source": "intervals",
@@ -52427,44 +52645,6 @@
    "name": "Saint Valentine Marathon",
    "start_date": "2027-02-21",
    "source": "intervals",
-   "source_id": "14461",
-   "source_url": "https://www.intervals.icu/events/14461/",
-   "end_date": "2027-02-21",
-   "country": "IT",
-   "city": null,
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 42.195,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14461",
-     "source_url": "https://www.intervals.icu/events/14461/",
-     "id": "2164956d760c"
-    }
-   ],
-   "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "2164956d760c"
-  },
-  {
-   "name": "Saint Valentine Marathon",
-   "start_date": "2027-02-21",
-   "source": "intervals",
    "source_id": "14462",
    "source_url": "https://www.intervals.icu/events/14462/",
    "end_date": "2027-02-21",
@@ -52498,6 +52678,44 @@
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
    "id": "d92325a46a65"
+  },
+  {
+   "name": "Saint Valentine Marathon",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14461",
+   "source_url": "https://www.intervals.icu/events/14461/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14461",
+     "source_url": "https://www.intervals.icu/events/14461/",
+     "id": "2164956d760c"
+    }
+   ],
+   "fetched_at": "2026-10-28T09:42:50+00:00",
+   "id": "2164956d760c"
   },
   {
    "name": "Two Tunnels Ultra",
@@ -74106,6 +74324,39 @@
    "id": "8b5746a9fdf3"
   },
   {
+   "name": "GDYNIA PÓŁMARATON",
+   "start_date": "2027-04-24",
+   "source": "intervals",
+   "source_id": "14552",
+   "source_url": "https://www.intervals.icu/events/14552/",
+   "end_date": "2027-04-24",
+   "country": "PL",
+   "city": "Gdynia",
+   "lat": 54.51889,
+   "lon": 18.53188,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14552",
+     "source_url": "https://www.intervals.icu/events/14552/",
+     "id": "e2e6cdb76ad4"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "e2e6cdb76ad4"
+  },
+  {
    "name": "Humble Club Backyard Run Nr. 6",
    "start_date": "2027-04-24",
    "source": "duv",
@@ -80927,6 +81178,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "87f7804f88e7"
+  },
+  {
+   "name": "IRONMAN VN",
+   "start_date": "2027-05-09",
+   "source": "intervals",
+   "source_id": "14541",
+   "source_url": "https://www.intervals.icu/events/14541/",
+   "end_date": "2027-05-09",
+   "country": "VN",
+   "city": "Da Nang",
+   "lat": 16.06778,
+   "lon": 108.22083,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14541",
+     "source_url": "https://www.intervals.icu/events/14541/",
+     "id": "360eeb6e94b8"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "360eeb6e94b8"
   },
   {
    "name": "Kandern Trail Masters",
@@ -96045,7 +96329,7 @@
    "source": "utmb",
    "source_id": "verbier.utmb.world:2027",
    "source_url": "https://verbier.utmb.world/",
-   "end_date": "2027-07-11",
+   "end_date": "2027-07-12",
    "country": "CH",
    "city": "Verbier",
    "lat": 46.1002,
@@ -96055,6 +96339,10 @@
     {
      "km": 5.0,
      "elevation_gain_m": 240
+    },
+    {
+     "km": 7.0,
+     "elevation_gain_m": 320
     },
     {
      "km": 28.0,
@@ -96094,7 +96382,7 @@
      "id": "f2228bfcba8c"
     }
    ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "fetched_at": "2026-10-30T10:05:03+00:00",
    "id": "f2228bfcba8c"
   },
   {
@@ -98662,6 +98950,44 @@
    ],
    "fetched_at": "2026-10-23T08:35:29+00:00",
    "id": "341f750f32f2"
+  },
+  {
+   "name": "Run Melbourne 2027 - Half Marathon",
+   "start_date": "2027-07-18",
+   "source": "intervals",
+   "source_id": "14550",
+   "source_url": "https://www.intervals.icu/events/14550/",
+   "end_date": "2027-07-18",
+   "country": "AU",
+   "city": "Melbourne",
+   "lat": -37.814,
+   "lon": 144.96332,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "oceania"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14550",
+     "source_url": "https://www.intervals.icu/events/14550/",
+     "id": "b37fccde9a29"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "b37fccde9a29"
   },
   {
    "name": "41st Badwater Ultramarathon",
@@ -107244,6 +107570,56 @@
    ],
    "fetched_at": "2026-10-24T08:10:25+00:00",
    "id": "c08f360ecb82"
+  },
+  {
+   "name": "Kaçkar by UTMB",
+   "start_date": "2027-09-11",
+   "source": "utmb",
+   "source_id": "kackar.utmb.world:2027",
+   "source_url": "https://kackar.utmb.world/",
+   "end_date": "2027-09-11",
+   "country": "TR",
+   "city": "Ayder",
+   "lat": null,
+   "lon": null,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 20.0,
+     "elevation_gain_m": 1400
+    },
+    {
+     "km": 44.0,
+     "elevation_gain_m": 3000
+    },
+    {
+     "km": 82.0,
+     "elevation_gain_m": 5600
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://kackar.utmb.world/"
+   },
+   "region_tags": [
+    "cyprus-neighbours",
+    "georgia-caucasus",
+    "europe",
+    "asia",
+    "middle-east"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "kackar.utmb.world:2027",
+     "source_url": "https://kackar.utmb.world/",
+     "id": "20928d87efa8"
+    }
+   ],
+   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "id": "20928d87efa8"
   },
   {
    "name": "The Lap Anticlockwise",
