@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-03T10:59:48+00:00",
+ "generated_at": "2026-11-04T11:03:23+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-11-03T10:55:39+00:00"
+   "fetched_at": "2026-11-04T10:59:14+00:00"
   },
   "utmb": {
    "status": "ok",
    "count": 58,
-   "fetched_at": "2026-11-03T10:55:39+00:00"
+   "fetched_at": "2026-11-04T10:59:14+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 970,
-   "fetched_at": "2026-11-03T10:55:39+00:00"
+   "count": 981,
+   "fetched_at": "2026-11-04T10:59:14+00:00"
   },
   "duv": {
    "status": "ok",
    "count": 2149,
-   "fetched_at": "2026-11-03T10:55:39+00:00"
+   "fetched_at": "2026-11-04T10:59:14+00:00"
   }
  },
  "events": [
@@ -68,39 +68,6 @@
    ],
    "fetched_at": "2026-10-21T08:37:41+00:00",
    "id": "a05afe44c395"
-  },
-  {
-   "name": "SALOMON GRAVEL FESTIVAL",
-   "start_date": "2026-11-03",
-   "source": "intervals",
-   "source_id": "14585",
-   "source_url": "https://www.intervals.icu/events/14585/",
-   "end_date": "2026-11-03",
-   "country": "JP",
-   "city": null,
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "asia"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14585",
-     "source_url": "https://www.intervals.icu/events/14585/",
-     "id": "a1f9d802c029"
-    }
-   ],
-   "fetched_at": "2026-11-01T10:30:35+00:00",
-   "id": "a1f9d802c029"
   },
   {
    "name": "14th tBunk Endurance Challenge",
@@ -8072,6 +8039,72 @@
    "id": "33e6bc081745"
   },
   {
+   "name": "XXXII CIRCUITO DE SÃO MARTINHO",
+   "start_date": "2026-11-10",
+   "source": "intervals",
+   "source_id": "14665",
+   "source_url": "https://www.intervals.icu/events/14665/",
+   "end_date": "2026-11-10",
+   "country": "PT",
+   "city": "Funchal",
+   "lat": 32.66568,
+   "lon": -16.92547,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14665",
+     "source_url": "https://www.intervals.icu/events/14665/",
+     "id": "701c341c11e8"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "701c341c11e8"
+  },
+  {
+   "name": "XXXII CIRCUITO DE SÃO MARTINHO",
+   "start_date": "2026-11-10",
+   "source": "intervals",
+   "source_id": "14666",
+   "source_url": "https://www.intervals.icu/events/14666/",
+   "end_date": "2026-11-10",
+   "country": "PT",
+   "city": "Funchal",
+   "lat": 32.66568,
+   "lon": -16.92547,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14666",
+     "source_url": "https://www.intervals.icu/events/14666/",
+     "id": "ebf00512ddd8"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "ebf00512ddd8"
+  },
+  {
    "name": "7º Mons Ultra Trail 200mi",
    "start_date": "2026-11-11",
    "source": "duv",
@@ -8290,6 +8323,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "5529113c08bb"
+  },
+  {
+   "name": "Fuschey Cross Arnay",
+   "start_date": "2026-11-11",
+   "source": "intervals",
+   "source_id": "14664",
+   "source_url": "https://www.intervals.icu/events/14664/",
+   "end_date": "2026-11-11",
+   "country": "FR",
+   "city": "Arnay-le-Duc",
+   "lat": 47.13202,
+   "lon": 4.48595,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14664",
+     "source_url": "https://www.intervals.icu/events/14664/",
+     "id": "fd6a2d0d3d61"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "fd6a2d0d3d61"
   },
   {
    "name": "Górski Bieg NiepodległoścI 2026",
@@ -18031,6 +18097,44 @@
    "id": "545b24a9df5e"
   },
   {
+   "name": "SAN FRANCESCO MARATHON",
+   "start_date": "2026-11-22",
+   "source": "intervals",
+   "source_id": "14661",
+   "source_url": "https://www.intervals.icu/events/14661/",
+   "end_date": "2026-11-22",
+   "country": "IT",
+   "city": "Assisi",
+   "lat": 43.06671,
+   "lon": 12.62109,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14661",
+     "source_url": "https://www.intervals.icu/events/14661/",
+     "id": "a67ecbdef202"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "a67ecbdef202"
+  },
+  {
    "name": "Semi marathon du Beaujolais",
    "start_date": "2026-11-22",
    "source": "intervals",
@@ -21740,6 +21844,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "83bb534ffa88"
+  },
+  {
+   "name": "Kulon Progo Half Marathon",
+   "start_date": "2026-11-29",
+   "source": "intervals",
+   "source_id": "14671",
+   "source_url": "https://www.intervals.icu/events/14671/",
+   "end_date": "2026-11-29",
+   "country": "ID",
+   "city": "Daerah Istimewa Yogyakarta",
+   "lat": -7.80139,
+   "lon": 110.36472,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14671",
+     "source_url": "https://www.intervals.icu/events/14671/",
+     "id": "b47c2160bfec"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "b47c2160bfec"
   },
   {
    "name": "Lauf vom Turm zum Turm",
@@ -34685,6 +34827,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "ad3b6c7670b1"
+  },
+  {
+   "name": "2026 New Year's Day Sunrise Half Marathon",
+   "start_date": "2027-01-01",
+   "source": "intervals",
+   "source_id": "14668",
+   "source_url": "https://www.intervals.icu/events/14668/",
+   "end_date": "2027-01-01",
+   "country": "TW",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.1,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14668",
+     "source_url": "https://www.intervals.icu/events/14668/",
+     "id": "19b02df15965"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "19b02df15965"
   },
   {
    "name": "29th Red Eye 50km",
@@ -49078,44 +49258,6 @@
    "name": "Saint Valentine Marathon",
    "start_date": "2027-02-21",
    "source": "intervals",
-   "source_id": "14461",
-   "source_url": "https://www.intervals.icu/events/14461/",
-   "end_date": "2027-02-21",
-   "country": "IT",
-   "city": null,
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 42.195,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14461",
-     "source_url": "https://www.intervals.icu/events/14461/",
-     "id": "2164956d760c"
-    }
-   ],
-   "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "2164956d760c"
-  },
-  {
-   "name": "Saint Valentine Marathon",
-   "start_date": "2027-02-21",
-   "source": "intervals",
    "source_id": "14462",
    "source_url": "https://www.intervals.icu/events/14462/",
    "end_date": "2027-02-21",
@@ -49149,6 +49291,44 @@
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
    "id": "d92325a46a65"
+  },
+  {
+   "name": "Saint Valentine Marathon",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14461",
+   "source_url": "https://www.intervals.icu/events/14461/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14461",
+     "source_url": "https://www.intervals.icu/events/14461/",
+     "id": "2164956d760c"
+    }
+   ],
+   "fetched_at": "2026-10-28T09:42:50+00:00",
+   "id": "2164956d760c"
   },
   {
    "name": "Saint Valentine Marathon",
@@ -62924,6 +63104,39 @@
    ],
    "fetched_at": "2026-10-26T08:59:39+00:00",
    "id": "7bd9c760fa82"
+  },
+  {
+   "name": "TriHard - RBR Rotterdam",
+   "start_date": "2027-04-03",
+   "source": "intervals",
+   "source_id": "14675",
+   "source_url": "https://www.intervals.icu/events/14675/",
+   "end_date": "2027-04-03",
+   "country": "NL",
+   "city": "Rotterdam",
+   "lat": 51.9225,
+   "lon": 4.47917,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14675",
+     "source_url": "https://www.intervals.icu/events/14675/",
+     "id": "a3c0f11ba907"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "a3c0f11ba907"
   },
   {
    "name": "ULTRAMARATÓN 50K",
@@ -78596,6 +78809,39 @@
    ],
    "fetched_at": "2026-10-26T08:59:39+00:00",
    "id": "43782931cd4d"
+  },
+  {
+   "name": "COOP Kungsholmen runt 2027",
+   "start_date": "2027-05-08",
+   "source": "intervals",
+   "source_id": "14662",
+   "source_url": "https://www.intervals.icu/events/14662/",
+   "end_date": "2027-05-08",
+   "country": "SE",
+   "city": "Stockholm",
+   "lat": 59.32938,
+   "lon": 18.06871,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14662",
+     "source_url": "https://www.intervals.icu/events/14662/",
+     "id": "d74cb32995a6"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "d74cb32995a6"
   },
   {
    "name": "Formartine & Buchan Railway",
@@ -109249,6 +109495,39 @@
    "id": "eddc83bf2903"
   },
   {
+   "name": "Challange Almere Middle distance",
+   "start_date": "2027-09-11",
+   "source": "intervals",
+   "source_id": "14676",
+   "source_url": "https://www.intervals.icu/events/14676/",
+   "end_date": "2027-09-11",
+   "country": "NL",
+   "city": "Almere",
+   "lat": 52.37025,
+   "lon": 5.21413,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14676",
+     "source_url": "https://www.intervals.icu/events/14676/",
+     "id": "c02031646f5b"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "c02031646f5b"
+  },
+  {
    "name": "Hamburg Triathlon",
    "start_date": "2027-09-11",
    "source": "intervals",
@@ -109341,7 +109620,7 @@
     }
    ],
    "registration": {
-    "status": "upcoming",
+    "status": "open",
     "opens": null,
     "closes": null,
     "url": "https://kackar.utmb.world/"
@@ -109361,7 +109640,7 @@
      "id": "20928d87efa8"
     }
    ],
-   "fetched_at": "2026-10-30T10:05:03+00:00",
+   "fetched_at": "2026-11-04T10:59:14+00:00",
    "id": "20928d87efa8"
   },
   {
@@ -111693,7 +111972,7 @@
     }
    ],
    "registration": {
-    "status": "upcoming",
+    "status": "open",
     "opens": null,
     "closes": null,
     "url": "https://grindstone.utmb.world/"
@@ -111715,7 +111994,7 @@
      "id": "9388a3574775"
     }
    ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "fetched_at": "2026-11-04T10:59:14+00:00",
    "id": "f1704410511b"
   },
   {
@@ -115579,6 +115858,39 @@
    "id": "e2c7bfb3f793"
   },
   {
+   "name": "IRONMAN AUSTRALIA",
+   "start_date": "2027-10-17",
+   "source": "intervals",
+   "source_id": "14667",
+   "source_url": "https://www.intervals.icu/events/14667/",
+   "end_date": "2027-10-17",
+   "country": "AU",
+   "city": "Port Macquarie",
+   "lat": -31.43084,
+   "lon": 152.90894,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "oceania"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14667",
+     "source_url": "https://www.intervals.icu/events/14667/",
+     "id": "4370e7583613"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "4370e7583613"
+  },
+  {
    "name": "Unique Trail Lanzarote",
    "start_date": "2027-10-17",
    "source": "duv",
@@ -116162,6 +116474,39 @@
    ],
    "fetched_at": "2026-10-27T09:03:22+00:00",
    "id": "f4e1475b726c"
+  },
+  {
+   "name": "Łemkowyna Trail 150",
+   "start_date": "2027-10-23",
+   "source": "intervals",
+   "source_id": "14656",
+   "source_url": "https://www.intervals.icu/events/14656/",
+   "end_date": "2027-10-23",
+   "country": "PL",
+   "city": "Krynica-Zdrój",
+   "lat": 49.42225,
+   "lon": 20.95942,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14656",
+     "source_url": "https://www.intervals.icu/events/14656/",
+     "id": "8e4efb105b6b"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "8e4efb105b6b"
   },
   {
    "name": "6° Desafio Ichura 50k",
@@ -116882,6 +117227,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "6bc6ec9889f2"
+  },
+  {
+   "name": "Run for Breast Cancer 5K",
+   "start_date": "2027-12-12",
+   "source": "intervals",
+   "source_id": "14670",
+   "source_url": "https://www.intervals.icu/events/14670/",
+   "end_date": "2027-12-12",
+   "country": "US",
+   "city": "San Francisco",
+   "lat": 37.77493,
+   "lon": -122.41942,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 5.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14670",
+     "source_url": "https://www.intervals.icu/events/14670/",
+     "id": "37ef2f0bc4ae"
+    }
+   ],
+   "fetched_at": "2026-11-04T10:59:14+00:00",
+   "id": "37ef2f0bc4ae"
   },
   {
    "name": "10. Grüntal-Winterultra",
