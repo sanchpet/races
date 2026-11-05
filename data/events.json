@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-04T11:03:23+00:00",
+ "generated_at": "2026-11-05T11:03:42+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-11-04T10:59:14+00:00"
+   "fetched_at": "2026-11-05T10:59:33+00:00"
   },
   "utmb": {
    "status": "ok",
    "count": 58,
-   "fetched_at": "2026-11-04T10:59:14+00:00"
+   "fetched_at": "2026-11-05T10:59:33+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 981,
-   "fetched_at": "2026-11-04T10:59:14+00:00"
+   "count": 991,
+   "fetched_at": "2026-11-05T10:59:33+00:00"
   },
   "duv": {
    "status": "ok",
-   "count": 2149,
-   "fetched_at": "2026-11-04T10:59:14+00:00"
+   "count": 2200,
+   "fetched_at": "2026-11-05T10:59:33+00:00"
   }
  },
  "events": [
@@ -36,10 +36,6 @@
    "lon": 10.68614,
    "discipline": "ultra",
    "distances": [
-    {
-     "km": 5000.0,
-     "elevation_gain_m": null
-    },
     {
      "km": 6000.0,
      "elevation_gain_m": null
@@ -66,7 +62,7 @@
      "id": "a05afe44c395"
     }
    ],
-   "fetched_at": "2026-10-21T08:37:41+00:00",
+   "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "a05afe44c395"
   },
   {
@@ -8155,6 +8151,44 @@
    "id": "dd069dc58b5b"
   },
   {
+   "name": "Bieg 5 km",
+   "start_date": "2026-11-11",
+   "source": "intervals",
+   "source_id": "14678",
+   "source_url": "https://www.intervals.icu/events/14678/",
+   "end_date": "2026-11-11",
+   "country": "PL",
+   "city": "Wola",
+   "lat": 52.23477,
+   "lon": 20.96004,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 5.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14678",
+     "source_url": "https://www.intervals.icu/events/14678/",
+     "id": "84aa7e9a2d84"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "84aa7e9a2d84"
+  },
+  {
    "name": "Bieg Niepodległości",
    "start_date": "2026-11-11",
    "source": "intervals",
@@ -8699,6 +8733,39 @@
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
    "id": "cbbb2f783ba0"
+  },
+  {
+   "name": "1. Tiefsee Tunnel 12h Lauf",
+   "start_date": "2026-11-14",
+   "source": "duv",
+   "source_id": "137685",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137685",
+   "end_date": "2026-11-14",
+   "country": "DE",
+   "city": "Essen",
+   "lat": 51.45657,
+   "lon": 7.01228,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137685",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137685",
+     "id": "a6934df74103"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "a6934df74103"
   },
   {
    "name": "10th TARCkey Trot 6-Hour Ultra",
@@ -13394,6 +13461,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "adba72e489f9"
+  },
+  {
+   "name": "XXXX Volta a la Foia",
+   "start_date": "2026-11-15",
+   "source": "intervals",
+   "source_id": "14688",
+   "source_url": "https://www.intervals.icu/events/14688/",
+   "end_date": "2026-11-15",
+   "country": "ES",
+   "city": "Alicante",
+   "lat": 38.34517,
+   "lon": -0.48149,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14688",
+     "source_url": "https://www.intervals.icu/events/14688/",
+     "id": "f23613af56a7"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "f23613af56a7"
   },
   {
    "name": "Ytfff",
@@ -24776,6 +24876,44 @@
    "id": "338d3633c653"
   },
   {
+   "name": "8. Eversburger Gewässer Ultramarathon",
+   "start_date": "2026-12-05",
+   "source": "duv",
+   "source_id": "137596",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137596",
+   "end_date": "2026-12-05",
+   "country": "DE",
+   "city": "Osnabrück",
+   "lat": 52.27411,
+   "lon": 8.05056,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 45.3,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137596",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137596",
+     "id": "0918d040645f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "0918d040645f"
+  },
+  {
    "name": "8. Trail du BW - 100km",
    "start_date": "2026-12-05",
    "source": "duv",
@@ -33255,6 +33393,39 @@
    "id": "e59b0e20c0f6"
   },
   {
+   "name": "67ª Volta à Cidade do Funchal",
+   "start_date": "2026-12-28",
+   "source": "intervals",
+   "source_id": "14692",
+   "source_url": "https://www.intervals.icu/events/14692/",
+   "end_date": "2026-12-28",
+   "country": "PT",
+   "city": "Funchal",
+   "lat": 32.66568,
+   "lon": -16.92547,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14692",
+     "source_url": "https://www.intervals.icu/events/14692/",
+     "id": "bbbf32336690"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "bbbf32336690"
+  },
+  {
    "name": "7th Kyoto Great Round",
    "start_date": "2026-12-28",
    "source": "duv",
@@ -35715,7 +35886,7 @@
    "id": "266f8a34b215"
   },
   {
-   "name": "8. Eversburger Gewässer Ultramarathon",
+   "name": "9. Eversburger Gewässer Ultramarathon",
    "start_date": "2027-01-03",
    "source": "duv",
    "source_id": "134564",
@@ -35749,7 +35920,7 @@
      "id": "ca090c117488"
     }
    ],
-   "fetched_at": "2026-10-26T08:59:39+00:00",
+   "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "ca090c117488"
   },
   {
@@ -37599,44 +37770,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "b9a1e0ceb95d"
-  },
-  {
-   "name": "9. G1 Grüngürtel Ultra Köln",
-   "start_date": "2027-01-10",
-   "source": "duv",
-   "source_id": "128372",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128372",
-   "end_date": "2027-01-11",
-   "country": "DE",
-   "city": "Köln",
-   "lat": 50.93333,
-   "lon": 6.95,
-   "discipline": "ultra",
-   "distances": [
-    {
-     "km": 63.0,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "128372",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128372",
-     "id": "0644aa8f633f"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "0644aa8f633f"
   },
   {
    "name": "Alpha Win - Sarasota, FL 2027",
@@ -39825,6 +39958,44 @@
    "id": "79c3200d8cc9"
   },
   {
+   "name": "9. G1 Grüngürtel Ultra Köln",
+   "start_date": "2027-01-17",
+   "source": "duv",
+   "source_id": "128372",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128372",
+   "end_date": "2027-01-17",
+   "country": "DE",
+   "city": "Köln",
+   "lat": 50.93333,
+   "lon": 6.95,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 63.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "128372",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=128372",
+     "id": "0644aa8f633f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "0644aa8f633f"
+  },
+  {
    "name": "Houston Marathon",
    "start_date": "2027-01-17",
    "source": "intervals",
@@ -41904,6 +42075,39 @@
    "id": "5fe3c5c92d3d"
   },
   {
+   "name": "Mitja Marato Internacional Santa Pola",
+   "start_date": "2027-01-24",
+   "source": "intervals",
+   "source_id": "14689",
+   "source_url": "https://www.intervals.icu/events/14689/",
+   "end_date": "2027-01-24",
+   "country": "ES",
+   "city": "Alicante",
+   "lat": 38.34517,
+   "lon": -0.48149,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14689",
+     "source_url": "https://www.intervals.icu/events/14689/",
+     "id": "042ec7e50c6c"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "042ec7e50c6c"
+  },
+  {
    "name": "Mitja Marató de Granollers",
    "start_date": "2027-01-24",
    "source": "intervals",
@@ -42445,6 +42649,44 @@
    "id": "5d702d782f7a"
   },
   {
+   "name": "20th Bigfoot Snowshoe Festival",
+   "start_date": "2027-01-30",
+   "source": "duv",
+   "source_id": "137651",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137651",
+   "end_date": "2027-01-30",
+   "country": "US",
+   "city": "Midway",
+   "lat": 31.99735,
+   "lon": -102.07791,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137651",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137651",
+     "id": "8639b004f550"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "8639b004f550"
+  },
+  {
    "name": "22nd Yukon Arctic Ultra",
    "start_date": "2027-01-30",
    "source": "duv",
@@ -42976,6 +43218,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "9b1a2a27410c"
+  },
+  {
+   "name": "10k vincennes",
+   "start_date": "2027-01-31",
+   "source": "intervals",
+   "source_id": "14685",
+   "source_url": "https://www.intervals.icu/events/14685/",
+   "end_date": "2027-01-31",
+   "country": "FR",
+   "city": "Vincennes",
+   "lat": 48.8486,
+   "lon": 2.43769,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14685",
+     "source_url": "https://www.intervals.icu/events/14685/",
+     "id": "c08978d092c9"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "c08978d092c9"
   },
   {
    "name": "12th Clearwater Running Festival 50k Ultra",
@@ -45304,6 +45584,52 @@
    "id": "a5b72132ec50"
   },
   {
+   "name": "9th Actif Epica Ultra Marathon",
+   "start_date": "2027-02-12",
+   "source": "duv",
+   "source_id": "137522",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137522",
+   "end_date": "2027-02-14",
+   "country": "CA",
+   "city": "Emerson",
+   "lat": null,
+   "lon": null,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 115.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137522",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137522",
+     "id": "1518ab343ba3"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "1518ab343ba3"
+  },
+  {
    "name": "10th Eagle Ridge 50km",
    "start_date": "2027-02-13",
    "source": "duv",
@@ -46597,6 +46923,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "5c9494c3c149"
+  },
+  {
+   "name": "21k Don Benito",
+   "start_date": "2027-02-14",
+   "source": "intervals",
+   "source_id": "14680",
+   "source_url": "https://www.intervals.icu/events/14680/",
+   "end_date": "2027-02-14",
+   "country": "ES",
+   "city": "Badajoz",
+   "lat": 38.87789,
+   "lon": -6.97061,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 21.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14680",
+     "source_url": "https://www.intervals.icu/events/14680/",
+     "id": "20d538ffca1b"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "20d538ffca1b"
   },
   {
    "name": "21k Romeo&Giulietta",
@@ -48191,6 +48555,39 @@
    "id": "265c89d85d98"
   },
   {
+   "name": "4. Gretel hilft! 2027 (6h-Indoor-Spendenlauf)",
+   "start_date": "2027-02-20",
+   "source": "duv",
+   "source_id": "137659",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137659",
+   "end_date": "2027-02-20",
+   "country": "DE",
+   "city": "Hamburg",
+   "lat": 53.55073,
+   "lon": 9.99302,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137659",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137659",
+     "id": "f9f19a6f49d2"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "f9f19a6f49d2"
+  },
+  {
    "name": "4th Cheraw 24 Hour",
    "start_date": "2027-02-20",
    "source": "duv",
@@ -49296,44 +49693,6 @@
    "name": "Saint Valentine Marathon",
    "start_date": "2027-02-21",
    "source": "intervals",
-   "source_id": "14461",
-   "source_url": "https://www.intervals.icu/events/14461/",
-   "end_date": "2027-02-21",
-   "country": "IT",
-   "city": null,
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 42.195,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14461",
-     "source_url": "https://www.intervals.icu/events/14461/",
-     "id": "2164956d760c"
-    }
-   ],
-   "fetched_at": "2026-10-28T09:42:50+00:00",
-   "id": "2164956d760c"
-  },
-  {
-   "name": "Saint Valentine Marathon",
-   "start_date": "2027-02-21",
-   "source": "intervals",
    "source_id": "14510",
    "source_url": "https://www.intervals.icu/events/14510/",
    "end_date": "2027-02-21",
@@ -49367,6 +49726,44 @@
    ],
    "fetched_at": "2026-10-29T10:01:32+00:00",
    "id": "101bac34e32b"
+  },
+  {
+   "name": "Saint Valentine Marathon",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14461",
+   "source_url": "https://www.intervals.icu/events/14461/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14461",
+     "source_url": "https://www.intervals.icu/events/14461/",
+     "id": "2164956d760c"
+    }
+   ],
+   "fetched_at": "2026-10-28T09:42:50+00:00",
+   "id": "2164956d760c"
   },
   {
    "name": "Two Tunnels Ultra",
@@ -56183,6 +56580,44 @@
    "id": "8d2ece19b73f"
   },
   {
+   "name": "Hemslingen Ultra Marathon",
+   "start_date": "2027-03-13",
+   "source": "duv",
+   "source_id": "137603",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137603",
+   "end_date": "2027-03-13",
+   "country": "DE",
+   "city": "Hemslingen",
+   "lat": 53.08588,
+   "lon": 9.60103,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 56.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137603",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137603",
+     "id": "b9376ed68193"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "b9376ed68193"
+  },
+  {
    "name": "Linz Donautrail",
    "start_date": "2027-03-13",
    "source": "duv",
@@ -56219,6 +56654,39 @@
    ],
    "fetched_at": "2026-10-24T08:10:25+00:00",
    "id": "9f8c13b5798b"
+  },
+  {
+   "name": "Milla Romana Mérida ( 44 kilómetros)",
+   "start_date": "2027-03-13",
+   "source": "intervals",
+   "source_id": "14681",
+   "source_url": "https://www.intervals.icu/events/14681/",
+   "end_date": "2027-03-13",
+   "country": "ES",
+   "city": "Badajoz",
+   "lat": 38.87789,
+   "lon": -6.97061,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14681",
+     "source_url": "https://www.intervals.icu/events/14681/",
+     "id": "c9f39971e293"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "c9f39971e293"
   },
   {
    "name": "North Coast Ultra",
@@ -61376,6 +61844,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "28f8058db35e"
+  },
+  {
+   "name": "5 Frontrun",
+   "start_date": "2027-03-28",
+   "source": "duv",
+   "source_id": "137602",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137602",
+   "end_date": "2027-03-28",
+   "country": "SE",
+   "city": "Grums Värmland",
+   "lat": 59.35141,
+   "lon": 13.11105,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137602",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137602",
+     "id": "2a6ce22a8433"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "2a6ce22a8433"
   },
   {
    "name": "8th Picnic Island Ultra",
@@ -71276,39 +71777,6 @@
    "id": "c5810d1b0726"
   },
   {
-   "name": "2. Austria Backyard Ultra - Amstetten-Forstheide",
-   "start_date": "2027-04-24",
-   "source": "duv",
-   "source_id": "135423",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135423",
-   "end_date": "2027-04-24",
-   "country": "AT",
-   "city": "Amstetten",
-   "lat": 48.1229,
-   "lon": 14.87206,
-   "discipline": "ultra",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "135423",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135423",
-     "id": "1f99cbc012d7"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "1f99cbc012d7"
-  },
-  {
    "name": "20th Chippewa Moraine 50km Ultra Marathon",
    "start_date": "2027-04-24",
    "source": "duv",
@@ -72229,6 +72697,44 @@
    "id": "8ec6f0eaf68d"
   },
   {
+   "name": "Austria Backyard 7+1 - Amstetten-Forstheide",
+   "start_date": "2027-04-24",
+   "source": "duv",
+   "source_id": "135423",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135423",
+   "end_date": "2027-04-25",
+   "country": "AT",
+   "city": "Amstetten",
+   "lat": 48.1229,
+   "lon": 14.87206,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 53.6,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "135423",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135423",
+     "id": "1f99cbc012d7"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "1f99cbc012d7"
+  },
+  {
    "name": "Backyard Ultra Esztergom",
    "start_date": "2027-04-24",
    "source": "duv",
@@ -72436,39 +72942,6 @@
    "name": "Ironman Texas",
    "start_date": "2027-04-24",
    "source": "intervals",
-   "source_id": "11508",
-   "source_url": "https://www.intervals.icu/events/11508/",
-   "end_date": "2027-04-24",
-   "country": "US",
-   "city": "Texas",
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "11508",
-     "source_url": "https://www.intervals.icu/events/11508/",
-     "id": "e19bc2f70e34"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "e19bc2f70e34"
-  },
-  {
-   "name": "Ironman Texas",
-   "start_date": "2027-04-24",
-   "source": "intervals",
    "source_id": "11593",
    "source_url": "https://www.intervals.icu/events/11593/",
    "end_date": "2027-04-24",
@@ -72497,6 +72970,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "9c14d151411a"
+  },
+  {
+   "name": "Ironman Texas",
+   "start_date": "2027-04-24",
+   "source": "intervals",
+   "source_id": "11508",
+   "source_url": "https://www.intervals.icu/events/11508/",
+   "end_date": "2027-04-24",
+   "country": "US",
+   "city": "Texas",
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "11508",
+     "source_url": "https://www.intervals.icu/events/11508/",
+     "id": "e19bc2f70e34"
+    }
+   ],
+   "fetched_at": "2026-10-18T13:41:31+00:00",
+   "id": "e19bc2f70e34"
   },
   {
    "name": "Marmaris Ultra Trail 100km",
@@ -72547,6 +73053,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "28337ccd1712"
+  },
+  {
+   "name": "Rab GAPA Trail",
+   "start_date": "2027-04-24",
+   "source": "intervals",
+   "source_id": "14693",
+   "source_url": "https://www.intervals.icu/events/14693/",
+   "end_date": "2027-04-24",
+   "country": "DE",
+   "city": "Garmisch-Partenkirchen",
+   "lat": 47.49209,
+   "lon": 11.09576,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14693",
+     "source_url": "https://www.intervals.icu/events/14693/",
+     "id": "cf2bfa4e9088"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "cf2bfa4e9088"
   },
   {
    "name": "TCS London Marathon",
@@ -75759,6 +76298,44 @@
    "id": "585857249464"
   },
   {
+   "name": "Sri Chinmoy",
+   "start_date": "2027-05-01",
+   "source": "duv",
+   "source_id": "137684",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137684",
+   "end_date": "2027-05-14",
+   "country": "BG",
+   "city": "Sofia",
+   "lat": 42.69751,
+   "lon": 23.32415,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 1126.5,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137684",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137684",
+     "id": "6a5f6ec7e14f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "6a5f6ec7e14f"
+  },
+  {
    "name": "Vilnius Trail Run",
    "start_date": "2027-05-01",
    "source": "duv",
@@ -77598,6 +78175,44 @@
    "id": "fa65065e0823"
   },
   {
+   "name": "14th Conquer the Canuck",
+   "start_date": "2027-05-08",
+   "source": "duv",
+   "source_id": "137623",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137623",
+   "end_date": "2027-05-08",
+   "country": "CA",
+   "city": "Cambridge",
+   "lat": 43.3601,
+   "lon": -80.31269,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137623",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137623",
+     "id": "d3e424d82c7a"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d3e424d82c7a"
+  },
+  {
    "name": "15th Grizzly Peak 50k",
    "start_date": "2027-05-08",
    "source": "duv",
@@ -77905,6 +78520,44 @@
    "id": "7faab6cbe903"
   },
   {
+   "name": "2nd Wascally Wabbit",
+   "start_date": "2027-05-08",
+   "source": "duv",
+   "source_id": "137613",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137613",
+   "end_date": "2027-05-08",
+   "country": "CA",
+   "city": "Folly Lake",
+   "lat": null,
+   "lon": null,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 62.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137613",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137613",
+     "id": "39fee6576d3f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "39fee6576d3f"
+  },
+  {
    "name": "2nd Zamboanguita Mountain Ultra Trail",
    "start_date": "2027-05-08",
    "source": "duv",
@@ -78016,6 +78669,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "b2bee3aa3b7d"
+  },
+  {
+   "name": "36. Sri Chinmoy",
+   "start_date": "2027-05-08",
+   "source": "duv",
+   "source_id": "137598",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137598",
+   "end_date": "2027-05-09",
+   "country": "CH",
+   "city": "Basel",
+   "lat": 47.55839,
+   "lon": 7.57327,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137598",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137598",
+     "id": "7a7a64eb075b"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "7a7a64eb075b"
   },
   {
    "name": "37th Trail Mix Race",
@@ -78390,6 +79076,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "efe55ebf2393"
+  },
+  {
+   "name": "5th Nakkertok Trail Enduro",
+   "start_date": "2027-05-08",
+   "source": "duv",
+   "source_id": "137618",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137618",
+   "end_date": "2027-05-08",
+   "country": "CA",
+   "city": "Val-des-Monts",
+   "lat": 45.6501,
+   "lon": -75.66604,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137618",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137618",
+     "id": "34aed534968e"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "34aed534968e"
   },
   {
    "name": "7. Schwarzwaldultra Backyard (Mini-SWUB)",
@@ -79122,6 +79841,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "be5de38f3256"
+  },
+  {
+   "name": "Sri Chinmoy 6 Day Race, Sofia",
+   "start_date": "2027-05-08",
+   "source": "duv",
+   "source_id": "137673",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137673",
+   "end_date": "2027-05-14",
+   "country": "BG",
+   "city": "Sofia",
+   "lat": 42.69751,
+   "lon": 23.32415,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137673",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137673",
+     "id": "3378df5d54f8"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "3378df5d54f8"
   },
   {
    "name": "The Lap Clockwise",
@@ -83601,6 +84353,44 @@
    "id": "eefe2d97d49b"
   },
   {
+   "name": "6th Trail du Coureur des Bois de Duchesnay",
+   "start_date": "2027-05-23",
+   "source": "duv",
+   "source_id": "137621",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137621",
+   "end_date": "2027-05-23",
+   "country": "CA",
+   "city": "la-Jacques-Cartier",
+   "lat": null,
+   "lon": null,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 48.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137621",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137621",
+     "id": "73b0b3bf2288"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "73b0b3bf2288"
+  },
+  {
    "name": "Challenge The Championship",
    "start_date": "2027-05-23",
    "source": "intervals",
@@ -84020,6 +84810,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "ef3bbffa8188"
+  },
+  {
+   "name": "5. Vom See zum Schloss Ultramarathon",
+   "start_date": "2027-05-27",
+   "source": "duv",
+   "source_id": "137679",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137679",
+   "end_date": "2027-05-27",
+   "country": "DE",
+   "city": "Münster",
+   "lat": 51.96236,
+   "lon": 7.62571,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 45.2,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137679",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137679",
+     "id": "1f5cb7dc5fd9"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "1f5cb7dc5fd9"
   },
   {
    "name": "6. HochwaldUltraTrail",
@@ -84878,39 +85706,6 @@
    "id": "f7d4631f144b"
   },
   {
-   "name": "3. Austria Backyard Ultra - Loosdorf Trail",
-   "start_date": "2027-05-29",
-   "source": "duv",
-   "source_id": "135421",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135421",
-   "end_date": "2027-05-29",
-   "country": "AT",
-   "city": "Loosdorf",
-   "lat": 48.2,
-   "lon": 15.4,
-   "discipline": "trail",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "135421",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135421",
-     "id": "2d31efe22c93"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "2d31efe22c93"
-  },
-  {
    "name": "3rd Austin's Backyard Ultra",
    "start_date": "2027-05-29",
    "source": "duv",
@@ -85300,6 +86095,48 @@
    "id": "43712fa2b97d"
   },
   {
+   "name": "5th Suffer on Centennial",
+   "start_date": "2027-05-29",
+   "source": "duv",
+   "source_id": "137625",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137625",
+   "end_date": "2027-05-29",
+   "country": "CA",
+   "city": "West Hawk Lake",
+   "lat": null,
+   "lon": null,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 100.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137625",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137625",
+     "id": "d0e969992126"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d0e969992126"
+  },
+  {
    "name": "6. Rund um Schloss Holte 50k (RUMS)",
    "start_date": "2027-05-29",
    "source": "duv",
@@ -85569,6 +86406,44 @@
    "id": "2c298aa301c4"
   },
   {
+   "name": "Austria Backyard 7+1 - Loosdorf TRAIL",
+   "start_date": "2027-05-29",
+   "source": "duv",
+   "source_id": "135421",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135421",
+   "end_date": "2027-05-30",
+   "country": "AT",
+   "city": "Loosdorf",
+   "lat": 48.2,
+   "lon": 15.4,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 53.6,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "135421",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=135421",
+     "id": "2d31efe22c93"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "2d31efe22c93"
+  },
+  {
    "name": "Blue Mountain Trail Run",
    "start_date": "2027-05-29",
    "source": "intervals",
@@ -85600,6 +86475,39 @@
    ],
    "fetched_at": "2026-11-03T10:55:39+00:00",
    "id": "d88f91e69ec7"
+  },
+  {
+   "name": "Etappenlauf Schweizer Rhein",
+   "start_date": "2027-05-29",
+   "source": "duv",
+   "source_id": "137595",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137595",
+   "end_date": "2027-06-05",
+   "country": "CH",
+   "city": "Basel",
+   "lat": 47.55839,
+   "lon": 7.57327,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137595",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137595",
+     "id": "60ca3f36be1d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "60ca3f36be1d"
   },
   {
    "name": "Kernowman",
@@ -85780,6 +86688,82 @@
    ],
    "fetched_at": "2026-10-20T08:35:40+00:00",
    "id": "91036324c7b8"
+  },
+  {
+   "name": "2. Osnabrücker Ringweg Ultramarathon",
+   "start_date": "2027-05-30",
+   "source": "duv",
+   "source_id": "137680",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137680",
+   "end_date": "2027-05-30",
+   "country": "DE",
+   "city": "Osnabrück",
+   "lat": 52.27411,
+   "lon": 8.05056,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 70.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137680",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137680",
+     "id": "490ada8b254d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "490ada8b254d"
+  },
+  {
+   "name": "20km van Brussel",
+   "start_date": "2027-05-30",
+   "source": "intervals",
+   "source_id": "14697",
+   "source_url": "https://www.intervals.icu/events/14697/",
+   "end_date": "2027-05-30",
+   "country": "BE",
+   "city": null,
+   "lat": 50.85045,
+   "lon": 4.34878,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 20.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14697",
+     "source_url": "https://www.intervals.icu/events/14697/",
+     "id": "ef93e27f3c74"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ef93e27f3c74"
   },
   {
    "name": "49th Rocky Mountain 50k",
@@ -90088,6 +91072,10 @@
     {
      "km": 50.0,
      "elevation_gain_m": null
+    },
+    {
+     "km": 52.0,
+     "elevation_gain_m": null
     }
    ],
    "registration": {
@@ -90107,7 +91095,7 @@
      "id": "afc9bc758e49"
     }
    ],
-   "fetched_at": "2026-11-03T10:55:39+00:00",
+   "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "afc9bc758e49"
   },
   {
@@ -91805,6 +92793,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "53ed073ac739"
+  },
+  {
+   "name": "2nd Sasquatch Ultra Trail",
+   "start_date": "2027-06-19",
+   "source": "duv",
+   "source_id": "137608",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137608",
+   "end_date": "2027-06-20",
+   "country": "CA",
+   "city": "Agassiz",
+   "lat": 49.23298,
+   "lon": -121.76926,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137608",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137608",
+     "id": "598db48d0788"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "598db48d0788"
   },
   {
    "name": "2nd The Longest Light",
@@ -93833,6 +94854,72 @@
    "id": "d1a8f5eb186f"
   },
   {
+   "name": "2. Neuenbürger Schloss-Park-Run",
+   "start_date": "2027-06-26",
+   "source": "duv",
+   "source_id": "137678",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137678",
+   "end_date": "2027-06-26",
+   "country": "DE",
+   "city": "Neuenbürg",
+   "lat": 47.81431,
+   "lon": 7.56005,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137678",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137678",
+     "id": "ba5ce1f5d35c"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ba5ce1f5d35c"
+  },
+  {
+   "name": "26 Zes uur van de Haarlemmermeer",
+   "start_date": "2027-06-26",
+   "source": "duv",
+   "source_id": "137607",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137607",
+   "end_date": "2027-06-26",
+   "country": "NL",
+   "city": "Hoofddorp",
+   "lat": 52.3025,
+   "lon": 4.68889,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137607",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137607",
+     "id": "f27127676f70"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "f27127676f70"
+  },
+  {
    "name": "2nd Endless Summer",
    "start_date": "2027-06-26",
    "source": "duv",
@@ -95413,6 +96500,60 @@
    "id": "e8cc92a65ae0"
   },
   {
+   "name": "Stubai Ultratrail by UTMB",
+   "start_date": "2027-07-02",
+   "source": "utmb",
+   "source_id": "stubai.utmb.world:2027",
+   "source_url": "https://stubai.utmb.world/",
+   "end_date": "2027-07-03",
+   "country": "AT",
+   "city": "Neustift im Stubaital ",
+   "lat": 47.11667,
+   "lon": 11.31667,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 14.0,
+     "elevation_gain_m": 700
+    },
+    {
+     "km": 23.0,
+     "elevation_gain_m": 1240
+    },
+    {
+     "km": 31.0,
+     "elevation_gain_m": 2300
+    },
+    {
+     "km": 57.0,
+     "elevation_gain_m": 4200
+    },
+    {
+     "km": 100.0,
+     "elevation_gain_m": 5800
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://stubai.utmb.world/"
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "stubai.utmb.world:2027",
+     "source_url": "https://stubai.utmb.world/",
+     "id": "590b8586b9ce"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "590b8586b9ce"
+  },
+  {
    "name": "10. Chouffe Trail - 52 km",
    "start_date": "2027-07-03",
    "source": "duv",
@@ -96317,6 +97458,44 @@
    "id": "054a46918e18"
   },
   {
+   "name": "3rd Kaslo Wild Ultra",
+   "start_date": "2027-07-08",
+   "source": "duv",
+   "source_id": "137611",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137611",
+   "end_date": "2027-07-08",
+   "country": "CA",
+   "city": "Kaslo",
+   "lat": 49.91658,
+   "lon": -116.91887,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 53.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137611",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137611",
+     "id": "61e529fcfe89"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "61e529fcfe89"
+  },
+  {
    "name": "12th Cry Me A River",
    "start_date": "2027-07-09",
    "source": "duv",
@@ -96682,6 +97861,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "4929b7cf4eb4"
+  },
+  {
+   "name": "'t Giet moar deur",
+   "start_date": "2027-07-10",
+   "source": "duv",
+   "source_id": "137660",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137660",
+   "end_date": "2027-07-11",
+   "country": "NL",
+   "city": "Gieten",
+   "lat": 53.005,
+   "lon": 6.76389,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137660",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137660",
+     "id": "2f00252a0d33"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "2f00252a0d33"
   },
   {
    "name": "14th Honey Badger 100 Mile Ultra Road Race",
@@ -100469,6 +101681,39 @@
    "id": "35c0a271e998"
   },
   {
+   "name": "5th The Magnificent Bastards Challenge",
+   "start_date": "2027-07-24",
+   "source": "duv",
+   "source_id": "137649",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137649",
+   "end_date": "2027-07-24",
+   "country": "US",
+   "city": "Corinth",
+   "lat": 33.15401,
+   "lon": -97.06473,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137649",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137649",
+     "id": "27d90d0f5817"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "27d90d0f5817"
+  },
+  {
    "name": "6. Davos X-Trails",
    "start_date": "2027-07-24",
    "source": "duv",
@@ -101525,6 +102770,39 @@
    "id": "7d95cfa04449"
   },
   {
+   "name": "6th Persistence Backyard Ultra",
+   "start_date": "2027-07-31",
+   "source": "duv",
+   "source_id": "137669",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137669",
+   "end_date": "2027-08-02",
+   "country": "CA",
+   "city": "London",
+   "lat": 42.98339,
+   "lon": -81.23304,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137669",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137669",
+     "id": "3179e8439f1b"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "3179e8439f1b"
+  },
+  {
    "name": "7 Revsudden Backyard Ultra",
    "start_date": "2027-07-31",
    "source": "duv",
@@ -101710,6 +102988,60 @@
    ],
    "fetched_at": "2026-10-24T08:10:25+00:00",
    "id": "b9ce0b4f58ec"
+  },
+  {
+   "name": "Quito Trail by UTMB",
+   "start_date": "2027-07-31",
+   "source": "utmb",
+   "source_id": "quito.utmb.world:2027",
+   "source_url": "https://quito.utmb.world/",
+   "end_date": "2027-08-01",
+   "country": "EC",
+   "city": "Mindo",
+   "lat": -0.05201,
+   "lon": -78.77633,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 13.0,
+     "elevation_gain_m": 850
+    },
+    {
+     "km": 20.0,
+     "elevation_gain_m": 1000
+    },
+    {
+     "km": 31.0,
+     "elevation_gain_m": 1600
+    },
+    {
+     "km": 53.0,
+     "elevation_gain_m": 2800
+    },
+    {
+     "km": 76.0,
+     "elevation_gain_m": 4400
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://quito.utmb.world/"
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "quito.utmb.world:2027",
+     "source_url": "https://quito.utmb.world/",
+     "id": "04b421c9f438"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "04b421c9f438"
   },
   {
    "name": "Rostocker Marathon",
@@ -102716,6 +104048,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "28b45863401d"
+  },
+  {
+   "name": "19^ 6 ore per le vie di Curinga",
+   "start_date": "2027-08-07",
+   "source": "duv",
+   "source_id": "137677",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137677",
+   "end_date": "2027-08-07",
+   "country": "IT",
+   "city": "Curinga (CZ)",
+   "lat": 38.82811,
+   "lon": 16.31344,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137677",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137677",
+     "id": "ce9f982b0fa1"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ce9f982b0fa1"
   },
   {
    "name": "21st El Vaquero Loco 50K Mountain Race",
@@ -104185,6 +105550,44 @@
    "id": "811e91b7e871"
   },
   {
+   "name": "2. Ahornweg Ultra",
+   "start_date": "2027-08-14",
+   "source": "duv",
+   "source_id": "137681",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137681",
+   "end_date": "2027-08-15",
+   "country": "DE",
+   "city": "Dissen",
+   "lat": 52.11591,
+   "lon": 8.19956,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 67.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137681",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137681",
+     "id": "e2f2d774482a"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "e2f2d774482a"
+  },
+  {
    "name": "20th Martha Moats Baker Memorial",
    "start_date": "2027-08-14",
    "source": "duv",
@@ -104707,6 +106110,39 @@
    "id": "73e84f7df94c"
   },
   {
+   "name": "9th Tartarus Backyard Ultra",
+   "start_date": "2027-08-14",
+   "source": "duv",
+   "source_id": "137646",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137646",
+   "end_date": "2027-08-15",
+   "country": "US",
+   "city": "Nine Mile Falls",
+   "lat": 40.75201,
+   "lon": -80.31923,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137646",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137646",
+     "id": "f38157b53515"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "f38157b53515"
+  },
+  {
    "name": "DQ Brookville Olympic",
    "start_date": "2027-08-14",
    "source": "intervals",
@@ -104814,6 +106250,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "6dd1664e0e2c"
+  },
+  {
+   "name": "2. Ahornweg Ultra Etappe 2",
+   "start_date": "2027-08-15",
+   "source": "duv",
+   "source_id": "137683",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137683",
+   "end_date": "2027-08-15",
+   "country": "DE",
+   "city": "Lienen",
+   "lat": 52.15,
+   "lon": 7.98333,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 47.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137683",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137683",
+     "id": "ce0c409e4930"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ce0c409e4930"
   },
   {
    "name": "Embrunman",
@@ -106095,6 +107569,39 @@
    "id": "46ccdd039d03"
   },
   {
+   "name": "13th Le Defi de la Tortue 12 Hour Race",
+   "start_date": "2027-08-28",
+   "source": "duv",
+   "source_id": "137631",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137631",
+   "end_date": "2027-08-28",
+   "country": "CA",
+   "city": "Shawinigan",
+   "lat": 46.56675,
+   "lon": -72.74913,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137631",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137631",
+     "id": "3b2e200117e7"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "3b2e200117e7"
+  },
+  {
    "name": "14th Telluride Mountain Run",
    "start_date": "2027-08-28",
    "source": "duv",
@@ -106244,6 +107751,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "1106aaedd994"
+  },
+  {
+   "name": "2nd Campobello Coastal Challenge",
+   "start_date": "2027-08-28",
+   "source": "duv",
+   "source_id": "137610",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137610",
+   "end_date": "2027-08-28",
+   "country": "CA",
+   "city": "Welshpool",
+   "lat": null,
+   "lon": null,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137610",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137610",
+     "id": "bb721704c042"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "bb721704c042"
   },
   {
    "name": "2nd Wiley Canyon Ultra",
@@ -106569,6 +108114,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "60e879f8f511"
+  },
+  {
+   "name": "7th Race the North Face Brandon Hills 50km",
+   "start_date": "2027-08-28",
+   "source": "duv",
+   "source_id": "137630",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137630",
+   "end_date": "2027-08-28",
+   "country": "CA",
+   "city": "Brandon",
+   "lat": 49.84692,
+   "lon": -99.95306,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137630",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137630",
+     "id": "ffff3b22129f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ffff3b22129f"
   },
   {
    "name": "8. Mountainman Großarltal",
@@ -106932,6 +108515,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "19a70375bee6"
+  },
+  {
+   "name": "Austria Backyard 7+1 - Kirchschlag bei Linz",
+   "start_date": "2027-08-29",
+   "source": "duv",
+   "source_id": "137672",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137672",
+   "end_date": "2027-08-29",
+   "country": "AT",
+   "city": "Kirchschlag bei Linz",
+   "lat": 48.41149,
+   "lon": 14.27656,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 53.6,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137672",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137672",
+     "id": "d1df1238eccc"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d1df1238eccc"
   },
   {
    "name": "DO IT FAST Phoenix-West Sommer-Edition",
@@ -107974,6 +109595,44 @@
    "id": "d676c9a0f44f"
   },
   {
+   "name": "6th Steep Ultra 100 km Race",
+   "start_date": "2027-09-04",
+   "source": "duv",
+   "source_id": "137629",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137629",
+   "end_date": "2027-09-05",
+   "country": "CA",
+   "city": "Corner Brook",
+   "lat": 48.95001,
+   "lon": -57.95202,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 100.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137629",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137629",
+     "id": "06630a0f928f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "06630a0f928f"
+  },
+  {
    "name": "9 I2 IF backyard ultra",
    "start_date": "2027-09-04",
    "source": "duv",
@@ -108923,6 +110582,106 @@
    "id": "b0c933410bc6"
   },
   {
+   "name": "Wildstrubel by UTMB",
+   "start_date": "2027-09-10",
+   "source": "utmb",
+   "source_id": "wildstrubel.utmb.world:2027",
+   "source_url": "https://wildstrubel.utmb.world/",
+   "end_date": "2027-09-12",
+   "country": "CH",
+   "city": "Crans-Montana",
+   "lat": 46.31316,
+   "lon": 7.47914,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 10.0,
+     "elevation_gain_m": 500
+    },
+    {
+     "km": 10.0,
+     "elevation_gain_m": 500
+    },
+    {
+     "km": 26.0,
+     "elevation_gain_m": 1200
+    },
+    {
+     "km": 41.0,
+     "elevation_gain_m": 2500
+    },
+    {
+     "km": 55.0,
+     "elevation_gain_m": 3300
+    },
+    {
+     "km": 72.0,
+     "elevation_gain_m": 4600
+    },
+    {
+     "km": 113.0,
+     "elevation_gain_m": 6600
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://wildstrubel.utmb.world/"
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "wildstrubel.utmb.world:2027",
+     "source_url": "https://wildstrubel.utmb.world/",
+     "id": "057947440b30"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "057947440b30"
+  },
+  {
+   "name": "11th The Golden Ultra 60 km Ultramarathon",
+   "start_date": "2027-09-11",
+   "source": "duv",
+   "source_id": "137622",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137622",
+   "end_date": "2027-09-11",
+   "country": "CA",
+   "city": "Golden",
+   "lat": 51.29995,
+   "lon": -116.9689,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 60.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137622",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137622",
+     "id": "a3e30ef4f364"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "a3e30ef4f364"
+  },
+  {
    "name": "12th Mendocino Running Festival",
    "start_date": "2027-09-11",
    "source": "duv",
@@ -109455,6 +111214,39 @@
    ],
    "fetched_at": "2026-11-02T11:14:39+00:00",
    "id": "2ccd7e84bc3b"
+  },
+  {
+   "name": "8. Schwarzwaldultra Backyard (Mini-SWUB)",
+   "start_date": "2027-09-11",
+   "source": "duv",
+   "source_id": "137604",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137604",
+   "end_date": "2027-09-11",
+   "country": "DE",
+   "city": "Freudenstadt",
+   "lat": 48.46695,
+   "lon": 8.41371,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137604",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137604",
+     "id": "08dee4b9011d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "08dee4b9011d"
   },
   {
    "name": "8th Megunticook 50km Race",
@@ -110522,7 +112314,7 @@
    "distances": [
     {
      "km": 29.0,
-     "elevation_gain_m": 800
+     "elevation_gain_m": 2524
     },
     {
      "km": 59.0,
@@ -110552,7 +112344,7 @@
      "id": "c931abfac554"
     }
    ],
-   "fetched_at": "2026-11-02T11:14:39+00:00",
+   "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "0c68b1c829b0"
   },
   {
@@ -111055,6 +112847,44 @@
    "id": "c1b21c9593af"
   },
   {
+   "name": "5th Dream Nation Apparel",
+   "start_date": "2027-09-18",
+   "source": "duv",
+   "source_id": "137615",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137615",
+   "end_date": "2027-09-19",
+   "country": "CA",
+   "city": "Duncan",
+   "lat": 48.78293,
+   "lon": -123.70266,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 100.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137615",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137615",
+     "id": "5eec7d4bd113"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "5eec7d4bd113"
+  },
+  {
    "name": "5th Ultra Trail Forillon",
    "start_date": "2027-09-18",
    "source": "duv",
@@ -111287,6 +113117,77 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "6c0809039e3a"
+  },
+  {
+   "name": "9th Three Sisters Skyline 50km Race",
+   "start_date": "2027-09-18",
+   "source": "duv",
+   "source_id": "137645",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137645",
+   "end_date": "2027-09-18",
+   "country": "US",
+   "city": "Sisters",
+   "lat": 44.29095,
+   "lon": -121.54921,
+   "discipline": "sky",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137645",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137645",
+     "id": "027335d8015b"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "027335d8015b"
+  },
+  {
+   "name": "Double Ironman",
+   "start_date": "2027-09-18",
+   "source": "intervals",
+   "source_id": "14691",
+   "source_url": "https://www.intervals.icu/events/14691/",
+   "end_date": "2027-09-18",
+   "country": "US",
+   "city": "New Jersey",
+   "lat": 41.94394,
+   "lon": -85.63249,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14691",
+     "source_url": "https://www.intervals.icu/events/14691/",
+     "id": "87ae6ac32c8f"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "87ae6ac32c8f"
   },
   {
    "name": "Heights Ultra Trail",
@@ -112449,7 +114350,7 @@
    "id": "f4d9c7784863"
   },
   {
-   "name": "2nd Backyard Nonsense",
+   "name": "2nd Whimsical Nonsense",
    "start_date": "2027-09-25",
    "source": "duv",
    "source_id": "137525",
@@ -112478,7 +114379,7 @@
      "id": "31de43950aee"
     }
    ],
-   "fetched_at": "2026-11-03T10:55:39+00:00",
+   "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "31de43950aee"
   },
   {
@@ -112626,6 +114527,44 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "74d8af219a24"
+  },
+  {
+   "name": "5. Kleeblattultra",
+   "start_date": "2027-09-25",
+   "source": "duv",
+   "source_id": "137599",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137599",
+   "end_date": "2027-09-26",
+   "country": "DE",
+   "city": "Schwarme",
+   "lat": 52.89775,
+   "lon": 9.01877,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137599",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137599",
+     "id": "e2710f4a57ad"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "e2710f4a57ad"
   },
   {
    "name": "5th The Two Towers 50km",
@@ -112971,6 +114910,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "0cad1ea691c0"
+  },
+  {
+   "name": "Kreuzhorst Ultra (KRHU)",
+   "start_date": "2027-09-25",
+   "source": "duv",
+   "source_id": "137658",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137658",
+   "end_date": "2027-09-26",
+   "country": "DE",
+   "city": "Magdeburg",
+   "lat": 52.13129,
+   "lon": 11.63189,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137658",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137658",
+     "id": "3e0f8edb277a"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "3e0f8edb277a"
   },
   {
    "name": "Lidingöloppet 30 km",
@@ -113417,6 +115389,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "95afe0635d01"
+  },
+  {
+   "name": "10th Beaudry Fall Classic",
+   "start_date": "2027-10-01",
+   "source": "duv",
+   "source_id": "137664",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137664",
+   "end_date": "2027-10-03",
+   "country": "CA",
+   "city": "Winnipeg",
+   "lat": 49.8844,
+   "lon": -97.14704,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137664",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137664",
+     "id": "d5a2a468cbfc"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d5a2a468cbfc"
   },
   {
    "name": "2nd DC Peaks 100",
@@ -114293,6 +116298,77 @@
    "id": "79828169a601"
   },
   {
+   "name": "2nd Kettle Cooker Trail Race",
+   "start_date": "2027-10-03",
+   "source": "duv",
+   "source_id": "137655",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137655",
+   "end_date": "2027-10-03",
+   "country": "US",
+   "city": "Nottingham",
+   "lat": 37.68187,
+   "lon": -121.76801,
+   "discipline": "trail",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137655",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137655",
+     "id": "5847896ee70e"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "5847896ee70e"
+  },
+  {
+   "name": "50km di Calabria",
+   "start_date": "2027-10-03",
+   "source": "duv",
+   "source_id": "137675",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137675",
+   "end_date": "2027-10-03",
+   "country": "IT",
+   "city": "Curinga (CZ)",
+   "lat": 38.82811,
+   "lon": 16.31344,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137675",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137675",
+     "id": "041d7d12934d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "041d7d12934d"
+  },
+  {
    "name": "8. 24 h Lauf Freudenstadt",
    "start_date": "2027-10-03",
    "source": "duv",
@@ -114775,6 +116851,44 @@
    "id": "514f7e7cfe51"
   },
   {
+   "name": "3rd Break the Bank",
+   "start_date": "2027-10-09",
+   "source": "duv",
+   "source_id": "137640",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137640",
+   "end_date": "2027-10-09",
+   "country": "US",
+   "city": "Duluth",
+   "lat": 46.78327,
+   "lon": -92.10658,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 80.5,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137640",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137640",
+     "id": "ac15c02757f9"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ac15c02757f9"
+  },
+  {
    "name": "3rd Flagstaff Loop Trail",
    "start_date": "2027-10-09",
    "source": "duv",
@@ -114853,6 +116967,81 @@
    ],
    "fetched_at": "2026-11-02T11:14:39+00:00",
    "id": "78cc6e32909d"
+  },
+  {
+   "name": "3rd Mad Meadows",
+   "start_date": "2027-10-09",
+   "source": "duv",
+   "source_id": "137638",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137638",
+   "end_date": "2027-10-09",
+   "country": "US",
+   "city": "Leavenworth",
+   "lat": 39.31111,
+   "lon": -94.92246,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 50.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 80.5,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137638",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137638",
+     "id": "e7c9f0ca8c6e"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "e7c9f0ca8c6e"
+  },
+  {
+   "name": "3rd Nelson Backyard Ultra - Cottonwood Countdown",
+   "start_date": "2027-10-09",
+   "source": "duv",
+   "source_id": "137612",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137612",
+   "end_date": "2027-10-11",
+   "country": "CA",
+   "city": "Manning Park",
+   "lat": 56.92166,
+   "lon": -117.63117,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137612",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137612",
+     "id": "d1182e3c6472"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d1182e3c6472"
   },
   {
    "name": "3rd Virginia Trail Running Festival",
@@ -115087,6 +117276,39 @@
    ],
    "fetched_at": "2026-10-24T08:10:25+00:00",
    "id": "1a53785170c5"
+  },
+  {
+   "name": "9th Arrowhead",
+   "start_date": "2027-10-09",
+   "source": "duv",
+   "source_id": "137641",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137641",
+   "end_date": "2027-10-10",
+   "country": "US",
+   "city": "Johnston City",
+   "lat": 37.82061,
+   "lon": -88.92757,
+   "discipline": "ultra",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137641",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137641",
+     "id": "d256e6aecde4"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "d256e6aecde4"
   },
   {
    "name": "9th Midstate Massive",
@@ -115929,11 +118151,11 @@
    "id": "afea74bef1cf"
   },
   {
-   "name": "12th Endless Mile",
+   "name": "12th Endless Mile - 6 Hour Race",
    "start_date": "2027-10-21",
    "source": "duv",
-   "source_id": "137520",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137520",
+   "source_id": "137663",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137663",
    "end_date": "2027-10-24",
    "country": "US",
    "city": "Alabaster",
@@ -115953,13 +118175,13 @@
    "sources": [
     {
      "source": "duv",
-     "source_id": "137520",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137520",
-     "id": "2a9b920449fb"
+     "source_id": "137663",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137663",
+     "id": "b25facb3fbdb"
     }
    ],
-   "fetched_at": "2026-11-03T10:55:39+00:00",
-   "id": "2a9b920449fb"
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "b25facb3fbdb"
   },
   {
    "name": "4th Weekend at Burney",
@@ -116547,6 +118769,52 @@
    "id": "08035e72d582"
   },
   {
+   "name": "5th Machete Trail Madness",
+   "start_date": "2027-10-27",
+   "source": "duv",
+   "source_id": "137635",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137635",
+   "end_date": "2027-10-31",
+   "country": "US",
+   "city": "Perris",
+   "lat": 33.78252,
+   "lon": -117.22865,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 80.5,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 321.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137635",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137635",
+     "id": "745649fabc7d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "745649fabc7d"
+  },
+  {
    "name": "5th Hare Mountain 100 - 50",
    "start_date": "2027-10-29",
    "source": "duv",
@@ -116587,6 +118855,52 @@
    ],
    "fetched_at": "2026-11-03T10:55:39+00:00",
    "id": "17f39ec4c39c"
+  },
+  {
+   "name": "7th Hell Creek",
+   "start_date": "2027-10-29",
+   "source": "duv",
+   "source_id": "137632",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137632",
+   "end_date": "2027-10-31",
+   "country": "US",
+   "city": "Sylvan Grove",
+   "lat": 47.25149,
+   "lon": -122.62902,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 100.0,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    },
+    {
+     "km": 225.3,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137632",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137632",
+     "id": "20d112651fed"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "20d112651fed"
   },
   {
    "name": "2nd Running for visually impaired children",
@@ -116653,6 +118967,44 @@
    ],
    "fetched_at": "2026-11-03T10:55:39+00:00",
    "id": "75fe8a785738"
+  },
+  {
+   "name": "5. Von Dom zu Dom",
+   "start_date": "2027-10-31",
+   "source": "duv",
+   "source_id": "137627",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137627",
+   "end_date": "2027-10-31",
+   "country": "DE",
+   "city": "Verden",
+   "lat": 52.92334,
+   "lon": 9.23804,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 56.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137627",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137627",
+     "id": "ca5a8a0b044d"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "ca5a8a0b044d"
   },
   {
    "name": "Mainova Frankfurt Marathon 2027",
@@ -116779,6 +119131,44 @@
    ],
    "fetched_at": "2026-11-02T11:14:39+00:00",
    "id": "8262597db069"
+  },
+  {
+   "name": "Walking Dead Ultra 100miles",
+   "start_date": "2027-11-05",
+   "source": "duv",
+   "source_id": "137606",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137606",
+   "end_date": "2027-11-07",
+   "country": "SE",
+   "city": "Huddinge",
+   "lat": 59.23705,
+   "lon": 17.98192,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 160.9,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "137606",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=137606",
+     "id": "53c4d96bce26"
+    }
+   ],
+   "fetched_at": "2026-11-05T10:59:33+00:00",
+   "id": "53c4d96bce26"
   },
   {
    "name": "11th Feral Pig Ultra 100 mi (100km, 50mi, 50km)",
