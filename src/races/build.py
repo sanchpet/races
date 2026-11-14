@@ -1,9 +1,8 @@
-"""Render the static site: copy the page assets and write one JSON the page filters client-side."""
+"""Write the feed: one JSON with every race and its picks, which the site filters client-side."""
 
 from __future__ import annotations
 
 import json
-import shutil
 from pathlib import Path
 
 from races.config import OWNER, Pick, PicksError, load_picks, load_regions
@@ -25,10 +24,37 @@ def inline_events(
     return events
 
 
+def feed_record(event: Event) -> dict:
+    """What the page reads, and no more: the feed is downloaded whole by every reader."""
+    d = event.to_dict()
+    record = {
+        "id": d["id"],
+        "name": d["name"],
+        "start_date": d["start_date"],
+        "end_date": d["end_date"],
+        "country": d["country"],
+        "city": d["city"],
+        "lat": d["lat"],
+        "lon": d["lon"],
+        "discipline": d["discipline"],
+        "distances": [
+            {"km": x["km"], "climb_m": x["elevation_gain_m"]}
+            if x["elevation_gain_m"]
+            else {"km": x["km"]}
+            for x in d["distances"]
+        ],
+        "sources": [{"source": s["source"], "url": s["source_url"]} for s in d["sources"]],
+    }
+    registration = d["registration"]
+    if registration["status"] != "unknown" or registration["url"]:
+        record["registration"] = {"status": registration["status"], "url": registration["url"]}
+    return {k: v for k, v in record.items() if v is not None}
+
+
 def attach_picks(events: list[Event], picks: list[Pick]) -> list[dict]:
-    """Site records with each event's picks; a pick that names no event stops the build."""
+    """Feed records with each event's picks; a pick that names no event stops the build."""
     index = index_events(events)
-    records = {e.id: e.to_dict() for e in events}
+    records = {e.id: feed_record(e) for e in events}
     missing = []
     for pick in picks:
         event = pick.find(index)
@@ -47,7 +73,7 @@ def attach_picks(events: list[Event], picks: list[Pick]) -> list[dict]:
     return list(records.values())
 
 
-def build_site(root: Path, data_path: Path, out: Path, gazetteer: Gazetteer | None = None) -> dict:
+def build_feed(root: Path, data_path: Path, out: Path, gazetteer: Gazetteer | None = None) -> dict:
     """Picks are applied here, not at fetch, so a picks.yaml edit shows on the next build."""
     data = json.loads(data_path.read_text(encoding="utf-8"))
     regions_path = root / "config" / "regions.yaml"
@@ -62,14 +88,12 @@ def build_site(root: Path, data_path: Path, out: Path, gazetteer: Gazetteer | No
         "generated_at": data.get("generated_at"),
         "sources": data.get("sources", {}),
         "owner": OWNER,
-        "regions": [{"key": r.key, "label": r.label, "countries": r.countries} for r in regions],
+        "regions": [{"key": r.key, "labels": r.labels, "countries": r.countries} for r in regions],
         "countries": {c: name_of(c) for c in countries},
         "events": records,
     }
 
-    if out.exists():
-        shutil.rmtree(out)
-    shutil.copytree(root / "site", out)
+    out.mkdir(parents=True, exist_ok=True)
     (out / "events.json").write_text(
         json.dumps(site_data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
     )

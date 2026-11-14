@@ -36,8 +36,12 @@ class PicksError(ValueError):
 @dataclass
 class Region:
     key: str
-    label: str
+    labels: dict[str, str]
     countries: list[str]
+
+    @property
+    def label(self) -> str:
+        return self.labels["en"]
 
 
 @dataclass
@@ -67,7 +71,9 @@ def load_regions(path: Path) -> list[Region]:
             # Catches YAML's Norway problem: an unquoted NO loads as False.
             raise ValueError(f"{path}: region {key!r} has invalid country codes {bad!r}")
         countries = [c.upper() for c in countries]
-        regions.append(Region(key=key, label=body.get("label", key), countries=countries))
+        label = body.get("label", key)
+        labels = {"en": label, "ru": body.get("label_ru", label)}
+        regions.append(Region(key=key, labels=labels, countries=countries))
     return regions
 
 
