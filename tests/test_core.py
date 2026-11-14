@@ -6,7 +6,7 @@ from pathlib import Path
 import httpx
 import pytest
 
-from races.build import attach_picks, build_site
+from races.build import attach_picks, build_feed
 from races.config import PicksError, Region, load_picks, region_tags
 from races.dedupe import deduplicate
 from races.geocode import Gazetteer
@@ -15,6 +15,21 @@ from races.models import Distance, Event, Registration
 from races.pipeline import write_events
 
 ROOT = Path(__file__).resolve().parent.parent
+FEED_KEYS = {
+    "id",
+    "name",
+    "start_date",
+    "end_date",
+    "country",
+    "city",
+    "lat",
+    "lon",
+    "discipline",
+    "distances",
+    "sources",
+    "registration",
+    "picks",
+}
 
 
 def event(source, sid, name, day, country="GE", **kw):
@@ -70,7 +85,10 @@ def test_dedupe_never_merges_within_one_source():
 
 
 def test_region_tags_allow_overlap():
-    regions = [Region("caucasus", "Caucasus", ["GE", "TR"]), Region("europe", "Europe", ["TR"])]
+    regions = [
+        Region("caucasus", {"en": "Caucasus"}, ["GE", "TR"]),
+        Region("europe", {"en": "Europe"}, ["TR"]),
+    ]
     assert region_tags("TR", regions) == ["caucasus", "europe"]
     assert region_tags(None, regions) == []
 
@@ -137,12 +155,11 @@ def test_pick_matching_no_race_fails_the_build(tmp_path):
     write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1))], {})
     root = tmp_path / "root"
     (root / "picks").mkdir(parents=True)
-    (root / "site").symlink_to(ROOT / "site")
     (root / "config").symlink_to(ROOT / "config")
     (root / "picks.yaml").write_text("- id: deadbeef0000\n")
     (root / "picks" / "nino.yaml").write_text("- url: https://nowhere.example/race\n")
     with pytest.raises(PicksError) as err:
-        build_site(root, data, tmp_path / "dist")
+        build_feed(root, data, tmp_path / "dist")
     assert "picks.yaml #1: deadbeef0000" in str(err.value)
     assert "picks/nino.yaml #1: https://nowhere.example/race" in str(err.value)
     assert not (tmp_path / "dist").exists()
@@ -190,18 +207,20 @@ def test_polite_client_obeys_robots_with_wildcards(tmp_path):
         client.get_text("https://duv.example/events/1")
 
 
-def test_build_site_writes_page_and_data(tmp_path):
+def test_build_feed_writes_only_the_data(tmp_path):
     data = tmp_path / "events.json"
     write_events(
         data, [event("utmb", "1", "Race", date(2027, 1, 1))], {"utmb": {"status": "ok", "count": 1}}
     )
     out = tmp_path / "dist"
-    stats = build_site(site_root(tmp_path, "[]"), data, out)
+    stats = build_feed(site_root(tmp_path, "[]"), data, out)
     assert stats == {"events": 1, "picks": 0}
-    assert (out / "index.html").exists() and (out / "app.js").exists()
+    assert [p.name for p in out.iterdir()] == ["events.json"]
     site = json.loads((out / "events.json").read_text())
     assert site["countries"] == {"GE": "Georgia"}
     assert {r["key"] for r in site["regions"]} >= {"europe", "asia"}
+    assert site["regions"][0]["labels"] == {"en": "Cyprus & neighbours", "ru": "Кипр и соседи"}
+    assert set(site["events"][0]) <= FEED_KEYS
 
 
 def test_dedupe_does_not_merge_marathon_with_same_city_ultra():
@@ -269,7 +288,6 @@ def geonames_row(name, country, lat, lon, population=10000):
 def site_root(tmp_path, picks_yaml):
     root = tmp_path / "root"
     root.mkdir()
-    (root / "site").symlink_to(ROOT / "site")
     (root / "config").symlink_to(ROOT / "config")
     (root / "picks.yaml").write_text(picks_yaml)
     return root
@@ -321,12 +339,12 @@ def test_inline_race_is_geocoded_and_listed_with_its_provenance(tmp_path):
     write_events(data, [event("utmb", "1", "Race", date(2027, 1, 1), "FR")], {})
     gazetteer = Gazetteer([geonames_row("Mestia", "GE", 43.04, 42.73)])
     out = tmp_path / "dist"
-    build_site(site_root(tmp_path, INLINE_PICK), data, out, gazetteer)
+    build_feed(site_root(tmp_path, INLINE_PICK), data, out, gazetteer)
 
     site = json.loads((out / "events.json").read_text())
     race = next(e for e in site["events"] if e["name"] == "Svaneti Trail")
     assert (race["lat"], race["lon"]) == (43.04, 42.73)
-    assert "georgia-caucasus" in race["region_tags"]
+    assert race["country"] == "GE"
     assert [s["source"] for s in race["sources"]] == ["picks"]
     assert race["picks"] == [{"person": "owner", "status": "registered", "note": "Home race"}]
     assert site["countries"] == {"FR": "France", "GE": "Georgia"}
@@ -356,10 +374,10 @@ def test_inline_race_merges_into_the_source_event_that_finds_it(tmp_path, name, 
     data = tmp_path / "events.json"
     write_events(data, [found], {})
     out = tmp_path / "dist"
-    build_site(site_root(tmp_path, INLINE_PICK), data, out, Gazetteer([]))
+    build_feed(site_root(tmp_path, INLINE_PICK), data, out, Gazetteer([]))
 
     (race,) = json.loads((out / "events.json").read_text())["events"]
     assert race["id"] == found.id and race["name"] == name
     assert [s["source"] for s in race["sources"]] == ["duv", "picks"]
-    assert [(d["km"], d["elevation_gain_m"]) for d in race["distances"]] == [(21, None), (54, 3100)]
+    assert [(d["km"], d.get("climb_m")) for d in race["distances"]] == [(21, None), (54, 3100)]
     assert race["picks"][0]["status"] == "registered"

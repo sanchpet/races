@@ -11,8 +11,8 @@ from urllib.parse import urlsplit
 import httpx
 from protego import Protego
 
-USER_AGENT = "races.sanch.pet/0.1 (+https://races.sanch.pet)"
-ROBOTS_AGENT = "races.sanch.pet"
+USER_AGENT = "sanch.pet-races/0.1 (+https://sanch.pet/en/sport/races)"
+ROBOTS_AGENT = "sanch.pet-races"
 DEFAULT_DELAY_S = 2.0
 CACHE_TTL_S = 20 * 3600
 RETRIES = 2

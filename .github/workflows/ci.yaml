@@ -29,5 +29,5 @@ jobs:
       - name: Test
         run: uv run pytest -q
 
-      - name: Build the site from committed data
+      - name: Build the feed from committed data
         run: uv run races build --out dist

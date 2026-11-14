@@ -65,13 +65,24 @@ jobs:
       - name: Build
         run: uv run races build --out dist
 
-      # The server serves this branch through git-sync, so a single commit keeps its clone small.
-      - name: Push to the public branch
+      # The garden's build checks this branch out, so a single commit keeps that checkout small.
+      - name: Push the feed to the public branch
         working-directory: dist
         run: |
           source=$(git -C .. rev-parse --short HEAD)
           git init -q -b public
           git add -A
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit -q -m "Build from races ${source}"
+            commit -q -m "Feed from races ${source}"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" public
+
+      # A push made with the workflow's own token starts no workflow elsewhere, so ask for the rebuild.
+      - name: Rebuild the site
+        env:
+          GH_TOKEN: ${{ secrets.GARDEN_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GARDEN_DISPATCH_TOKEN is not set: the site keeps the previous feed until its next build."
+            exit 0
+          fi
+          gh api repos/sanchpet/garden/dispatches -f event_type=races-feed

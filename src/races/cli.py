@@ -1,4 +1,4 @@
-"""Command line: `races fetch` refreshes data/events.json, `races build` renders dist/."""
+"""Command line: `races fetch` refreshes data/events.json, `races build` writes the feed."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
-from races.build import build_site
+from races.build import build_feed
 from races.config import PicksError, load_picks, load_regions
 from races.geocode import open_gazetteer
 from races.http import PoliteClient
@@ -75,7 +75,7 @@ def print_summary(events, report: dict, root: Path) -> None:
 
 
 def cmd_build(args: argparse.Namespace) -> int:
-    stats = build_site(args.root, args.data, args.out)
+    stats = build_feed(args.root, args.data, args.out)
     print(f"built {args.out}: {stats['events']} events, {stats['picks']} picks")
     return 0
 
@@ -93,7 +93,7 @@ def main(argv: list[str] | None = None) -> int:
     fetch.add_argument("--no-geocode", action="store_true", help="skip GeoNames lookup")
     fetch.set_defaults(func=cmd_fetch)
 
-    build = sub.add_parser("build", help="render the static site")
+    build = sub.add_parser("build", help="write the feed the site reads")
     build.add_argument("--out", type=Path, default=Path("dist"))
     build.set_defaults(func=cmd_build)
 
