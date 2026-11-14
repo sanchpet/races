@@ -5,7 +5,7 @@ Which calendars the aggregator reads, which it only links to, and why. Checked o
 ## Rules every parser follows
 
 - Fetch only what `robots.txt` allows for our agent, and honour `Crawl-delay`. The client refuses a URL when robots.txt disallows it and stops when robots.txt is unreachable.
-- Identify as `races.sanch.pet/0.1 (+https://races.sanch.pet)`.
+- Identify as `sanch.pet-races/0.1 (+https://sanch.pet/en/sport/races)`.
 - At most one request per host every 2 seconds (or the source's crawl delay, if longer); retry transient failures twice with backoff.
 - Cache raw responses for 20 hours (`.cache/raw/`, not committed), so re-runs do not hit the source again.
 - Keep facts only (name, dates, place, distances, climb, registration status) and link every race back to its source page. No descriptions, images or logos are copied.
