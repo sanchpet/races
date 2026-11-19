@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-18T11:50:55+00:00",
+ "generated_at": "2026-11-19T11:48:52+00:00",
  "sources": {
   "traillab": {
    "status": "ok",
    "count": 3,
-   "fetched_at": "2026-11-18T11:46:28+00:00"
+   "fetched_at": "2026-11-19T11:44:38+00:00"
   },
   "utmb": {
    "status": "ok",
-   "count": 62,
-   "fetched_at": "2026-11-18T11:46:28+00:00"
+   "count": 60,
+   "fetched_at": "2026-11-19T11:44:38+00:00"
   },
   "intervals": {
    "status": "ok",
-   "count": 947,
-   "fetched_at": "2026-11-18T11:46:28+00:00"
+   "count": 961,
+   "fetched_at": "2026-11-19T11:44:38+00:00"
   },
   "duv": {
    "status": "ok",
-   "count": 2246,
-   "fetched_at": "2026-11-18T11:46:28+00:00"
+   "count": 2248,
+   "fetched_at": "2026-11-19T11:44:38+00:00"
   }
  },
  "events": [
@@ -66,39 +66,6 @@
    "id": "a05afe44c395"
   },
   {
-   "name": "10th Ultra Africa 220 km Stage Race",
-   "start_date": "2026-11-15",
-   "source": "duv",
-   "source_id": "138030",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138030",
-   "end_date": "2026-11-19",
-   "country": "MZ",
-   "city": "Lac Nhambavale",
-   "lat": null,
-   "lon": null,
-   "discipline": "ultra",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "africa"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "138030",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138030",
-     "id": "cfb14f45bf62"
-    }
-   ],
-   "fetched_at": "2026-11-13T11:03:26+00:00",
-   "id": "cfb14f45bf62"
-  },
-  {
    "name": "11° The Last Desert Antarctica",
    "start_date": "2026-11-16",
    "source": "duv",
@@ -128,78 +95,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "cf6df24733bc"
-  },
-  {
-   "name": "8th Saioto Colors",
-   "start_date": "2026-11-18",
-   "source": "duv",
-   "source_id": "132443",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=132443",
-   "end_date": "2026-11-18",
-   "country": "JP",
-   "city": "Hiroshima Pref.",
-   "lat": 34.4,
-   "lon": 132.45,
-   "discipline": "ultra",
-   "distances": [
-    {
-     "km": 52.0,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "asia"
-   ],
-   "sources": [
-    {
-     "source": "duv",
-     "source_id": "132443",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=132443",
-     "id": "5ae7060597c5"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "5ae7060597c5"
-  },
-  {
-   "name": "Φειδιππειδιοσ Αθλος",
-   "start_date": "2026-11-18",
-   "source": "intervals",
-   "source_id": "8716",
-   "source_url": "https://www.intervals.icu/events/8716/",
-   "end_date": "2026-11-18",
-   "country": "GR",
-   "city": "Αθήνα",
-   "lat": null,
-   "lon": null,
-   "discipline": "road",
-   "distances": [],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "cyprus-neighbours",
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "8716",
-     "source_url": "https://www.intervals.icu/events/8716/",
-     "id": "151d49512a44"
-    }
-   ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "151d49512a44"
   },
   {
    "name": "1st In The Footsteps of the Athenian Army (Athens-Sparta-Athens-Marathon",
@@ -16882,6 +16777,39 @@
    "id": "3904d7a05af5"
   },
   {
+   "name": "13^ Fatica di Ercole",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14989",
+   "source_url": "https://www.intervals.icu/events/14989/",
+   "end_date": "2026-12-13",
+   "country": "IT",
+   "city": "Policoro",
+   "lat": 40.2128,
+   "lon": 16.67795,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14989",
+     "source_url": "https://www.intervals.icu/events/14989/",
+     "id": "9b113b48cf7e"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "9b113b48cf7e"
+  },
+  {
    "name": "17h Mel Williams Memorial Seashore (Seashore Nature Trail)",
    "start_date": "2026-12-13",
    "source": "duv",
@@ -17975,6 +17903,39 @@
    "id": "58bac4065485"
   },
   {
+   "name": "Pajamasrun 2026",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14972",
+   "source_url": "https://www.intervals.icu/events/14972/",
+   "end_date": "2026-12-13",
+   "country": "ID",
+   "city": "Daerah Khusus Ibukota Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14972",
+     "source_url": "https://www.intervals.icu/events/14972/",
+     "id": "18428642f453"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "18428642f453"
+  },
+  {
    "name": "Penang 21km Marathon",
    "start_date": "2026-12-13",
    "source": "intervals",
@@ -18044,6 +18005,39 @@
    ],
    "fetched_at": "2026-10-23T08:35:29+00:00",
    "id": "11019c4ca2ac"
+  },
+  {
+   "name": "Pokemon Run 2026",
+   "start_date": "2026-12-13",
+   "source": "intervals",
+   "source_id": "14971",
+   "source_url": "https://www.intervals.icu/events/14971/",
+   "end_date": "2026-12-13",
+   "country": "ID",
+   "city": "Daerah Khusus Ibukota Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14971",
+     "source_url": "https://www.intervals.icu/events/14971/",
+     "id": "2007ff766361"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "2007ff766361"
   },
   {
    "name": "Richmond Park Half Marathon",
@@ -19588,8 +19582,8 @@
    "name": "Solstice Ultra",
    "start_date": "2026-12-19",
    "source": "duv",
-   "source_id": "133192",
-   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133192",
+   "source_id": "138338",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138338",
    "end_date": "2026-12-19",
    "country": "CH",
    "city": "Bern",
@@ -19609,13 +19603,13 @@
    "sources": [
     {
      "source": "duv",
-     "source_id": "133192",
-     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=133192",
-     "id": "ca9f09df75b3"
+     "source_id": "138338",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138338",
+     "id": "ad4aaf663954"
     }
    ],
-   "fetched_at": "2026-10-18T13:41:31+00:00",
-   "id": "ca9f09df75b3"
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "ad4aaf663954"
   },
   {
    "name": "São Silvestre VN Cerveira 2026",
@@ -28791,6 +28785,39 @@
    "id": "434a983dee47"
   },
   {
+   "name": "Jakarta One Running Series - North Jakarta",
+   "start_date": "2027-01-17",
+   "source": "intervals",
+   "source_id": "14973",
+   "source_url": "https://www.intervals.icu/events/14973/",
+   "end_date": "2027-01-17",
+   "country": "ID",
+   "city": "Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14973",
+     "source_url": "https://www.intervals.icu/events/14973/",
+     "id": "a97dfb18c91f"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "a97dfb18c91f"
+  },
+  {
    "name": "Louisiana Marathon",
    "start_date": "2027-01-17",
    "source": "intervals",
@@ -29198,20 +29225,20 @@
    "discipline": "trail",
    "distances": [
     {
-     "km": 22.1,
-     "elevation_gain_m": 744
+     "km": 24.4,
+     "elevation_gain_m": 826
     },
     {
-     "km": 49.4,
-     "elevation_gain_m": 1458
+     "km": 47.3,
+     "elevation_gain_m": 1370
     },
     {
-     "km": 82.7,
-     "elevation_gain_m": 2708
+     "km": 83.8,
+     "elevation_gain_m": 2738
     },
     {
-     "km": 174.0,
-     "elevation_gain_m": 5507
+     "km": 174.4,
+     "elevation_gain_m": 5534
     }
    ],
    "registration": {
@@ -29237,7 +29264,7 @@
      "id": "75f985f248f8"
     }
    ],
-   "fetched_at": "2026-11-09T11:37:20+00:00",
+   "fetched_at": "2026-11-19T11:44:38+00:00",
    "id": "8bd40061f560"
   },
   {
@@ -36718,6 +36745,39 @@
    "id": "865ce8f7d88a"
   },
   {
+   "name": "Groeten uit Schoorl",
+   "start_date": "2027-02-14",
+   "source": "intervals",
+   "source_id": "14979",
+   "source_url": "https://www.intervals.icu/events/14979/",
+   "end_date": "2027-02-14",
+   "country": "NL",
+   "city": "Schoorl",
+   "lat": 52.70167,
+   "lon": 4.69722,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14979",
+     "source_url": "https://www.intervals.icu/events/14979/",
+     "id": "41cf35a0a99c"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "41cf35a0a99c"
+  },
+  {
    "name": "Haltom Stampede",
    "start_date": "2027-02-14",
    "source": "intervals",
@@ -39263,44 +39323,6 @@
    "name": "Saint Valentine Marathon",
    "start_date": "2027-02-21",
    "source": "intervals",
-   "source_id": "14510",
-   "source_url": "https://www.intervals.icu/events/14510/",
-   "end_date": "2027-02-21",
-   "country": "IT",
-   "city": "San Valentino Torio",
-   "lat": 40.79109,
-   "lon": 14.60333,
-   "discipline": "road",
-   "distances": [
-    {
-     "km": 42.195,
-     "elevation_gain_m": null
-    }
-   ],
-   "registration": {
-    "status": "unknown",
-    "opens": null,
-    "closes": null,
-    "url": null
-   },
-   "region_tags": [
-    "europe"
-   ],
-   "sources": [
-    {
-     "source": "intervals",
-     "source_id": "14510",
-     "source_url": "https://www.intervals.icu/events/14510/",
-     "id": "101bac34e32b"
-    }
-   ],
-   "fetched_at": "2026-10-29T10:01:32+00:00",
-   "id": "101bac34e32b"
-  },
-  {
-   "name": "Saint Valentine Marathon",
-   "start_date": "2027-02-21",
-   "source": "intervals",
    "source_id": "14461",
    "source_url": "https://www.intervals.icu/events/14461/",
    "end_date": "2027-02-21",
@@ -39334,6 +39356,44 @@
    ],
    "fetched_at": "2026-10-28T09:42:50+00:00",
    "id": "2164956d760c"
+  },
+  {
+   "name": "Saint Valentine Marathon",
+   "start_date": "2027-02-21",
+   "source": "intervals",
+   "source_id": "14510",
+   "source_url": "https://www.intervals.icu/events/14510/",
+   "end_date": "2027-02-21",
+   "country": "IT",
+   "city": "San Valentino Torio",
+   "lat": 40.79109,
+   "lon": 14.60333,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14510",
+     "source_url": "https://www.intervals.icu/events/14510/",
+     "id": "101bac34e32b"
+    }
+   ],
+   "fetched_at": "2026-10-29T10:01:32+00:00",
+   "id": "101bac34e32b"
   },
   {
    "name": "Two Tunnels Ultra",
@@ -40965,6 +41025,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "02dd818b573a"
+  },
+  {
+   "name": "XI CARRERA LA CUNA DE LA LEGION",
+   "start_date": "2027-02-27",
+   "source": "intervals",
+   "source_id": "14978",
+   "source_url": "https://www.intervals.icu/events/14978/",
+   "end_date": "2027-02-27",
+   "country": "ES",
+   "city": "Ceuta",
+   "lat": 35.88919,
+   "lon": -5.32042,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14978",
+     "source_url": "https://www.intervals.icu/events/14978/",
+     "id": "f00e2a67923f"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "f00e2a67923f"
   },
   {
    "name": "XI Carrera de Montaña Reino de Patones",
@@ -51302,6 +51395,39 @@
    ],
    "fetched_at": "2026-11-03T10:55:39+00:00",
    "id": "2457f56d949e"
+  },
+  {
+   "name": "Jakarta One Running Series - West Jakarta",
+   "start_date": "2027-03-21",
+   "source": "intervals",
+   "source_id": "14974",
+   "source_url": "https://www.intervals.icu/events/14974/",
+   "end_date": "2027-03-21",
+   "country": "ID",
+   "city": "Daerah Khusus Ibukota Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14974",
+     "source_url": "https://www.intervals.icu/events/14974/",
+     "id": "c3db60d9df28"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "c3db60d9df28"
   },
   {
    "name": "KPMG  MARATHON",
@@ -62719,6 +62845,44 @@
    "id": "1ae5a45897a0"
   },
   {
+   "name": "Leipzig Halbmarathon",
+   "start_date": "2027-04-18",
+   "source": "intervals",
+   "source_id": "14980",
+   "source_url": "https://www.intervals.icu/events/14980/",
+   "end_date": "2027-04-18",
+   "country": "DE",
+   "city": "Leipzig",
+   "lat": 51.33962,
+   "lon": 12.37129,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14980",
+     "source_url": "https://www.intervals.icu/events/14980/",
+     "id": "37a8ad14730a"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "37a8ad14730a"
+  },
+  {
    "name": "Leipzig Marathon",
    "start_date": "2027-04-18",
    "source": "intervals",
@@ -66413,6 +66577,39 @@
    "id": "5eb085d1dbcf"
   },
   {
+   "name": "Jakarta One Running Series - East Jakarta",
+   "start_date": "2027-04-25",
+   "source": "intervals",
+   "source_id": "14975",
+   "source_url": "https://www.intervals.icu/events/14975/",
+   "end_date": "2027-04-25",
+   "country": "ID",
+   "city": "Daerah Khusus Ibukota Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14975",
+     "source_url": "https://www.intervals.icu/events/14975/",
+     "id": "59552e0de95e"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "59552e0de95e"
+  },
+  {
    "name": "Kauno Akropolio maratonas 2027",
    "start_date": "2027-04-25",
    "source": "intervals",
@@ -67235,6 +67432,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "87d9aa925c70"
+  },
+  {
+   "name": "Pursuit In Paradise",
+   "start_date": "2027-04-27",
+   "source": "intervals",
+   "source_id": "14983",
+   "source_url": "https://www.intervals.icu/events/14983/",
+   "end_date": "2027-04-27",
+   "country": "CK",
+   "city": "Aitutaki",
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "oceania"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14983",
+     "source_url": "https://www.intervals.icu/events/14983/",
+     "id": "b4eeca7fd09c"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "b4eeca7fd09c"
   },
   {
    "name": "13th Merrell Hobbit Journey 90km Trail Run",
@@ -76262,6 +76492,44 @@
    "id": "409c2345063d"
   },
   {
+   "name": "Runaway Hawke'S Bay Marathon",
+   "start_date": "2027-05-15",
+   "source": "intervals",
+   "source_id": "14984",
+   "source_url": "https://www.intervals.icu/events/14984/",
+   "end_date": "2027-05-15",
+   "country": "NZ",
+   "city": "Hawke's Bay Region",
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [
+    {
+     "km": 42.195,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "oceania"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14984",
+     "source_url": "https://www.intervals.icu/events/14984/",
+     "id": "9d8f06d4696f"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "9d8f06d4696f"
+  },
+  {
    "name": "Runforestrun VAM12",
    "start_date": "2027-05-15",
    "source": "duv",
@@ -84522,6 +84790,39 @@
    "id": "e500ec289360"
   },
   {
+   "name": "Jakarta One Running Series - Central Jakarta",
+   "start_date": "2027-06-06",
+   "source": "intervals",
+   "source_id": "14976",
+   "source_url": "https://www.intervals.icu/events/14976/",
+   "end_date": "2027-06-06",
+   "country": "ID",
+   "city": "Jakarta",
+   "lat": -6.21462,
+   "lon": 106.84513,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "asia"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14976",
+     "source_url": "https://www.intervals.icu/events/14976/",
+     "id": "5da6f845b210"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "5da6f845b210"
+  },
+  {
    "name": "La Transju'Trails - 25K",
    "start_date": "2027-06-06",
    "source": "intervals",
@@ -86315,7 +86616,7 @@
    "id": "58a507005778"
   },
   {
-   "name": "Jakarta International Marathon 10k",
+   "name": "Jakarta International Marathon 2027–10k",
    "start_date": "2027-06-12",
    "source": "intervals",
    "source_id": "14715",
@@ -86349,7 +86650,7 @@
      "id": "317be77856be"
     }
    ],
-   "fetched_at": "2026-11-07T10:15:44+00:00",
+   "fetched_at": "2026-11-19T11:44:38+00:00",
    "id": "317be77856be"
   },
   {
@@ -88044,6 +88345,39 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "53ed073ac739"
+  },
+  {
+   "name": "2027 BISMAN TRIATHLON",
+   "start_date": "2027-06-19",
+   "source": "intervals",
+   "source_id": "14982",
+   "source_url": "https://www.intervals.icu/events/14982/",
+   "end_date": "2027-06-19",
+   "country": "US",
+   "city": "Bismarck",
+   "lat": 46.80833,
+   "lon": -100.78374,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14982",
+     "source_url": "https://www.intervals.icu/events/14982/",
+     "id": "4c46fd1569d8"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "4c46fd1569d8"
   },
   {
    "name": "2nd Mauritius by UTMB",
@@ -92920,6 +93254,39 @@
    "id": "88829d922240"
   },
   {
+   "name": "Freedom Springs Triathlon",
+   "start_date": "2027-07-04",
+   "source": "intervals",
+   "source_id": "14969",
+   "source_url": "https://www.intervals.icu/events/14969/",
+   "end_date": "2027-07-04",
+   "country": "US",
+   "city": "Marianna",
+   "lat": 30.77436,
+   "lon": -85.22687,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14969",
+     "source_url": "https://www.intervals.icu/events/14969/",
+     "id": "3c31f947bb0b"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "3c31f947bb0b"
+  },
+  {
    "name": "Ironman Thun",
    "start_date": "2027-07-04",
    "source": "intervals",
@@ -97306,6 +97673,82 @@
    "id": "2a15a96a9c77"
   },
   {
+   "name": "Pluteno120",
+   "start_date": "2027-07-23",
+   "source": "duv",
+   "source_id": "138345",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138345",
+   "end_date": "2027-07-25",
+   "country": "AT",
+   "city": "Bludenz",
+   "lat": 47.15476,
+   "lon": 9.82255,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 119.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "138345",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138345",
+     "id": "31291ed6e408"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "31291ed6e408"
+  },
+  {
+   "name": "Pluteno160",
+   "start_date": "2027-07-23",
+   "source": "duv",
+   "source_id": "138346",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138346",
+   "end_date": "2027-07-25",
+   "country": "AT",
+   "city": "Bludenz",
+   "lat": 47.15476,
+   "lon": 9.82255,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 158.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "138346",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138346",
+     "id": "2e1c12e6aa64"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "2e1c12e6aa64"
+  },
+  {
    "name": "Speedgoat Mountain Races by UTMB",
    "start_date": "2027-07-23",
    "source": "utmb",
@@ -98060,6 +98503,44 @@
    ],
    "fetched_at": "2026-11-13T11:03:26+00:00",
    "id": "e2dd25caba72"
+  },
+  {
+   "name": "Pluteno75",
+   "start_date": "2027-07-24",
+   "source": "duv",
+   "source_id": "138341",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138341",
+   "end_date": "2027-07-25",
+   "country": "AT",
+   "city": "Bludenz",
+   "lat": 47.15476,
+   "lon": 9.82255,
+   "discipline": "ultra",
+   "distances": [
+    {
+     "km": 73.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "138341",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138341",
+     "id": "4633906a0c01"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "4633906a0c01"
   },
   {
    "name": "Rat Race 100 Edinburgh to Glamis",
@@ -101604,6 +102085,39 @@
    "id": "fadd5d530fa3"
   },
   {
+   "name": "STHLM Triathlon",
+   "start_date": "2027-08-08",
+   "source": "intervals",
+   "source_id": "14981",
+   "source_url": "https://www.intervals.icu/events/14981/",
+   "end_date": "2027-08-08",
+   "country": "SE",
+   "city": null,
+   "lat": null,
+   "lon": null,
+   "discipline": "road",
+   "distances": [],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "intervals",
+     "source_id": "14981",
+     "source_url": "https://www.intervals.icu/events/14981/",
+     "id": "1649eb85e5cc"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "1649eb85e5cc"
+  },
+  {
    "name": "dm kurzdistanz",
    "start_date": "2027-08-08",
    "source": "intervals",
@@ -101782,64 +102296,6 @@
    ],
    "fetched_at": "2026-10-18T13:41:31+00:00",
    "id": "74a1a1327716"
-  },
-  {
-   "name": "Boréalys Mont-Tremblant by UTMB",
-   "start_date": "2027-08-13",
-   "source": "utmb",
-   "source_id": "borealys.utmb.world:2027",
-   "source_url": "https://borealys.utmb.world/",
-   "end_date": "2027-08-15",
-   "country": "CA",
-   "city": "Village Tremblant",
-   "lat": 46.21274,
-   "lon": -74.58438,
-   "discipline": "trail",
-   "distances": [
-    {
-     "km": 5.8,
-     "elevation_gain_m": 379
-    },
-    {
-     "km": 14.5,
-     "elevation_gain_m": 896
-    },
-    {
-     "km": 26.6,
-     "elevation_gain_m": 1645
-    },
-    {
-     "km": 46.4,
-     "elevation_gain_m": 2400
-    },
-    {
-     "km": 81.0,
-     "elevation_gain_m": 4020
-    },
-    {
-     "km": 81.0,
-     "elevation_gain_m": 4020
-    }
-   ],
-   "registration": {
-    "status": "upcoming",
-    "opens": null,
-    "closes": null,
-    "url": "https://borealys.utmb.world/"
-   },
-   "region_tags": [
-    "americas"
-   ],
-   "sources": [
-    {
-     "source": "utmb",
-     "source_id": "borealys.utmb.world:2027",
-     "source_url": "https://borealys.utmb.world/",
-     "id": "307cf599b937"
-    }
-   ],
-   "fetched_at": "2026-11-13T11:03:26+00:00",
-   "id": "307cf599b937"
   },
   {
    "name": "The Clint Eastwood Backyard Ultra",
@@ -102769,6 +103225,64 @@
    ],
    "fetched_at": "2026-11-05T10:59:33+00:00",
    "id": "f38157b53515"
+  },
+  {
+   "name": "Boréalys Mont-Tremblant by UTMB",
+   "start_date": "2027-08-14",
+   "source": "utmb",
+   "source_id": "borealys.utmb.world:2027",
+   "source_url": "https://borealys.utmb.world/",
+   "end_date": "2027-08-15",
+   "country": "CA",
+   "city": "Village Tremblant",
+   "lat": 46.21274,
+   "lon": -74.58438,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 5.8,
+     "elevation_gain_m": 379
+    },
+    {
+     "km": 14.5,
+     "elevation_gain_m": 896
+    },
+    {
+     "km": 26.6,
+     "elevation_gain_m": 1645
+    },
+    {
+     "km": 46.4,
+     "elevation_gain_m": 2400
+    },
+    {
+     "km": 81.0,
+     "elevation_gain_m": 4020
+    },
+    {
+     "km": 81.0,
+     "elevation_gain_m": 4020
+    }
+   ],
+   "registration": {
+    "status": "upcoming",
+    "opens": null,
+    "closes": null,
+    "url": "https://borealys.utmb.world/"
+   },
+   "region_tags": [
+    "americas"
+   ],
+   "sources": [
+    {
+     "source": "utmb",
+     "source_id": "borealys.utmb.world:2027",
+     "source_url": "https://borealys.utmb.world/",
+     "id": "307cf599b937"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "307cf599b937"
   },
   {
    "name": "DQ Brookville Olympic",
@@ -114588,6 +115102,44 @@
    "id": "71b6008d7ed6"
   },
   {
+   "name": "Ultra Pirineu Trail 100K - 60 km",
+   "start_date": "2027-10-02",
+   "source": "duv",
+   "source_id": "138356",
+   "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138356",
+   "end_date": "2027-10-03",
+   "country": "ES",
+   "city": "Baga",
+   "lat": 42.25289,
+   "lon": 1.86098,
+   "discipline": "trail",
+   "distances": [
+    {
+     "km": 60.0,
+     "elevation_gain_m": null
+    }
+   ],
+   "registration": {
+    "status": "unknown",
+    "opens": null,
+    "closes": null,
+    "url": null
+   },
+   "region_tags": [
+    "europe"
+   ],
+   "sources": [
+    {
+     "source": "duv",
+     "source_id": "138356",
+     "source_url": "https://statistik.d-u-v.org/eventdetail.php?event=138356",
+     "id": "3572b473f846"
+    }
+   ],
+   "fetched_at": "2026-11-19T11:44:38+00:00",
+   "id": "3572b473f846"
+  },
+  {
    "name": "10th 800 Heroes - Wangyou",
    "start_date": "2027-10-03",
    "source": "duv",
@@ -118144,7 +118696,7 @@
    "id": "efe49b9b62d5"
   },
   {
-   "name": "JRF 2027",
+   "name": "Jakarta Running Festival 2027",
    "start_date": "2027-10-23",
    "source": "intervals",
    "source_id": "14595",
@@ -118173,7 +118725,7 @@
      "id": "280bb830281c"
     }
    ],
-   "fetched_at": "2026-11-01T10:30:35+00:00",
+   "fetched_at": "2026-11-19T11:44:38+00:00",
    "id": "280bb830281c"
   },
   {
