@@ -77,12 +77,16 @@ jobs:
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" public
 
       # A push made with the workflow's own token starts no workflow elsewhere, so ask for the rebuild.
+      # sanchpet-hev mints an hour-long token for the engine repo only; its key does not expire.
+      - id: app
+        uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
+        with:
+          client-id: ${{ vars.HEV_CLIENT_ID }}
+          private-key: ${{ secrets.HEV_APP_KEY }}
+          owner: sanchpet
+          repositories: garden
+          permission-contents: write
       - name: Rebuild the site
         env:
-          GH_TOKEN: ${{ secrets.GARDEN_DISPATCH_TOKEN }}
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::warning::GARDEN_DISPATCH_TOKEN is not set: the site keeps the previous feed until its next build."
-            exit 0
-          fi
-          gh api repos/sanchpet/garden/dispatches -f event_type=races-feed
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: gh api repos/sanchpet/garden/dispatches -f event_type=races-feed
